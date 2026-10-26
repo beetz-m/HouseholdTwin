@@ -1,0 +1,23 @@
+# Put things where they belong: a conceptual CRAM research activity (ccram, ~/Documents/ConceptualCRAM).
+[activity]
+name = "put-away"
+title = "Put things where they belong"
+description = "After breakfast the robot tidies the counter: restore what is stray, leave what is in place or licensed, ask about what has no known home -- and honour (or decline) requests with their debts. (Competence A, M3)"
+
+[language]
+modules = ["ontology/*.ttl"]       # beside the ccram core (ccram-lang, ccram-actions, ccram-nouns, DUL/SOMA imports)
+library = ["library/*.lisp"]
+rules = ["rules/*.lisp"]
+
+[twin]
+# Emulator twin (no CRAM world): the adapter executes its realisations itself.
+adapter = "adapter:make_adapter"
+default_plan = "tidy-after-breakfast"
+# CRAM twin (world + robot + CRAMERA): add the demonstration class and its environment, e.g.
+# path = [".."]
+# demonstration = "demo:MyDemonstration"
+# python = "~/.virtualenvs/cram-env/bin/python"
+# setup = ["/opt/ros/jazzy/setup.bash", "~/ros_ws/install/setup.bash"]
+
+[workbench]
+port = 8795

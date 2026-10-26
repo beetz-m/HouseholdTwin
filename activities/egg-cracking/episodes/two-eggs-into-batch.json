@@ -1,0 +1,89 @@
+[
+ {
+  "path": "two-eggs-into-batch/egg-1/add-egg-to-batch/check",
+  "designator": "(an action (type float-testing) (object ?egg))",
+  "schema": "float-testing",
+  "t0": 0.0,
+  "bindings": {
+   "object": {
+    "symbol": "egg-1",
+    "servant": "symbol-table",
+    "status": "recorded"
+   }
+  },
+  "goal": [
+   "(achieve (float-tested egg-1) :at (end ?i))"
+  ],
+  "gate": "admitted",
+  "warrant": "justified",
+  "warrant_why": "",
+  "preact": "act-now",
+  "t1": 20.0,
+  "wall_s": 1.2,
+  "model_only": [],
+  "verdict": "goal achieved",
+  "violations": [],
+  "state_after": [
+   "(batch-bowl batch-bowl)",
+   "(shell-state egg-1 intact)",
+   "(float-tested egg-1)",
+   "(float-observed egg-1 sinks 21)",
+   "(shell-state egg-2 intact)",
+   "(empty cup-1)",
+   "(float-class egg-1 tilts)",
+   "(fresh egg-1)"
+  ]
+ },
+ {
+  "path": "two-eggs-into-batch/egg-1/add-egg-to-batch/crack-egg-cleanly/grip",
+  "designator": "(an action (type picking-up) (object ?egg) (force (some grip-force)))",
+  "schema": "picking-up",
+  "t0": 20.0,
+  "bindings": {
+   "object": {
+    "symbol": "egg-1",
+    "servant": "symbol-table",
+    "status": "recorded"
+   },
+   "force": {
+    "symbol": 40.0,
+    "servant": "grip-corridor",
+    "status": "assumed",
+    "note": "scenario: an override"
+   }
+  },
+  "goal": [
+   "(achieve (held egg-1) :at (end ?i))",
+   "(prevent (shell-state egg-1 cracked) :during ?i)",
+   "(prevent (shell-state egg-1 shattered) :during ?i)"
+  ],
+  "gate": "admitted",
+  "warrant": "plausible",
+  "warrant_why": "force: common sense / assumed",
+  "preact": "deliberate-longer: predicted egg-crushed and no handler in scope (P(success) 0.28)",
+  "prediction": "P(slip) 0.000, P(rupture) 0.725",
+  "p_success": 0.275,
+  "t1": 22.0,
+  "wall_s": 0.0,
+  "model_only": [],
+  "verdict": "goal violated",
+  "violations": [
+   [
+    "(prevent (shell-state egg-1 cracked) :during ?i)",
+    22.0,
+    "happened"
+   ]
+  ],
+  "state_after": [
+   "(batch-bowl batch-bowl)",
+   "(shell-state egg-1 cracked)",
+   "(held egg-1)",
+   "(float-tested egg-1)",
+   "(float-observed egg-1 sinks 21)",
+   "(shell-state egg-2 intact)",
+   "(empty cup-1)",
+   "(float-class egg-1 tilts)",
+   "(fresh egg-1)"
+  ]
+ }
+]

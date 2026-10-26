@@ -1,0 +1,387 @@
+{
+ "when": "2026-10-20 19:40",
+ "seconds": 97.0,
+ "truth": {
+  "stage": 2.958189042748593,
+  "seed_length": 39.98699183957017,
+  "testa_adheres_to": "flesh"
+ },
+ "variables": [
+  {
+   "node": "avocado_1",
+   "variable": "ripeness_stage",
+   "mean": 3.1583579773312165,
+   "sd": 0.34583072376752355,
+   "p05": 2.6790625605031844,
+   "p95": 3.833901896023048,
+   "unit": "1..5"
+  },
+  {
+   "node": "avocado_1",
+   "variable": "mass_g",
+   "mean": 214.30784776742945,
+   "sd": 14.419838931235095,
+   "p05": 189.645727529571,
+   "p95": 238.55916705035082,
+   "unit": "g"
+  },
+  {
+   "node": "avocado_1",
+   "variable": "length_L",
+   "mean": 94.97144762279308,
+   "sd": 2.009928822087236,
+   "p05": 91.4225917197685,
+   "p95": 98.06650564857448,
+   "unit": "mm"
+  },
+  {
+   "node": "avocado_1",
+   "variable": "diameter_D",
+   "mean": 67.20559845232356,
+   "sd": 1.925346736815977,
+   "p05": 64.06926475742142,
+   "p95": 70.07999659510492,
+   "unit": "mm"
+  },
+  {
+   "node": "avocado_1",
+   "variable": "seed_length",
+   "mean": 41.4455602668034,
+   "sd": 0.8510106953435043,
+   "p05": 40.018087573721324,
+   "p95": 42.810388536482996,
+   "unit": "mm"
+  },
+  {
+   "node": "avocado_1",
+   "variable": "skin_thickness",
+   "mean": 1.5976203066984063,
+   "sd": 0.15642459759758098,
+   "p05": 1.2951573918880808,
+   "p95": 1.8036142133559887,
+   "unit": "mm"
+  },
+  {
+   "node": "avocado_1",
+   "variable": "penetrometer_N",
+   "mean": 14.592641574676525,
+   "sd": 3.679632923175886,
+   "p05": 9.157301050617681,
+   "p95": 21.49219551803591,
+   "unit": "N"
+  },
+  {
+   "node": "avocado_1",
+   "variable": "flesh_E_MPa",
+   "mean": 0.3964749754577973,
+   "sd": 0.08337559519850435,
+   "p05": 0.2695688047928995,
+   "p95": 0.5505404802808296,
+   "unit": "MPa"
+  },
+  {
+   "node": "avocado_1",
+   "variable": "ripening_rate",
+   "mean": 0.5576450857876947,
+   "sd": 0.09715698671615769,
+   "p05": 0.4266646432750675,
+   "p95": 0.7647833767173982,
+   "unit": "stage/d"
+  },
+  {
+   "node": "avocado_1",
+   "variable": "bruised",
+   "mean": 0.0,
+   "sd": 0.0,
+   "p05": 0.0,
+   "p95": 0.0,
+   "unit": "P"
+  },
+  {
+   "node": "avocado_1",
+   "variable": "testa_adheres_to_flesh",
+   "mean": 0.9612500000000004,
+   "sd": 0.1929985427406124,
+   "p05": 1.0,
+   "p95": 1.0,
+   "unit": "P"
+  }
+ ],
+ "answers": [
+  {
+   "question": "What is the object?",
+   "answer": "a Hass avocado (Avocado < Fruit < Produce < Food), 217 +- 26 g, 95 x 67 mm, ripeness stage 4.0 +- 0.5 (nearly ripe); parts: exocarp_skin: tubercles, stem_button; mesocarp_flesh: fibre_strands; seed: seed_coat (testa), cotyledons x2, embryo_axis",
+   "evidence": "belief after 3 observation steps, ESS 4000",
+   "method": "belief",
+   "time_s": 0.0
+  },
+  {
+   "question": "How ripe is it, and when can it be eaten?",
+   "answer": "P(ready to eat, stage >= 4.5) = 0.13; P(still hard, stage < 2) = 0.00; ready in about 0.7 days (median over the belief)",
+   "evidence": "ripeness stage and ripening rate per particle (register ripening model)",
+   "method": "belief",
+   "time_s": 0.0
+  },
+  {
+   "question": "Where is the seed, how deep will the knife go?",
+   "answer": "blade stops on the seed coat at a depth (90 % interval) of side 13..19 mm, top 32..41 mm, bottom 15..22 mm",
+   "evidence": "seed size and offset, skin thickness, fruit size per particle",
+   "method": "belief",
+   "time_s": 0.0
+  },
+  {
+   "question": "What can I do with it now?",
+   "answer": "state integrity=whole, seed=in: CutRoundSeed: integrity = scored: a lengthwise cut through skin and flesh all round the seed",
+   "evidence": "preconditions of the task models (food/avocado_tasks.py, food/schema.py)",
+   "method": "task model",
+   "time_s": 0.0
+  },
+  {
+   "question": "Should I squeeze it before deciding?",
+   "answer": "yes: without squeezing I would choose 'store 2 days, then guacamole' (expected utility 0.77; guacamole now (halve, spoon out the seed): 0.68, store 2 days, then guacamole: 0.77); a 3 N squeeze (P(bruise) 0.000) changes that choice in 8% of the imagined readings and is worth +0.012",
+   "evidence": "preposterior analysis: 120 imagined avocados x 120 imagined squeeze readings; utility = quality of the pitted halves x mashability (ILLUSTRATIVE)",
+   "method": "mental simulation",
+   "time_s": 0.0
+  },
+  {
+   "question": "What did the squeeze tell me?",
+   "answer": "as expected: 3.40 N/mm (imagined 2.05..3.97); ripeness belief ripeness_stage 3.97 +- 0.53; penetrometer_N 9.32 +- 5.28 -> ripeness_stage 3.79 +- 0.52; penetrometer_N 10.12 +- 3.89",
+   "evidence": "squeeze stiffness -> ripeness (register FEM squeeze table, belief measurement model)",
+   "method": "execution monitoring",
+   "time_s": 0.0
+  },
+  {
+   "question": "Guacamole now, or store it?",
+   "answer": "store 2 days, then guacamole (expected utility guacamole now: 0.64, store 2 days, then guacamole: 0.77)",
+   "evidence": "mental simulation of halving and pitting now and after 48 h of ripening; utility = quality x mashability (ILLUSTRATIVE)",
+   "method": "mental simulation",
+   "time_s": 0.0
+  },
+  {
+   "question": "What happens if I halve and pit it now?",
+   "answer": "halve now, spoon out the seed: P(success) 1.00, P(clean halves) 0.92, P(torn) 0.08, P(seed coat left) 0.47, P(gouge) 0.19, quality 0.80 | halve now, knife-twist the seed out: P(success) 1.00, P(clean halves) 0.92, P(torn) 0.08, P(seed coat left) 0.47, P(gouge) 0.00, quality 0.85, HAZARD | wait 2 days, halve, spoon: P(success) 1.00, P(clean halves) 1.00, P(torn) 0.00, P(seed coat left) 0.43, P(gouge) 0.13, quality 0.86",
+   "evidence": "mental simulation: cut round the seed, twist apart, remove the seed on 150 imagined avocados from the belief (food/avocado_process.py)",
+   "method": "mental simulation",
+   "time_s": 0.0
+  },
+  {
+   "question": "Should I rather wait?",
+   "answer": "waiting 2 days raises the expected quality from 0.80 to 0.86 (P(clean halves) 0.92 -> 1.00)",
+   "evidence": "the same mental simulation on the imagined avocados ripened by 48 h at their own rates",
+   "method": "mental simulation",
+   "time_s": 0.0
+  },
+  {
+   "question": "How should I do it (parameters)?",
+   "answer": "halve now, spoon out the seed; twist torque limit 0.30 N m (imagined p95 0.20), seed removal limit 6.5 (imagined p95 4.3); keep the blade on the seed coat",
+   "evidence": "limits = 1.5 x the 95th percentile of the imagined peak loads",
+   "method": "mental simulation",
+   "time_s": 0.0
+  },
+  {
+   "question": "What am I doing with it?",
+   "answer": "CutRoundSeed: integrity = scored: a lengthwise cut through skin and flesh all round the seed; steps: place the fruit on its side on the board -> pierce at the stem end until the blade meets the seed -> keep the edge on the seed coat -> turn the fruit once round under the blade -> withdraw; possible failures: partial_cut: watch for 'blade stalls / gap in the cut line', then complete the cut over the gap; no_entry: watch for 'blade slides on the skin', then pierce at the stem button with the tip",
+   "evidence": "designator CutRoundSeed (food/avocado_tasks.py)",
+   "method": "task model",
+   "time_s": 0.0
+  },
+  {
+   "question": "Did CutRoundSeed go as expected?",
+   "answer": "as expected: expected P(scored) = 1.00; F_puncture_N imagined 6.24..14.65; measured scored, F_puncture_N 13.10",
+   "evidence": "belief ripeness_stage 3.79 +- 0.52; seed_length 40.01 +- 2.46; testa_adheres_to_flesh 0.50 +- 0.50 -> ripeness_stage 3.80 +- 0.53; seed_length 40.45 +- 2.18; testa_adheres_to_flesh 0.48 +- 0.50",
+   "method": "execution monitoring",
+   "time_s": 0.0
+  },
+  {
+   "question": "What am I doing with it?",
+   "answer": "TwistApart: integrity = halved; the seed stays in one half; steps: grip both halves across the cut -> twist in opposite directions about the cut-plane normal -> pull apart once the halves turn; possible failures: stuck: watch for 'torque rises, halves do not turn', then check the cut line for a bridge; re-cut; torn: watch for 'flesh stays on the seed, rough cavity wall', then unripe: accept or wait 1-2 days",
+   "evidence": "designator TwistApart (food/avocado_tasks.py)",
+   "method": "task model",
+   "time_s": 0.0
+  },
+  {
+   "question": "Did TwistApart go as expected?",
+   "answer": "unexpected: expected P(halved_torn) = 0.07; T_peak_Nm imagined 0.07..0.15; measured halved_torn, T_peak_Nm 0.18; flesh tears and stays on the seed",
+   "evidence": "belief ripeness_stage 3.80 +- 0.53; seed_length 40.45 +- 2.18; testa_adheres_to_flesh 0.48 +- 0.50 -> ripeness_stage 3.00 +- 0.38; seed_length 40.43 +- 2.09; testa_adheres_to_flesh 0.44 +- 0.50",
+   "method": "execution monitoring",
+   "time_s": 0.0
+  },
+  {
+   "question": "What am I doing with it?",
+   "answer": "RemoveSeed: seed = out; cavity clean (no seed coat, no gouge); steps: hold the half that holds the seed, cut face up -> spoon: slide the bowl under the seed edge, lever it out along the seed coat -> inspect the cavity: brown seed-coat patches? gouges? -> remove remaining seed coat; possible failures: stuck: watch for 'seed does not lift', then unripe: knife twist in a fixture, or wait; testa_left: watch for 'brown papery patches in the cavity', then peel them off with the spoon tip; gouge: watch for 'spoon took flesh', then lower the spoon angle; follow the seed coat",
+   "evidence": "designator RemoveSeed (food/avocado_tasks.py)",
+   "method": "task model",
+   "time_s": 0.0
+  },
+  {
+   "question": "Did RemoveSeed go as expected?",
+   "answer": "as expected: expected P(pitted_testa_left) = 0.49; F_peak_N imagined 2.65..5.71; measured pitted_testa_left, F_peak_N 3.37; spoon took flesh from the cavity rim",
+   "evidence": "belief ripeness_stage 3.00 +- 0.38; seed_length 40.43 +- 2.09; testa_adheres_to_flesh 0.44 +- 0.50 -> ripeness_stage 3.16 +- 0.35; seed_length 41.45 +- 0.85; testa_adheres_to_flesh 0.96 +- 0.19",
+   "method": "execution monitoring",
+   "time_s": 0.0
+  },
+  {
+   "question": "What is the object?",
+   "answer": "a Hass avocado (Avocado < Fruit < Produce < Food), 214 +- 14 g, 95 x 67 mm, ripeness stage 3.2 +- 0.3 (softening); parts: exocarp_skin: tubercles, stem_button; mesocarp_flesh: fibre_strands; seed: seed_coat (testa), cotyledons x2, embryo_axis",
+   "evidence": "belief after 9 observation steps, ESS 4000",
+   "method": "belief",
+   "time_s": 0.0
+  },
+  {
+   "question": "What can I do with it now?",
+   "answer": "state integrity=halved_torn, seed=out: nothing from the halving / pitting tasks",
+   "evidence": "preconditions of the task models (food/avocado_tasks.py, food/schema.py)",
+   "method": "task model",
+   "time_s": 0.0
+  }
+ ],
+ "imagined": [
+  {
+   "plan": "halve now, spoon out the seed",
+   "wait_h": 0.0,
+   "n": 150,
+   "p_success": 1.0,
+   "p_clean_halves": 0.92,
+   "p_torn": 0.08,
+   "p_stuck": 0.0,
+   "p_seed_coat_left": 0.47333333333333333,
+   "p_gouge": 0.18666666666666668,
+   "hazardous": false,
+   "quality": 0.7976666666666667,
+   "twist_torque_Nm_p50": 0.1000989325392943,
+   "twist_torque_Nm_p95": 0.20107515373337378,
+   "seed_force_N_p50": 2.959837078861466,
+   "seed_force_N_p95": 4.315943299379881
+  },
+  {
+   "plan": "halve now, knife-twist the seed out",
+   "wait_h": 0.0,
+   "n": 150,
+   "p_success": 1.0,
+   "p_clean_halves": 0.92,
+   "p_torn": 0.08,
+   "p_stuck": 0.0,
+   "p_seed_coat_left": 0.47333333333333333,
+   "p_gouge": 0.0,
+   "hazardous": true,
+   "quality": 0.8536666666666668,
+   "twist_torque_Nm_p50": 0.1000989325392943,
+   "twist_torque_Nm_p95": 0.20107515373337378,
+   "seed_force_N_p50": 0.10100183545933616,
+   "seed_force_N_p95": 0.16217962800973565
+  },
+  {
+   "plan": "wait 2 days, halve, spoon",
+   "wait_h": 48.0,
+   "n": 150,
+   "p_success": 1.0,
+   "p_clean_halves": 1.0,
+   "p_torn": 0.0,
+   "p_stuck": 0.0,
+   "p_seed_coat_left": 0.4266666666666667,
+   "p_gouge": 0.12666666666666668,
+   "hazardous": false,
+   "quality": 0.8553333333333332,
+   "twist_torque_Nm_p50": 0.07011940375710723,
+   "twist_torque_Nm_p95": 0.10593300663009327,
+   "seed_force_N_p50": 2.056347446529129,
+   "seed_force_N_p95": 2.9119582276105507
+  }
+ ],
+ "monitoring": [
+  {
+   "step": "SqueezeTest",
+   "expected": "stiffness 2.05..3.97 N/mm (95 %), mean 2.51",
+   "measured": "stiffness 3.40 N/mm at 3 N",
+   "verdict": "as expected",
+   "belief_before": "ripeness_stage 3.97 +- 0.53; penetrometer_N 9.32 +- 5.28",
+   "belief_after": "ripeness_stage 3.79 +- 0.52; penetrometer_N 10.12 +- 3.89"
+  },
+  {
+   "step": "CutRoundSeed",
+   "expected": "P(scored) = 1.00; F_puncture_N imagined 6.24..14.65",
+   "measured": "scored, F_puncture_N 13.10",
+   "verdict": "as expected",
+   "belief_before": "ripeness_stage 3.79 +- 0.52; seed_length 40.01 +- 2.46; testa_adheres_to_flesh 0.50 +- 0.50",
+   "belief_after": "ripeness_stage 3.80 +- 0.53; seed_length 40.45 +- 2.18; testa_adheres_to_flesh 0.48 +- 0.50"
+  },
+  {
+   "step": "TwistApart",
+   "expected": "P(halved_torn) = 0.07; T_peak_Nm imagined 0.07..0.15",
+   "measured": "halved_torn, T_peak_Nm 0.18; flesh tears and stays on the seed",
+   "verdict": "unexpected",
+   "belief_before": "ripeness_stage 3.80 +- 0.53; seed_length 40.45 +- 2.18; testa_adheres_to_flesh 0.48 +- 0.50",
+   "belief_after": "ripeness_stage 3.00 +- 0.38; seed_length 40.43 +- 2.09; testa_adheres_to_flesh 0.44 +- 0.50"
+  },
+  {
+   "step": "RemoveSeed",
+   "expected": "P(pitted_testa_left) = 0.49; F_peak_N imagined 2.65..5.71",
+   "measured": "pitted_testa_left, F_peak_N 3.37; spoon took flesh from the cavity rim",
+   "verdict": "as expected",
+   "belief_before": "ripeness_stage 3.00 +- 0.38; seed_length 40.43 +- 2.09; testa_adheres_to_flesh 0.44 +- 0.50",
+   "belief_after": "ripeness_stage 3.16 +- 0.35; seed_length 41.45 +- 0.85; testa_adheres_to_flesh 0.96 +- 0.19"
+  }
+ ],
+ "history": [
+  {
+   "kind": "photo_shape",
+   "time_h": 0.0,
+   "source": "photo avocado_4_counter.png (35fe9301ffd2)",
+   "ess_after": 1628.844780138529
+  },
+  {
+   "kind": "skin_colour",
+   "time_h": 0.0,
+   "source": "photo avocado_4_counter.png (35fe9301ffd2)",
+   "ess_after": 1510.1297517436715
+  },
+  {
+   "kind": "stem_button",
+   "time_h": 0.0,
+   "source": "photo avocado_4_counter.png (35fe9301ffd2)",
+   "ess_after": 3999.999999999998
+  },
+  {
+   "kind": "squeeze",
+   "time_h": 0.0,
+   "source": "PR2 gripper squeeze",
+   "ess_after": 3324.939147176927
+  },
+  {
+   "kind": "seed_depths",
+   "time_h": 0.0,
+   "source": "blade stop depths (cut round the seed)",
+   "ess_after": 1308.1777476825405
+  },
+  {
+   "kind": "twist",
+   "time_h": 0.0,
+   "source": "twist torque + cavity inspection",
+   "ess_after": 904.1816699616542
+  },
+  {
+   "kind": "seed_lift_force",
+   "time_h": 0.0,
+   "source": "spoon lever force",
+   "ess_after": 3395.370607458692
+  },
+  {
+   "kind": "seed_length_mm",
+   "time_h": 0.0,
+   "source": "extracted seed measured",
+   "ess_after": 1651.7570705757998
+  },
+  {
+   "kind": "testa_seen",
+   "time_h": 0.0,
+   "source": "cavity inspection after pitting",
+   "ess_after": 1945.804432067002
+  }
+ ],
+ "pieces": [
+  "avocado_half_a_pitted_seed_coat",
+  "avocado_half_a_pitted_skin",
+  "avocado_half_b_skin",
+  "avocado_seed_seed_coat"
+ ]
+}

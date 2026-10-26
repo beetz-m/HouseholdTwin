@@ -1,0 +1,24 @@
+# Cracking eggs into a batch: a conceptual CRAM research activity (ccram, ~/Documents/ConceptualCRAM).
+[activity]
+name = "egg-cracking"
+title = "Cracking eggs into a batch"
+description = "Crack eggs into a cup, inspect, fish out shell, add to the batch: which strike, which checks keep shell and stale eggs out of the batch? (HouseholdTwin egg emulator)"
+
+[language]
+modules = ["ontology/*.ttl"]       # beside the ccram core (ccram-lang, ccram-actions, ccram-nouns, DUL/SOMA imports)
+library = ["library/*.lisp"]
+rules = ["rules/*.lisp"]
+
+[twin]
+# Emulator twin (no CRAM world): food/egg_emulator.py; the adapter executes its realisations itself.
+path = ["../.."]                    # HouseholdTwin (the food package)
+adapter = "adapter:make_adapter"
+default_plan = "two-eggs-into-batch"
+# CRAM twin (world + robot + CRAMERA): add the demonstration class and its environment, e.g.
+# path = [".."]
+# demonstration = "demo:MyDemonstration"
+# python = "~/.virtualenvs/cram-env/bin/python"
+# setup = ["/opt/ros/jazzy/setup.bash", "~/ros_ws/install/setup.bash"]
+
+[workbench]
+port = 8797

@@ -1,0 +1,137 @@
+"""Generate docs/ANATOMY.md and renders/food/scenegraph_sdt.{png,pdf} from the built assets and the parameter register.
+
+Both artefacts are read from the USD part graphs (assets/food/<kind>_<seed>/whole.usdc, sdt.usda, truth.usda) and
+food/params.py, so they cannot drift from the models.
+Run: ~/Documents/LabAutomationTwin/env_cad/bin/python tools/anatomy_doc.py
+"""
+
+import json
+import os
+import sys
+
+import matplotlib
+
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt  # noqa: E402
+from pxr import Usd  # noqa: E402
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, ROOT)
+from food import params as PR  # noqa: E402
+
+A = os.path.join(ROOT, "assets", "food")
+KINDS = ["egg", "apple", "avocado"]
+TITLE = {"egg": "Hen egg", "apple": "Apple (Gala-like)", "avocado": "Hass avocado"}
+OBS_COL = {"visible": "#2e7d32", "visible after cut/opening": "#00897b", "tactile": "#1565c0",
+           "weighed": "#1565c0", "inferred": "#ef6c00", "hidden": "#8e8e8e"}
+
+
+def first(kind):
+    return sorted(d for d in os.listdir(A) if d.startswith(kind + "_"))[0]
+
+
+def tree(kind):
+    d = os.path.join(A, first(kind))
+    st = Usd.Stage.Open(os.path.join(d, "whole.usdc"))
+    rows = []
+    root = st.GetPrimAtPath("/Food/Parts")
+    for p in Usd.PrimRange(root):
+        if p == root or p.GetName() == "Geom" or p.GetTypeName() == "GeomSubset":
+            continue
+        depth = len(p.GetPath().pathString.split("/")) - 4
+        g = lambda n: (p.GetAttribute(n).Get() if p.GetAttribute(n) else None)  # noqa: E731
+        rows.append({"depth": depth, "name": p.GetName(), "cls": g("sdt:class") or "", "obs": g("sdt:observability") or "",
+                     "mass": g("food:mass_g"), "count": g("food:count"), "iri": g("sdt:represents") or "",
+                     "doc": p.GetDocumentation(), "path": p.GetPath().pathString})
+    for p in Usd.PrimRange(st.GetPrimAtPath("/Food/Parts")):
+        if p.GetTypeName() == "GeomSubset" and p.GetAttribute("sdt:class"):
+            rows.append({"depth": 3, "name": f"[region] {p.GetName()}", "cls": p.GetAttribute("sdt:class").Get(),
+                         "obs": "visible", "mass": None, "count": None, "iri": p.GetAttribute("sdt:represents").Get(),
+                         "doc": "GeomSubset of the cuticle mesh", "path": p.GetPath().pathString})
+    rec = json.load(open(os.path.join(d, "instance.json")))
+    return rows, rec, d
+
+
+def obs_key(o):
+    if "after" in o:
+        return "visible after cut/opening"
+    for k in OBS_COL:
+        if o.startswith(k):
+            return k
+    return "hidden" if "hidden" in o else ("visible" if "visible" in o else "inferred")
+
+
+def figure():
+    fig, axes = plt.subplots(1, 3, figsize=(22, 13.5))
+    for ax, kind in zip(axes, KINDS):
+        rows, rec, d = tree(kind)
+        rows = [r for r in rows if not r["name"].startswith("[region]")]
+        ax.set_axis_off()
+        ax.set_xlim(0, 1)
+        n = len(rows) + 3
+        ax.set_ylim(-n, 1.5)
+        ax.text(0, 1, f"{TITLE[kind]}  ({first(kind)}, {rec['whole']['mass_g']:.1f} g)", fontsize=14, weight="bold")
+        ax.text(0, 0.25, "/Food/Parts ...   prim  ->  sdt:class   [mass]", fontsize=9, color="#555")
+        for i, r in enumerate(rows):
+            y = -i - 1
+            x = 0.02 + 0.045 * r["depth"]
+            col = OBS_COL[obs_key(r["obs"])]
+            if r["depth"] > 0:
+                ax.plot([x - 0.025, x - 0.006], [y + 0.0, y + 0.0], color="#bbb", lw=0.8)
+            ax.plot([x], [y], "o", ms=5, color=col)
+            label = r["name"]
+            ax.text(x + 0.012, y, label, fontsize=8.6, va="center", weight="bold" if r["mass"] is None and not r["count"]
+                    else "normal")
+            extra = (f"{r['mass']:.2f} g" if r["mass"] is not None and r["mass"] < 10 else
+                     f"{r['mass']:.1f} g" if r["mass"] is not None else (f"{r['count']} pts" if r["count"] else ""))
+            ax.text(0.60, y, r["cls"], fontsize=7.6, va="center", color="#333", family="monospace")
+            ax.text(0.98, y, extra, fontsize=7.8, va="center", ha="right", color="#333")
+    handles = [plt.Line2D([], [], marker="o", ls="", color=c, label=k) for k, c in OBS_COL.items()
+               if k in ("visible", "visible after cut/opening", "tactile", "inferred", "hidden")]
+    fig.legend(handles=handles, loc="lower center", ncol=5, title="sdt:observability", frameon=False, fontsize=10)
+    fig.suptitle("Food twins as USD scene graphs: every prim is an SDT node (sdt:represents -> entity IRI, sdt:class, "
+                 "sdt:partOf); beliefs in sdt.usda, hidden truth in truth.usda", fontsize=13)
+    fig.tight_layout(rect=(0, 0.04, 1, 0.96))
+    out = os.path.join(ROOT, "renders", "food", "scenegraph_sdt")
+    fig.savefig(out + ".png", dpi=130)
+    fig.savefig(out + ".pdf")
+    print("wrote", out + ".png")
+
+
+def md():
+    L = ["# Food twins: anatomy, scene graph and parameter register", "",
+         "Generated by `tools/anatomy_doc.py` from the built assets and `food/params.py` -- do not edit by hand.", "",
+         "Each food object is one USD asset whose prims under `/Food/Parts` follow the anatomical partonomy. Every prim "
+         "is an SDT node: `sdt:represents` names the physical part (entity IRI), `sdt:class` its ontology class, "
+         "`sdt:partOf` its parent part, `sdt:observability` how the robot can come to know it; `food:mass_g`, "
+         "`food:volume_cm3`, `food:density_kgm3` come from the part's closed mesh. Beliefs live in `sdt.usda` (over "
+         "`whole.usdc`), hidden instance parameters in `truth.usda`. Cuts slice every part mesh, so a half is again a "
+         "complete part graph with its own mass and inertia.", "",
+         "Status codes: SOURCED, SOURCED-VERIFY (detail to check in the full text), STANDARD, DERIVED, TYPICAL "
+         "(textbook value, no citation held), ILLUSTRATIVE (twin assumption, calibrate before quantitative claims).", ""]
+    for kind in KINDS:
+        rows, rec, d = tree(kind)
+        L += [f"## {TITLE[kind]} (`{first(kind)}`, {rec['whole']['mass_g']:.1f} g)", "",
+              "| prim (below /Food/Parts) | sdt:class | observability | mass | notes |", "|---|---|---|---|---|"]
+        for r in rows:
+            ind = "&nbsp;&nbsp;" * r["depth"]
+            m = (f"{r['mass']:.3f} g" if r["mass"] is not None else (f"{r['count']} points" if r["count"] else ""))
+            L.append(f"| {ind}{r['name']} | `{r['cls']}` | {r['obs']} | {m} | {(r['doc'] or '').replace('|', '/')} |")
+        L += ["", f"Cut states: " + ", ".join(f"`{k}` ({v['parts']} parts" + (f", {v['mass_g']:.1f} g)" if v['mass_g']
+                                                                                 else ")")
+                                            for k, v in rec["cuts"].items()), ""]
+        L += ["Parameter register:", "", "| parameter | unit | value / distribution | status | source |",
+              "|---|---|---|---|---|"]
+        for k, (u, v, s, src) in PR.REGISTERS[kind].items():
+            L.append(f"| {k} | {u} | {str(v).replace('|', '/')} | {s} | {src} |")
+        L += [""]
+    L += ["## Sources", ""] + [f"- **{k}**: {v}" for k, v in PR.SOURCES.items()] + [""]
+    out = os.path.join(ROOT, "docs", "ANATOMY.md")
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    open(out, "w").write("\n".join(L))
+    print("wrote", out)
+
+
+if __name__ == "__main__":
+    md()
+    figure()

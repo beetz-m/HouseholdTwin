@@ -1,0 +1,25 @@
+# Put things where they belong, in the PR2 kitchen: the same conceptual layer as activities/put-away (ontology,
+# library, rules shared), on a CRAM twin -- the PR2 in the apartment; the places are labelled stand-in trays (the
+# apartment has no fridge, dishwasher or bin).
+[activity]
+name = "put-away-kitchen"
+title = "Put things where they belong (PR2 kitchen)"
+description = "The after-breakfast tidy with the PR2 in CRAMERA: it surveys the counter, carries stray things to their (stand-in) places, leaves what is in place or licensed, and asks about what has no known home."
+
+[language]
+modules = ["../put-away/ontology/*.ttl"]
+library = ["../put-away/library/*.lisp"]
+rules = ["../put-away/rules/*.lisp"]
+
+[twin]
+path = ["../..", "../../cram"]
+demonstration = "putaway_kitchen:PutAwayKitchenDemonstration"
+adapter = "adapter:make_adapter"
+default_plan = "tidy-after-breakfast"
+python = "~/.virtualenvs/cram-env/bin/python"
+setup = ["/opt/ros/jazzy/setup.bash", "~/ros_ws/install/setup.bash"]
+
+[workbench]
+port = 8796
+bridge = 8771
+viewer = 8714          # its own viewer: CRAMERA_DATA=~/Documents/HouseholdTwin/cram/cramera_data_putaway cramera 8714

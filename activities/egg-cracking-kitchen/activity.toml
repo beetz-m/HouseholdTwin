@@ -1,0 +1,25 @@
+# Cracking eggs into a batch, in the PR2 kitchen: the same conceptual layer as activities/egg-cracking (ontology,
+# library, rules are shared), on a CRAM twin -- the PR2 in the apartment, motions in CRAMERA, outcomes from the egg
+# emulator, decisions from the egg belief.
+[activity]
+name = "egg-cracking-kitchen"
+title = "Cracking eggs in the PR2 kitchen"
+description = "The egg-cracking activity on the CRAM kitchen: the PR2 floats, grips, strikes, opens, inspects and empties; the egg emulator decides what happens, the egg belief decides how to act."
+
+[language]
+modules = ["../egg-cracking/ontology/*.ttl"]
+library = ["../egg-cracking/library/*.lisp"]
+rules = ["../egg-cracking/rules/*.lisp"]
+
+[twin]
+path = ["../..", "../../cram"]              # HouseholdTwin (food) and HouseholdTwin/cram (egg_kitchen, avocado_*)
+demonstration = "egg_kitchen:EggKitchenDemonstration"
+adapter = "adapter:make_adapter"
+default_plan = "two-eggs-into-batch"
+python = "~/.virtualenvs/cram-env/bin/python"
+setup = ["/opt/ros/jazzy/setup.bash", "~/ros_ws/install/setup.bash"]
+
+[workbench]
+port = 8798
+bridge = 8769
+viewer = 8713          # its own viewer: CRAMERA_DATA=~/Documents/HouseholdTwin/cram/cramera_data_egg cramera 8713

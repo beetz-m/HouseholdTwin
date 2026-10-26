@@ -1,0 +1,216 @@
+{
+ "demos": {
+  "PickRoll": {
+   "ok": true,
+   "state": {
+    "freshness": "soft_crust",
+    "crust_texture": "leathery",
+    "cut_state": "whole",
+    "toast_level": "none"
+   },
+   "trace": "[('grip', {'F': 1.9261021063311647, 'corridor': (0.5574086226674475, 3.294795589994882), 'ok': True})]"
+  },
+  "SliceRollOpen": {
+   "ok": true,
+   "state": {
+    "freshness": "soft_crust",
+    "crust_texture": "leathery",
+    "cut_state": "sliced_open",
+    "toast_level": "none"
+   },
+   "trace": "[('saw', {'ok': True, 'strokes_needed': 6.0, 'squashed': False, 'strain': 0.1570891768844989, 'F_crust': 3.5762211246075646, 'crumbs_g': 0.03481010672456849})]"
+  },
+  "ReheatRoll": {
+   "ok": true,
+   "state": {
+    "freshness": "fresh",
+    "crust_texture": "crisp",
+    "cut_state": "whole",
+    "toast_level": "none"
+   },
+   "trace": "[('reheat', {'freshness': 'fresh', 'crust_texture': 'crisp', 'cut_state': 'whole', 'toast_level': 'none'})]"
+  },
+  "ToastRollHalves": {
+   "ok": true,
+   "state": {
+    "freshness": "fresh",
+    "crust_texture": "crisp",
+    "cut_state": "whole",
+    "toast_level": "golden"
+   },
+   "trace": "[('toast', 'golden')]"
+  },
+  "SeparateBanana": {
+   "ok": true,
+   "state": {
+    "ripeness_stage": 7,
+    "edible": "yes",
+    "peel_state": "on",
+    "neck": "intact",
+    "chilling_injury": "no",
+    "bruised": "no",
+    "pulp_browning": "none"
+   },
+   "trace": "[('pull', {'ok': True, 'F_needed': 8.605660660888617, 'failure': None})]"
+  },
+  "PeelBanana": {
+   "ok": true,
+   "state": {
+    "ripeness_stage": 7,
+    "edible": "yes",
+    "peel_state": "off",
+    "neck": "snapped",
+    "chilling_injury": "no",
+    "bruised": "no",
+    "pulp_browning": "fresh"
+   },
+   "trace": "[('snap_neck', {'ok': True, 'F_needed': 3.250401285995911}), ('strip_1', {'ok': True, 'torn_short': False, 'peel_on': 0.6666666666666667, 'F_needed': 2.6258427005914133}), ('strip_2', {'ok': True, 'torn_short': False, 'peel_on': 0.33333333333333337, 'F_needed': 2.6258427005914133}), ('strip_3', {'ok"
+  },
+  "SliceBananaRounds": {
+   "ok": true,
+   "state": {
+    "ripeness_stage": 7,
+    "edible": "yes",
+    "peel_state": "off",
+    "neck": "snapped",
+    "chilling_injury": "no",
+    "bruised": "no",
+    "pulp_browning": "fresh"
+   },
+   "trace": "[('snap_neck', {'ok': True, 'F_needed': 3.250401285995911}), ('strip_1', {'ok': True, 'torn_short': False, 'peel_on': 0.6666666666666667, 'F_needed': 2.6258427005914133}), ('strip_2', {'ok': True, 'torn_short': False, 'peel_on': 0.33333333333333337, 'F_needed': 2.6258427005914133}), ('strip_3', {'ok"
+  },
+  "PeelCarrot": {
+   "ok": true,
+   "state": {
+    "firmness_class": "crisp",
+    "peel_state": "peeled",
+    "trim_state": "untrimmed",
+    "cooked_state": "raw_crisp",
+    "surface_blush": "none"
+   },
+   "trace": "[('strokes', 12)]"
+  },
+  "CutCarrotRounds": {
+   "ok": true,
+   "state": {
+    "firmness_class": "crisp",
+    "peel_state": "unpeeled",
+    "trim_state": "untrimmed",
+    "cooked_state": "raw_crisp",
+    "surface_blush": "none"
+   },
+   "trace": "[('cut', {'ok': True, 'F_needed': 44.041517606370064, 'failure': None})]"
+  },
+  "BoilCarrot": {
+   "ok": true,
+   "state": {
+    "firmness_class": "crisp",
+    "peel_state": "unpeeled",
+    "trim_state": "untrimmed",
+    "cooked_state": "crisp_tender",
+    "surface_blush": "none"
+   },
+   "trace": "[('boil', {'F_over_F0': 0.3888835084823434, 'class': 'crisp_tender', 'tau_s': 26.054018650886853})]"
+  },
+  "TakeToastSlice": {
+   "ok": true,
+   "state": {
+    "freshness": "stale",
+    "slices_left": 19,
+    "mould_risk": "no"
+   },
+   "trace": "[('take', {'ok': True, 'slices_left': 19})]"
+  },
+  "ToastSlice": {
+   "ok": true,
+   "state": {
+    "freshness": "stale",
+    "slices_left": 20,
+    "mould_risk": "no"
+   },
+   "trace": "[('toast', 'golden')]"
+  },
+  "SliceTomato": {
+   "ok": true,
+   "state": {
+    "ripeness_class": "red",
+    "bruised": "no",
+    "flavour": "full",
+    "cut_state": "cut (12 faces)",
+    "skin": "on"
+   },
+   "trace": "[('cut', {'ok': True, 'F_needed': 2.8312166209595424, 'squashed': False, 'gel_out_frac': 0.25}), ('cut', {'ok': True, 'F_needed': 2.8312166209595424, 'squashed': False, 'gel_out_frac': 0.1875}), ('cut', {'ok': True, 'F_needed': 2.8312166209595424, 'squashed': False, 'gel_out_frac': 0.140625}), ('cut"
+  },
+  "PeelTomato": {
+   "ok": true,
+   "state": {
+    "ripeness_class": "red",
+    "bruised": "no",
+    "flavour": "full",
+    "cut_state": "whole",
+    "skin": "loose"
+   },
+   "trace": "[('blanch', 'skin slips off')]"
+  },
+  "BoilPotatoes": {
+   "ok": true,
+   "state": {
+    "greening": "unacceptable",
+    "sweetened": "no",
+    "peel_state": "unpeeled",
+    "cooked_state": "done"
+   },
+   "trace": "[('boil', {'F_over_F0_centre': 0.054839138234605816, 'done': True, 'tau_min': 2.34539776949856})]"
+  },
+  "PeelPotato": {
+   "ok": true,
+   "state": {
+    "greening": "unacceptable",
+    "sweetened": "no",
+    "peel_state": "peeled",
+    "cooked_state": "raw"
+   },
+   "trace": "[('peel_loss', np.float64(0.09952266077543814))]"
+  },
+  "DiceOnion": {
+   "ok": true,
+   "state": {
+    "peel_state": "dry_skin_on",
+    "trim_state": "trimmed",
+    "sprouting": "no",
+    "cut_state": "198 pieces"
+   },
+   "trace": "[('dice', {'dice_mm': 6.0, 'pieces_est': 198, 'cut_area_cm2': 562.9267295413189}), ('lf_dose', 1529.1072290154655)]"
+  },
+  "SauteOnion": {
+   "ok": true,
+   "state": {
+    "peel_state": "dry_skin_on",
+    "trim_state": "untrimmed",
+    "sprouting": "no",
+    "cut_state": "whole"
+   },
+   "trace": "[('saute', 'translucent')]"
+  },
+  "JuiceOrange": {
+   "ok": true,
+   "state": {
+    "peel_state": "on",
+    "juice": "fresh",
+    "segments": 10
+   },
+   "trace": "[('juice', {'juice_ml': np.float64(63.499704447694846)})]"
+  },
+  "PeelOrange": {
+   "ok": true,
+   "state": {
+    "peel_state": "off",
+    "juice": "none",
+    "segments": 10
+   },
+   "trace": "[('strip_1', {'ok': True, 'strip_broke': False, 'peel_on': 0.65}), ('strip_2', {'ok': True, 'strip_broke': False, 'peel_on': 0.30000000000000004}), ('strip_3', {'ok': True, 'strip_broke': False, 'peel_on': 0.0})]"
+  }
+ },
+ "_runtime_s": 123.9,
+ "_date": "2026-10-20 06:07"
+}

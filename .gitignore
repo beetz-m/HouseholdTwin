@@ -1,0 +1,13 @@
+# generated (rebuild with scripts/build_food_assets.py and the render scripts)
+assets/food/
+renders/**/*.png
+!renders/food/scenegraph_sdt.png
+__pycache__/
+*.log
+
+# PC-only: heavy or regenerable (added 2026-10-26 when the repo got a GitHub remote)
+cram/cramera_data*/
+cram/meshes/
+.venv*/
+.pytest_cache/
+*.pyc

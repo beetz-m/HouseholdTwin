@@ -1,0 +1,2449 @@
+{
+ "seconds": 11.0,
+ "dropped": [
+  "soma:finishes AsymmetricProperty",
+  "soma:before AsymmetricProperty",
+  "soma:starts AsymmetricProperty",
+  "soma:during AsymmetricProperty",
+  "soma:contains AsymmetricProperty",
+  "soma:finishes IrreflexiveProperty",
+  "soma:before IrreflexiveProperty",
+  "soma:starts IrreflexiveProperty",
+  "soma:during IrreflexiveProperty",
+  "soma:contains IrreflexiveProperty"
+ ],
+ "ancestors": {
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Disposition": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Extrinsic",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#GoalRole": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#InterrogativeClause": [
+   "http://www.ease-crc.org/ont/SOMA.owl#ClausalObject",
+   "http://www.ease-crc.org/ont/SOMA.owl#LinguisticObject",
+   "http://www.ease-crc.org/ont/SOMA.owl#Phrase",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#ClausalObject": [
+   "http://www.ease-crc.org/ont/SOMA.owl#LinguisticObject",
+   "http://www.ease-crc.org/ont/SOMA.owl#Phrase",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#ObjectDesignator": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#Designator"
+  ],
+  "https://aicor.knowledge/ccram#Designator": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"
+  ],
+  "https://aicor.knowledge/ccram#Weighed": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "https://aicor.knowledge/ccram#ObjectStateClass": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#DesignedHandle": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent",
+   "http://www.ease-crc.org/ont/SOMA.owl#FunctionalPart",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#Graspable"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Transporting": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Manipulating",
+   "http://www.ease-crc.org/ont/SOMA.owl#ModifyingPhysicalObject",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task",
+   "https://aicor.knowledge/ccram#ObjectDisplacement"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#ModifyingPhysicalObject": [
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "https://aicor.knowledge/ccram#ObjectDisplacement": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Manipulating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Lifting": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Actuating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Reaching": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EndEffectorPositioning",
+   "http://www.ease-crc.org/ont/SOMA.owl#Manipulating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Grasping": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Manipulating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity": [],
+  "http://www.ease-crc.org/ont/SOMA.owl#Query": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Item",
+   "http://www.ease-crc.org/ont/SOMA.owl#Message",
+   "http://www.ease-crc.org/ont/SOMA.owl#Patient",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#Scooping": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Manipulating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task",
+   "https://aicor.knowledge/ccram#Transferring"
+  ],
+  "https://aicor.knowledge/ccram#Transferring": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Manipulating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "https://aicor.knowledge/ccram#Stroking": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Actuating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Cleanliness": [
+   "http://www.ease-crc.org/ont/SOMA.owl#SocialQuality",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#SocialQuality": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  ],
+  "https://aicor.knowledge/ccram#SchemaFacet": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Leg": [
+   "http://www.ease-crc.org/ont/SOMA.owl#FunctionalPart",
+   "http://www.ease-crc.org/ont/SOMA.owl#Limb",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalEffector",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Limb": [
+   "http://www.ease-crc.org/ont/SOMA.owl#FunctionalPart",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalEffector",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "https://aicor.knowledge/sdt#ToolFrame": [
+   "http://www.ease-crc.org/ont/SOMA.owl#FunctionalPart",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#FunctionalPart": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "https://aicor.knowledge/ccram#Hot": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Serving": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Actuating",
+   "http://www.ease-crc.org/ont/SOMA.owl#Delivering",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Delivering": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Actuating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Patient": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#TurningControl": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Actuating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task",
+   "https://aicor.knowledge/ccram#ConfigurationChange"
+  ],
+  "https://aicor.knowledge/ccram#ConfigurationChange": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Actuating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "https://aicor.knowledge/ccram#Rotating": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Actuating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "https://aicor.knowledge/ccram#GoalConstruct": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#PlanLanguageConstruct"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Localization": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Extrinsic",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Actuating": [
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Opening": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Actuating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Pulling": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Actuating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Pushing": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Actuating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Squeezing": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Actuating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "https://aicor.knowledge/ccram#PerceptionAction": [
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Affordance": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Container": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Instrument",
+   "http://www.ease-crc.org/ont/SOMA.owl#ResourceRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Restrictor",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Restrictor": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Instrument",
+   "http://www.ease-crc.org/ont/SOMA.owl#ResourceRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Rack": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent",
+   "http://www.ease-crc.org/ont/SOMA.owl#FunctionalPart",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "https://aicor.knowledge/put-away#Dirty": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "https://aicor.knowledge/ccram#PlanFailure": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#FailureDescription"
+  ],
+  "https://aicor.knowledge/ccram#FailureDescription": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+  ],
+  "https://aicor.knowledge/ccram#UniversalDeterminer": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#Determiner"
+  ],
+  "https://aicor.knowledge/ccram#Determiner": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/put-away#Asking": [
+   "http://www.ease-crc.org/ont/SOMA.owl#CommunicationTask",
+   "http://www.ease-crc.org/ont/SOMA.owl#IllocutionaryTask",
+   "http://www.ease-crc.org/ont/SOMA.owl#QueryingTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#QueryingTask": [
+   "http://www.ease-crc.org/ont/SOMA.owl#CommunicationTask",
+   "http://www.ease-crc.org/ont/SOMA.owl#IllocutionaryTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#CommunicationTask": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "https://aicor.knowledge/ccram#MonitoredProcess": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#DeviceStateRange": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Design": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#Effector": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Instrument",
+   "http://www.ease-crc.org/ont/SOMA.owl#ResourceRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#AchieveGoal": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#GoalTemplate"
+  ],
+  "https://aicor.knowledge/ccram#GoalTemplate": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#ReferenceConstruct": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#PlanLanguageConstruct"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Refrigerator": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Appliance",
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ContainerObject",
+   "https://aicor.knowledge/put-away#BelongingPlace"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#EnclosedObject": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#IncludedObject",
+   "http://www.ease-crc.org/ont/SOMA.owl#Patient",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#TargetSetting": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#GoalRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#TrashContainer": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ContainerObject",
+   "https://aicor.knowledge/put-away#BelongingPlace"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Capacity": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Intrinsic",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  ],
+  "https://aicor.knowledge/ccram#Supported": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "https://aicor.knowledge/ccram#Wiping": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Cleaning",
+   "http://www.ease-crc.org/ont/SOMA.owl#ModifyingPhysicalObject",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task",
+   "https://aicor.knowledge/ccram#SurfaceTreatment"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Cleaning": [
+   "http://www.ease-crc.org/ont/SOMA.owl#ModifyingPhysicalObject",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "https://aicor.knowledge/ccram#SurfaceTreatment": [
+   "http://www.ease-crc.org/ont/SOMA.owl#ModifyingPhysicalObject",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Dishwasher": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Appliance",
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ContainerObject",
+   "https://aicor.knowledge/put-away#BelongingPlace"
+  ],
+  "https://aicor.knowledge/ccram#SubstanceManipulation": [
+   "http://www.ease-crc.org/ont/SOMA.owl#ModifyingPhysicalObject",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "https://aicor.knowledge/ccram#ApproachDirectionValue": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+  ],
+  "https://aicor.knowledge/ccram#Gathering": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Manipulating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task",
+   "https://aicor.knowledge/ccram#Transferring"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Instrument": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#ResourceRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#ResourceRole": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/put-away#Resident": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#MovedObject": [
+   "http://www.ease-crc.org/ont/SOMA.owl#AlteredObject",
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Patient",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#PuttingDown": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Manipulating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task",
+   "https://aicor.knowledge/ccram#ObjectDisplacement"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Manipulating": [
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Releasing": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Manipulating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "https://aicor.knowledge/ccram#HandingOver": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Actuating",
+   "http://www.ease-crc.org/ont/SOMA.owl#Delivering",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ease-crc.org/ont/SOMA.owl#Serving",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task",
+   "https://aicor.knowledge/ccram#InteractionAction"
+  ],
+  "https://aicor.knowledge/ccram#InteractionAction": [
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Jar": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ContainerObject",
+   "https://aicor.knowledge/put-away#HouseholdObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ContainerObject"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "https://aicor.knowledge/ccram#TemporalQualifier": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#CleanlinessRegion": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
+  ],
+  "https://aicor.knowledge/put-away#Licensed": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "https://aicor.knowledge/ccram#SequencingConstruct": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#PlanLanguageConstruct"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Setpoint": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#StopCondition": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#GoalRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#FailureHandlingConstruct": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#PlanLanguageConstruct"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#IncludedObject": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Patient",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#TreatedSurface": [
+   "http://www.ease-crc.org/ont/SOMA.owl#AlteredObject",
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Patient",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#Upright": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "https://aicor.knowledge/ccram#Tilted": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Destination": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Location",
+   "http://www.ease-crc.org/ont/SOMA.owl#SpatioTemporalRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#TargetState": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#GoalRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#WipeStroke": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#MotionPattern"
+  ],
+  "https://aicor.knowledge/ccram#MotionPattern": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/put-away#PuttingAway": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Manipulating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ease-crc.org/ont/SOMA.owl#PuttingDown",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task",
+   "https://aicor.knowledge/ccram#ObjectDisplacement"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#ExperiencerRole": [
+   "http://www.ease-crc.org/ont/SOMA.owl#CausativeRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#PerformerRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#PerformerRole": [
+   "http://www.ease-crc.org/ont/SOMA.owl#CausativeRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/put-away#MisplacementVerdictValue": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+  ],
+  "https://aicor.knowledge/put-away#Surveying": [
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task",
+   "https://aicor.knowledge/ccram#PerceptionAction"
+  ],
+  "https://aicor.knowledge/ccram#MotionDesignator": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#Designator"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Motion": [
+   "http://www.ease-crc.org/ont/SOMA.owl#ProcessType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Shaping": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Disposition",
+   "http://www.ease-crc.org/ont/SOMA.owl#Extrinsic",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality",
+   "http://www.ease-crc.org/ont/SOMA.owl#Variability",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Variability": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Disposition",
+   "http://www.ease-crc.org/ont/SOMA.owl#Extrinsic",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization": [
+   "http://org.semanticweb.owlapi/error#Error1",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity"
+  ],
+  "https://aicor.knowledge/ccram#DefinitionForm": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Insertion": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Containment",
+   "http://www.ease-crc.org/ont/SOMA.owl#Disposition",
+   "http://www.ease-crc.org/ont/SOMA.owl#Enclosing",
+   "http://www.ease-crc.org/ont/SOMA.owl#Extrinsic",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  ],
+  "https://aicor.knowledge/ccram#Idle": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Enclosing": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Containment",
+   "http://www.ease-crc.org/ont/SOMA.owl#Disposition",
+   "http://www.ease-crc.org/ont/SOMA.owl#Extrinsic",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  ],
+  "https://aicor.knowledge/ccram#DesignatorFailure": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#FailureDescription",
+   "https://aicor.knowledge/ccram#PlanFailure"
+  ],
+  "https://aicor.knowledge/put-away#InPlace": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "https://aicor.knowledge/put-away#Misplaced": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Origin": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Location",
+   "http://www.ease-crc.org/ont/SOMA.owl#SpatioTemporalRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Shifting": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Disposition",
+   "http://www.ease-crc.org/ont/SOMA.owl#Extrinsic",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality",
+   "http://www.ease-crc.org/ont/SOMA.owl#Variability",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "https://aicor.knowledge/ccram#BelongingDeterminer": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#Determiner"
+  ],
+  "https://aicor.knowledge/ccram#TravelFraction": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Fetching": [
+   "http://www.ease-crc.org/ont/SOMA.owl#ModifyingPhysicalObject",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalAcquiring",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "https://aicor.knowledge/ccram#PressingButton": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Actuating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ease-crc.org/ont/SOMA.owl#Pushing",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task",
+   "https://aicor.knowledge/ccram#ConfigurationChange"
+  ],
+  "https://aicor.knowledge/ccram#FreeGripper": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "https://aicor.knowledge/ccram#PlanLanguageConstruct": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Appliance": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Arm": [
+   "http://www.ease-crc.org/ont/SOMA.owl#FunctionalPart",
+   "http://www.ease-crc.org/ont/SOMA.owl#Limb",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalEffector",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/sdt#Arm"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#MassAttribute": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Extrinsic": [
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Message": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Item",
+   "http://www.ease-crc.org/ont/SOMA.owl#Patient",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Tool": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Instrument",
+   "http://www.ease-crc.org/ont/SOMA.owl#ResourceRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#ApproachDirection": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#PathRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#SpatioTemporalRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#PathRole": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#SpatioTemporalRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent": [
+   "http://www.ease-crc.org/ont/SOMA.owl#FunctionalPart",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "https://aicor.knowledge/ccram#MaintainGoal": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#GoalTemplate"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#IllocutionaryTask": [
+   "http://www.ease-crc.org/ont/SOMA.owl#CommunicationTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "https://aicor.knowledge/ccram#GraspFailure": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#FailureDescription",
+   "https://aicor.knowledge/ccram#ManipulationFailure"
+  ],
+  "https://aicor.knowledge/ccram#ManipulationFailure": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#FailureDescription"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#PrehensileEffector": [
+   "http://www.ease-crc.org/ont/SOMA.owl#FunctionalPart",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalEffector",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/sdt#EndEffector"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#PhysicalEffector": [
+   "http://www.ease-crc.org/ont/SOMA.owl#FunctionalPart",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#ShapeRegion": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#DesignedFurniture": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/put-away#NoBelongingPlace": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#DesignatorFailure",
+   "https://aicor.knowledge/ccram#FailureDescription",
+   "https://aicor.knowledge/ccram#PlanFailure"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Connectivity": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Disposition",
+   "http://www.ease-crc.org/ont/SOMA.owl#Extrinsic",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  ],
+  "https://aicor.knowledge/ccram#Wrapping": [
+   "http://www.ease-crc.org/ont/SOMA.owl#ModifyingPhysicalObject",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task",
+   "https://aicor.knowledge/ccram#SubstanceManipulation"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
+  ],
+  "https://aicor.knowledge/ccram#PerceptionFailure": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#FailureDescription"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Sender": [
+   "http://www.ease-crc.org/ont/SOMA.owl#CausativeRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#PerformerRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Containment": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Disposition",
+   "http://www.ease-crc.org/ont/SOMA.owl#Extrinsic",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  ],
+  "https://aicor.knowledge/ccram#ActionDesignator": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#Designator"
+  ],
+  "https://aicor.knowledge/ccram#MonitoringProcess": [
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task",
+   "https://aicor.knowledge/ccram#PerceptionAction"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#BodyMovement": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Motion",
+   "http://www.ease-crc.org/ont/SOMA.owl#ProcessType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#Timeout": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#SpatioTemporalRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#TimeRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Pouring": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Actuating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "https://aicor.knowledge/put-away#ResidentRole": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Graspability": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Disposition",
+   "http://www.ease-crc.org/ont/SOMA.owl#Extrinsic",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Cupboard": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer",
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedFurniture",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ContainerObject",
+   "https://aicor.knowledge/put-away#BelongingPlace"
+  ],
+  "https://aicor.knowledge/ccram#AttributiveDeterminer": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#Determiner"
+  ],
+  "https://aicor.knowledge/sdt#Neck": [
+   "http://www.ease-crc.org/ont/SOMA.owl#FunctionalPart",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Navigating": [
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#RecipientRole": [
+   "http://www.ease-crc.org/ont/SOMA.owl#BeneficiaryRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#GoalRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Pourable": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Disposition",
+   "http://www.ease-crc.org/ont/SOMA.owl#Extrinsic",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#PhysicalAction": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"
+  ],
+  "https://aicor.knowledge/put-away#PlaceNotAdmissible": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#FailureDescription",
+   "https://aicor.knowledge/ccram#ManipulationFailure"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Turning": [
+   "http://www.ease-crc.org/ont/SOMA.owl#BodyMovement",
+   "http://www.ease-crc.org/ont/SOMA.owl#Motion",
+   "http://www.ease-crc.org/ont/SOMA.owl#PosturalMoving",
+   "http://www.ease-crc.org/ont/SOMA.owl#ProcessType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#PosturalMoving": [
+   "http://www.ease-crc.org/ont/SOMA.owl#BodyMovement",
+   "http://www.ease-crc.org/ont/SOMA.owl#Motion",
+   "http://www.ease-crc.org/ont/SOMA.owl#ProcessType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Item": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Patient",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#ProcessType": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#MotionProcess": [
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicsProcess",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Location": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#SpatioTemporalRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#Lifted": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "https://aicor.knowledge/ccram#LogicalConstruct": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#PlanLanguageConstruct"
+  ],
+  "https://aicor.knowledge/ccram#ContainerObject": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "https://aicor.knowledge/ccram#MonitorGoal": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#GoalTemplate"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#AlteredObject": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Patient",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/put-away#Opened": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#PouredObject": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Patient",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#ProcessFailure": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#FailureDescription"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Substance": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#BeneficiaryRole": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#GoalRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Cup": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Crockery",
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer",
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedTool",
+   "http://www.ease-crc.org/ont/SOMA.owl#Tableware",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ContainerObject",
+   "https://aicor.knowledge/put-away#HouseholdObject"
+  ],
+  "https://aicor.knowledge/ccram#WaitingConstruct": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#PlanLanguageConstruct"
+  ],
+  "https://aicor.knowledge/sdt#Table": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedFurniture",
+   "http://www.ease-crc.org/ont/SOMA.owl#Table",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Table": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedFurniture",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/sdt#Table"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Channel": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#PathRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#SpatioTemporalRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Intrinsic": [
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  ],
+  "https://aicor.knowledge/put-away#UnknownJar": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer",
+   "http://www.ease-crc.org/ont/SOMA.owl#Jar",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ContainerObject",
+   "https://aicor.knowledge/put-away#HouseholdObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#DeviceTurnedOff": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DeviceStateRange",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/put-away#SugarJar": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer",
+   "http://www.ease-crc.org/ont/SOMA.owl#Jar",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ContainerObject",
+   "https://aicor.knowledge/put-away#HouseholdObject"
+  ],
+  "https://aicor.knowledge/ccram#FigureEightAbove": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#MotionPattern"
+  ],
+  "https://aicor.knowledge/ccram#ProtectionConstruct": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#PlanLanguageConstruct"
+  ],
+  "https://aicor.knowledge/ccram#ProtectGoal": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#GoalTemplate",
+   "https://aicor.knowledge/ccram#MaintainGoal"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#6DPose": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion"
+  ],
+  "https://aicor.knowledge/ccram#NavigationFailure": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#FailureDescription"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#DeviceTurnedOn": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DeviceStateRange",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Purification": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Disposition",
+   "http://www.ease-crc.org/ont/SOMA.owl#Extrinsic",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality",
+   "http://www.ease-crc.org/ont/SOMA.owl#Variability",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  ],
+  "https://aicor.knowledge/ccram#Dropped": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Clean": [
+   "http://www.ease-crc.org/ont/SOMA.owl#CleanlinessRegion",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#PouringInto": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Actuating",
+   "http://www.ease-crc.org/ont/SOMA.owl#Manipulating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ease-crc.org/ont/SOMA.owl#Pouring",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task",
+   "https://aicor.knowledge/ccram#Transferring"
+  ],
+  "https://aicor.knowledge/ccram#Tilting": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Actuating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "https://aicor.knowledge/ccram#PreventGoal": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#GoalTemplate"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Receiver": [
+   "http://www.ease-crc.org/ont/SOMA.owl#CausativeRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#ExperiencerRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#PerformerRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Pack": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ContainerObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Crockery": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer",
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedTool",
+   "http://www.ease-crc.org/ont/SOMA.owl#Tableware",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ContainerObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Tableware": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedTool",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "https://aicor.knowledge/put-away#HouseholdObject": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "https://aicor.knowledge/ccram#Held": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "https://aicor.knowledge/ccram#InWater": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "https://aicor.knowledge/ccram#NoReferent": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#DesignatorFailure",
+   "https://aicor.knowledge/ccram#FailureDescription",
+   "https://aicor.knowledge/ccram#PlanFailure"
+  ],
+  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#InsertedObject": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EnclosedObject",
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#IncludedObject",
+   "http://www.ease-crc.org/ont/SOMA.owl#Patient",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#SwitchState": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DeviceStateRange",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+  ],
+  "https://aicor.knowledge/ccram#PathClear": [
+   "http://www.ease-crc.org/ont/SOMA.owl#State",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#State": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#ShapedObject": [
+   "http://www.ease-crc.org/ont/SOMA.owl#AlteredObject",
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Patient",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Plate": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Crockery",
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer",
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedTool",
+   "http://www.ease-crc.org/ont/SOMA.owl#Tableware",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ContainerObject",
+   "https://aicor.knowledge/put-away#HouseholdObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Shape": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Intrinsic",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalQuality",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Door": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent",
+   "http://www.ease-crc.org/ont/SOMA.owl#FunctionalPart",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Blade": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent",
+   "http://www.ease-crc.org/ont/SOMA.owl#FunctionalPart",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "https://aicor.knowledge/ccram#Spilled": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "https://aicor.knowledge/ccram#Condition": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/sdt#EndEffector": [
+   "http://www.ease-crc.org/ont/SOMA.owl#FunctionalPart",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalEffector",
+   "http://www.ease-crc.org/ont/SOMA.owl#PrehensileEffector",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "https://aicor.knowledge/ccram#EmptyVessel": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "https://aicor.knowledge/ccram#ProhibitedAction": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"
+  ],
+  "https://aicor.knowledge/put-away#NoKnownHome": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#SpatioTemporalRole": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/sdt#PR2": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/sdt#Robot"
+  ],
+  "https://aicor.knowledge/sdt#Robot": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "https://aicor.knowledge/ccram#PouredAmount": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Patient",
+   "http://www.ease-crc.org/ont/SOMA.owl#PouredObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Countertop": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent",
+   "http://www.ease-crc.org/ont/SOMA.owl#FunctionalPart",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/put-away#BelongingPlace"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Knife": [
+   "http://www.ease-crc.org/ont/SOMA.owl#CuttingTool",
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedTool",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/put-away#HouseholdObject"
+  ],
+  "https://aicor.knowledge/ccram#Released": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "https://aicor.knowledge/put-away#BelongingPlace": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#MilkPack": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer",
+   "http://www.ease-crc.org/ont/SOMA.owl#Pack",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ContainerObject",
+   "https://aicor.knowledge/put-away#HouseholdObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#CausativeRole": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#DesignedTool": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "https://aicor.knowledge/ccram#ReferentialDeterminer": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#Determiner"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#PhysicsProcess": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process"
+  ],
+  "https://aicor.knowledge/ccram#Graspable": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#TimeRole": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#SpatioTemporalRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#NavigationBlocked": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#FailureDescription",
+   "https://aicor.knowledge/ccram#NavigationFailure"
+  ],
+  "https://aicor.knowledge/put-away#ProhibitedPlacement": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#ClosingEventViolation",
+   "https://aicor.knowledge/ccram#FailureDescription"
+  ],
+  "https://aicor.knowledge/ccram#ClosingEventViolation": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#FailureDescription"
+  ],
+  "https://aicor.knowledge/ccram#RecoverableMode": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DeviceStateRange",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+  ],
+  "https://aicor.knowledge/put-away#DirtyIntoCupboard": [
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalAction",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event",
+   "https://aicor.knowledge/ccram#ProhibitedAction"
+  ],
+  "https://aicor.knowledge/ccram#Inspected": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#EndEffectorPositioning": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Manipulating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Retracting": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EndEffectorPositioning",
+   "http://www.ease-crc.org/ont/SOMA.owl#Manipulating",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "https://aicor.knowledge/ccram#AboveLocation": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Location",
+   "http://www.ease-crc.org/ont/SOMA.owl#SpatioTemporalRole",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#LocationDesignator": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#Designator"
+  ],
+  "https://aicor.knowledge/put-away#CoffeeJar": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer",
+   "http://www.ease-crc.org/ont/SOMA.owl#Jar",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ContainerObject",
+   "https://aicor.knowledge/put-away#HouseholdObject"
+  ],
+  "https://aicor.knowledge/sdt#Camera": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "https://aicor.knowledge/ccram#CircleIn": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#MotionPattern"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#PhysicalAcquiring": [
+   "http://www.ease-crc.org/ont/SOMA.owl#ModifyingPhysicalObject",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  ],
+  "https://aicor.knowledge/ccram#GatheredMaterial": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Item",
+   "http://www.ease-crc.org/ont/SOMA.owl#Patient",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#ConnectedObject": [
+   "http://www.ease-crc.org/ont/SOMA.owl#EventAdjacentRole",
+   "http://www.ease-crc.org/ont/SOMA.owl#Patient",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/sdt#Handle": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent",
+   "http://www.ease-crc.org/ont/SOMA.owl#FunctionalPart",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#CuttingTool": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DesignedTool",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "https://aicor.knowledge/ccram#Duration": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"
+  ],
+  "https://aicor.knowledge/sdt#Arm": [
+   "http://www.ease-crc.org/ont/SOMA.owl#Arm",
+   "http://www.ease-crc.org/ont/SOMA.owl#FunctionalPart",
+   "http://www.ease-crc.org/ont/SOMA.owl#Limb",
+   "http://www.ease-crc.org/ont/SOMA.owl#PhysicalEffector",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "https://aicor.knowledge/sdt#MobileBase": [
+   "http://www.ease-crc.org/ont/SOMA.owl#FunctionalPart",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "https://aicor.knowledge/ccram#GoalUnachievable": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#FailureDescription",
+   "https://aicor.knowledge/ccram#PlanFailure"
+  ],
+  "https://aicor.knowledge/ccram#FingerAt": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#MotionPattern"
+  ],
+  "https://aicor.knowledge/ccram#Moving": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "https://aicor.knowledge/sdt#Torso": [
+   "http://www.ease-crc.org/ont/SOMA.owl#FunctionalPart",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalBody",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+  ],
+  "https://aicor.knowledge/put-away#GuestRole": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#SafeMode": [
+   "http://www.ease-crc.org/ont/SOMA.owl#DeviceStateRange",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Abstract",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+  ],
+  "https://aicor.knowledge/put-away#Flagged": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "https://aicor.knowledge/ccram#ProtectionViolation": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#FailureDescription",
+   "https://aicor.knowledge/ccram#PlanFailure"
+  ],
+  "https://aicor.knowledge/put-away#Surveyed": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
+   "https://aicor.knowledge/ccram#ObjectStateClass"
+  ],
+  "https://aicor.knowledge/ccram#EachGoal": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#GoalTemplate"
+  ],
+  "https://aicor.knowledge/ccram#ModeClass": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "https://aicor.knowledge/ccram#MultipleSolutionsFound": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+   "https://aicor.knowledge/ccram#DesignatorFailure",
+   "https://aicor.knowledge/ccram#FailureDescription",
+   "https://aicor.knowledge/ccram#PlanFailure"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#Phrase": [
+   "http://www.ease-crc.org/ont/SOMA.owl#LinguisticObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ],
+  "http://www.ease-crc.org/ont/SOMA.owl#LinguisticObject": [
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+  ]
+ }
+}

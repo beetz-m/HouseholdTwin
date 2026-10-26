@@ -1,0 +1,231 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.3.2"
+    }
+    defaultPrim = "tn__scenebodies_nG"
+    endTimeCode = 1000000
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    startTimeCode = 0
+    subLayers = [
+        @./physics.usda@
+    ]
+    upAxis = "Z"
+)
+
+over "tn__scenebodies_nG"
+{
+    over "Physics"
+    {
+        over "cabinet_door_4_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+            prepend apiSchemas = ["MjcJointAPI"]
+        )
+        {
+        }
+
+        over "cabinet_door_3_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+            prepend apiSchemas = ["MjcJointAPI"]
+        )
+        {
+        }
+
+        over "cabinet_door_2_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+            prepend apiSchemas = ["MjcJointAPI"]
+        )
+        {
+        }
+
+        over "cabinet_door_1_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+            prepend apiSchemas = ["MjcJointAPI"]
+        )
+        {
+        }
+
+        over "drawer_4_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+            prepend apiSchemas = ["MjcJointAPI"]
+        )
+        {
+        }
+
+        over "drawer_3_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+            prepend apiSchemas = ["MjcJointAPI"]
+        )
+        {
+        }
+
+        over "drawer_2_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+            prepend apiSchemas = ["MjcJointAPI"]
+        )
+        {
+        }
+
+        over "drawer_1_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+            prepend apiSchemas = ["MjcJointAPI"]
+        )
+        {
+        }
+
+        over "door_2_leaf" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+            prepend apiSchemas = ["MjcJointAPI"]
+        )
+        {
+        }
+
+        over "door_1_leaf" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+            prepend apiSchemas = ["MjcJointAPI"]
+        )
+        {
+        }
+
+        over "door_0_leaf" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+            prepend apiSchemas = ["MjcJointAPI"]
+        )
+        {
+        }
+
+        def MjcActuator "cabinet_door_4_joint_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -6.981317043304443, -0.6981316804885864, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = inf
+            uniform double mjc:forceRange:min = -inf
+            uniform double[] mjc:gainPrm = [6.981317043304443, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            append rel mjc:target = </tn__scenebodies_nG/Physics/cabinet_door_4_joint>
+        }
+
+        def MjcActuator "cabinet_door_3_joint_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -6.981317043304443, -0.6981316804885864, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = inf
+            uniform double mjc:forceRange:min = -inf
+            uniform double[] mjc:gainPrm = [6.981317043304443, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            append rel mjc:target = </tn__scenebodies_nG/Physics/cabinet_door_3_joint>
+        }
+
+        def MjcActuator "cabinet_door_2_joint_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -6.981317043304443, -0.6981316804885864, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = inf
+            uniform double mjc:forceRange:min = -inf
+            uniform double[] mjc:gainPrm = [6.981317043304443, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            append rel mjc:target = </tn__scenebodies_nG/Physics/cabinet_door_2_joint>
+        }
+
+        def MjcActuator "cabinet_door_1_joint_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -6.981317043304443, -0.6981316804885864, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = inf
+            uniform double mjc:forceRange:min = -inf
+            uniform double[] mjc:gainPrm = [6.981317043304443, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            append rel mjc:target = </tn__scenebodies_nG/Physics/cabinet_door_1_joint>
+        }
+
+        def MjcActuator "drawer_4_joint_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -400, -40, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = inf
+            uniform double mjc:forceRange:min = -inf
+            uniform double[] mjc:gainPrm = [400, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            append rel mjc:target = </tn__scenebodies_nG/Physics/drawer_4_joint>
+        }
+
+        def MjcActuator "drawer_3_joint_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -400, -40, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = inf
+            uniform double mjc:forceRange:min = -inf
+            uniform double[] mjc:gainPrm = [400, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            append rel mjc:target = </tn__scenebodies_nG/Physics/drawer_3_joint>
+        }
+
+        def MjcActuator "drawer_2_joint_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -400, -40, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = inf
+            uniform double mjc:forceRange:min = -inf
+            uniform double[] mjc:gainPrm = [400, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            append rel mjc:target = </tn__scenebodies_nG/Physics/drawer_2_joint>
+        }
+
+        def MjcActuator "drawer_1_joint_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -400, -40, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = inf
+            uniform double mjc:forceRange:min = -inf
+            uniform double[] mjc:gainPrm = [400, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            append rel mjc:target = </tn__scenebodies_nG/Physics/drawer_1_joint>
+        }
+
+        def MjcActuator "door_2_leaf_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -6.981317043304443, -0.6981316804885864, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = inf
+            uniform double mjc:forceRange:min = -inf
+            uniform double[] mjc:gainPrm = [6.981317043304443, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            append rel mjc:target = </tn__scenebodies_nG/Physics/door_2_leaf>
+        }
+
+        def MjcActuator "door_1_leaf_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -6.981317043304443, -0.6981316804885864, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = inf
+            uniform double mjc:forceRange:min = -inf
+            uniform double[] mjc:gainPrm = [6.981317043304443, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            append rel mjc:target = </tn__scenebodies_nG/Physics/door_1_leaf>
+        }
+
+        def MjcActuator "door_0_leaf_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -6.981317043304443, -0.6981316804885864, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = inf
+            uniform double mjc:forceRange:min = -inf
+            uniform double[] mjc:gainPrm = [6.981317043304443, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            append rel mjc:target = </tn__scenebodies_nG/Physics/door_0_leaf>
+        }
+    }
+}
+

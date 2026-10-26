@@ -1,0 +1,1250 @@
+{
+ "summary": {
+  "flat counter (granite)": {
+   "v_best": 0.45,
+   "p_best_recovery": 0.875,
+   "p_best_direct": 0.7475,
+   "window_90pct": [
+    0.4,
+    0.5
+   ]
+  },
+  "thin bowl rim (r 1.5 mm)": {
+   "v_best": 0.25,
+   "p_best_recovery": 0.7575,
+   "p_best_direct": 0.5,
+   "window_90pct": [
+    0.2,
+    0.25
+   ]
+  },
+  "thick bowl rim (r 4 mm)": {
+   "v_best": 0.35,
+   "p_best_recovery": 0.77,
+   "p_best_direct": 0.49,
+   "window_90pct": [
+    0.35,
+    0.4
+   ]
+  },
+  "another egg": {
+   "v_best": 0.5,
+   "p_best_recovery": 0.85,
+   "p_best_direct": 0.8025,
+   "window_90pct": [
+    0.45,
+    0.65
+   ]
+  }
+ },
+ "curves": {
+  "flat counter (granite)": [
+   {
+    "v": 0.05,
+    "intact": 1.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 0.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 0.1,
+    "intact": 0.9975,
+    "microcracked": 0.0025,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 0.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 0.15,
+    "intact": 0.965,
+    "microcracked": 0.0125,
+    "check": 0.0225,
+    "cracked_open": 0.0,
+    "shattered": 0.0,
+    "p_success": 0.02,
+    "p_success_recovery": 0.02
+   },
+   {
+    "v": 0.2,
+    "intact": 0.8075,
+    "microcracked": 0.0725,
+    "check": 0.1175,
+    "cracked_open": 0.0025,
+    "shattered": 0.0,
+    "p_success": 0.0875,
+    "p_success_recovery": 0.1075
+   },
+   {
+    "v": 0.25,
+    "intact": 0.55,
+    "microcracked": 0.1125,
+    "check": 0.3225,
+    "cracked_open": 0.015,
+    "shattered": 0.0,
+    "p_success": 0.26,
+    "p_success_recovery": 0.3125
+   },
+   {
+    "v": 0.3,
+    "intact": 0.325,
+    "microcracked": 0.095,
+    "check": 0.5375,
+    "cracked_open": 0.0375,
+    "shattered": 0.005,
+    "p_success": 0.45,
+    "p_success_recovery": 0.5475
+   },
+   {
+    "v": 0.35,
+    "intact": 0.1525,
+    "microcracked": 0.095,
+    "check": 0.6475,
+    "cracked_open": 0.095,
+    "shattered": 0.01,
+    "p_success": 0.6025,
+    "p_success_recovery": 0.7025
+   },
+   {
+    "v": 0.4,
+    "intact": 0.0675,
+    "microcracked": 0.0375,
+    "check": 0.6925,
+    "cracked_open": 0.18,
+    "shattered": 0.0225,
+    "p_success": 0.6825,
+    "p_success_recovery": 0.805
+   },
+   {
+    "v": 0.45,
+    "intact": 0.0125,
+    "microcracked": 0.0225,
+    "check": 0.6275,
+    "cracked_open": 0.295,
+    "shattered": 0.0425,
+    "p_success": 0.7475,
+    "p_success_recovery": 0.875
+   },
+   {
+    "v": 0.5,
+    "intact": 0.0025,
+    "microcracked": 0.0025,
+    "check": 0.5125,
+    "cracked_open": 0.3875,
+    "shattered": 0.095,
+    "p_success": 0.705,
+    "p_success_recovery": 0.85
+   },
+   {
+    "v": 0.55,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.3975,
+    "cracked_open": 0.4325,
+    "shattered": 0.17,
+    "p_success": 0.675,
+    "p_success_recovery": 0.7775
+   },
+   {
+    "v": 0.6,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.3,
+    "cracked_open": 0.4625,
+    "shattered": 0.2375,
+    "p_success": 0.6,
+    "p_success_recovery": 0.725
+   },
+   {
+    "v": 0.65,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.21,
+    "cracked_open": 0.4525,
+    "shattered": 0.3375,
+    "p_success": 0.49,
+    "p_success_recovery": 0.635
+   },
+   {
+    "v": 0.7,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.1225,
+    "cracked_open": 0.4425,
+    "shattered": 0.435,
+    "p_success": 0.445,
+    "p_success_recovery": 0.5425
+   },
+   {
+    "v": 0.75,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0775,
+    "cracked_open": 0.385,
+    "shattered": 0.5375,
+    "p_success": 0.38,
+    "p_success_recovery": 0.4375
+   },
+   {
+    "v": 0.8,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0425,
+    "cracked_open": 0.345,
+    "shattered": 0.6125,
+    "p_success": 0.3075,
+    "p_success_recovery": 0.37
+   },
+   {
+    "v": 0.85,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0125,
+    "cracked_open": 0.3075,
+    "shattered": 0.68,
+    "p_success": 0.27,
+    "p_success_recovery": 0.3025
+   },
+   {
+    "v": 0.9,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.005,
+    "cracked_open": 0.255,
+    "shattered": 0.74,
+    "p_success": 0.21,
+    "p_success_recovery": 0.2525
+   },
+   {
+    "v": 0.95,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.2,
+    "shattered": 0.8,
+    "p_success": 0.185,
+    "p_success_recovery": 0.1925
+   },
+   {
+    "v": 1.0,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.13,
+    "shattered": 0.87,
+    "p_success": 0.11,
+    "p_success_recovery": 0.125
+   },
+   {
+    "v": 1.05,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.1025,
+    "shattered": 0.8975,
+    "p_success": 0.0825,
+    "p_success_recovery": 0.0975
+   },
+   {
+    "v": 1.1,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.075,
+    "shattered": 0.925,
+    "p_success": 0.065,
+    "p_success_recovery": 0.0725
+   },
+   {
+    "v": 1.15,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0425,
+    "shattered": 0.9575,
+    "p_success": 0.0375,
+    "p_success_recovery": 0.04
+   },
+   {
+    "v": 1.2,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0175,
+    "shattered": 0.9825,
+    "p_success": 0.0075,
+    "p_success_recovery": 0.0175
+   },
+   {
+    "v": 1.25,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0075,
+    "shattered": 0.9925,
+    "p_success": 0.0075,
+    "p_success_recovery": 0.0075
+   },
+   {
+    "v": 1.3,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.005,
+    "shattered": 0.995,
+    "p_success": 0.005,
+    "p_success_recovery": 0.005
+   },
+   {
+    "v": 1.35,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0025,
+    "shattered": 0.9975,
+    "p_success": 0.0025,
+    "p_success_recovery": 0.0025
+   },
+   {
+    "v": 1.4,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.45,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.5,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   }
+  ],
+  "thin bowl rim (r 1.5 mm)": [
+   {
+    "v": 0.05,
+    "intact": 1.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 0.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 0.1,
+    "intact": 0.8975,
+    "microcracked": 0.0425,
+    "check": 0.005,
+    "cracked_open": 0.055,
+    "shattered": 0.0,
+    "p_success": 0.0225,
+    "p_success_recovery": 0.05
+   },
+   {
+    "v": 0.15,
+    "intact": 0.435,
+    "microcracked": 0.105,
+    "check": 0.02,
+    "cracked_open": 0.4325,
+    "shattered": 0.0075,
+    "p_success": 0.275,
+    "p_success_recovery": 0.4125
+   },
+   {
+    "v": 0.2,
+    "intact": 0.12,
+    "microcracked": 0.08,
+    "check": 0.0225,
+    "cracked_open": 0.735,
+    "shattered": 0.0425,
+    "p_success": 0.48,
+    "p_success_recovery": 0.6825
+   },
+   {
+    "v": 0.25,
+    "intact": 0.005,
+    "microcracked": 0.0225,
+    "check": 0.005,
+    "cracked_open": 0.815,
+    "shattered": 0.1525,
+    "p_success": 0.5,
+    "p_success_recovery": 0.7575
+   },
+   {
+    "v": 0.3,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.67,
+    "shattered": 0.33,
+    "p_success": 0.3675,
+    "p_success_recovery": 0.6225
+   },
+   {
+    "v": 0.35,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.46,
+    "shattered": 0.54,
+    "p_success": 0.2525,
+    "p_success_recovery": 0.4325
+   },
+   {
+    "v": 0.4,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.3075,
+    "shattered": 0.6925,
+    "p_success": 0.17,
+    "p_success_recovery": 0.2725
+   },
+   {
+    "v": 0.45,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.1725,
+    "shattered": 0.8275,
+    "p_success": 0.085,
+    "p_success_recovery": 0.1425
+   },
+   {
+    "v": 0.5,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.09,
+    "shattered": 0.91,
+    "p_success": 0.0475,
+    "p_success_recovery": 0.07
+   },
+   {
+    "v": 0.55,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0275,
+    "shattered": 0.9725,
+    "p_success": 0.01,
+    "p_success_recovery": 0.025
+   },
+   {
+    "v": 0.6,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.005,
+    "shattered": 0.995,
+    "p_success": 0.005,
+    "p_success_recovery": 0.005
+   },
+   {
+    "v": 0.65,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 0.7,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 0.75,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 0.8,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 0.85,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 0.9,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 0.95,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.0,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.05,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.1,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.15,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.2,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.25,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.3,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.35,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.4,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.45,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.5,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   }
+  ],
+  "thick bowl rim (r 4 mm)": [
+   {
+    "v": 0.05,
+    "intact": 1.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 0.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 0.1,
+    "intact": 0.995,
+    "microcracked": 0.0025,
+    "check": 0.0,
+    "cracked_open": 0.0025,
+    "shattered": 0.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0025
+   },
+   {
+    "v": 0.15,
+    "intact": 0.9375,
+    "microcracked": 0.02,
+    "check": 0.005,
+    "cracked_open": 0.0375,
+    "shattered": 0.0,
+    "p_success": 0.025,
+    "p_success_recovery": 0.04
+   },
+   {
+    "v": 0.2,
+    "intact": 0.7025,
+    "microcracked": 0.0875,
+    "check": 0.0125,
+    "cracked_open": 0.1975,
+    "shattered": 0.0,
+    "p_success": 0.1225,
+    "p_success_recovery": 0.185
+   },
+   {
+    "v": 0.25,
+    "intact": 0.415,
+    "microcracked": 0.1025,
+    "check": 0.0225,
+    "cracked_open": 0.4525,
+    "shattered": 0.0075,
+    "p_success": 0.3,
+    "p_success_recovery": 0.43
+   },
+   {
+    "v": 0.3,
+    "intact": 0.205,
+    "microcracked": 0.0925,
+    "check": 0.02,
+    "cracked_open": 0.66,
+    "shattered": 0.0225,
+    "p_success": 0.4475,
+    "p_success_recovery": 0.64
+   },
+   {
+    "v": 0.35,
+    "intact": 0.065,
+    "microcracked": 0.055,
+    "check": 0.0225,
+    "cracked_open": 0.805,
+    "shattered": 0.0525,
+    "p_success": 0.49,
+    "p_success_recovery": 0.77
+   },
+   {
+    "v": 0.4,
+    "intact": 0.0125,
+    "microcracked": 0.0275,
+    "check": 0.0125,
+    "cracked_open": 0.815,
+    "shattered": 0.1325,
+    "p_success": 0.47,
+    "p_success_recovery": 0.7225
+   },
+   {
+    "v": 0.45,
+    "intact": 0.0025,
+    "microcracked": 0.0025,
+    "check": 0.0025,
+    "cracked_open": 0.7675,
+    "shattered": 0.225,
+    "p_success": 0.4425,
+    "p_success_recovery": 0.69
+   },
+   {
+    "v": 0.5,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.6425,
+    "shattered": 0.3575,
+    "p_success": 0.375,
+    "p_success_recovery": 0.585
+   },
+   {
+    "v": 0.55,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.5175,
+    "shattered": 0.4825,
+    "p_success": 0.275,
+    "p_success_recovery": 0.4675
+   },
+   {
+    "v": 0.6,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.4,
+    "shattered": 0.6,
+    "p_success": 0.2025,
+    "p_success_recovery": 0.3525
+   },
+   {
+    "v": 0.65,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.3075,
+    "shattered": 0.6925,
+    "p_success": 0.145,
+    "p_success_recovery": 0.2775
+   },
+   {
+    "v": 0.7,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.23,
+    "shattered": 0.77,
+    "p_success": 0.1125,
+    "p_success_recovery": 0.2075
+   },
+   {
+    "v": 0.75,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.1425,
+    "shattered": 0.8575,
+    "p_success": 0.0725,
+    "p_success_recovery": 0.12
+   },
+   {
+    "v": 0.8,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.1,
+    "shattered": 0.9,
+    "p_success": 0.0575,
+    "p_success_recovery": 0.085
+   },
+   {
+    "v": 0.85,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0575,
+    "shattered": 0.9425,
+    "p_success": 0.02,
+    "p_success_recovery": 0.0525
+   },
+   {
+    "v": 0.9,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0275,
+    "shattered": 0.9725,
+    "p_success": 0.015,
+    "p_success_recovery": 0.025
+   },
+   {
+    "v": 0.95,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0075,
+    "shattered": 0.9925,
+    "p_success": 0.005,
+    "p_success_recovery": 0.0075
+   },
+   {
+    "v": 1.0,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.005,
+    "shattered": 0.995,
+    "p_success": 0.0025,
+    "p_success_recovery": 0.005
+   },
+   {
+    "v": 1.05,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.1,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.15,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.2,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.25,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.3,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.35,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.4,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.45,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 1.5,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   }
+  ],
+  "another egg": [
+   {
+    "v": 0.05,
+    "intact": 1.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 0.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 0.1,
+    "intact": 1.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 0.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   },
+   {
+    "v": 0.15,
+    "intact": 0.995,
+    "microcracked": 0.0025,
+    "check": 0.0025,
+    "cracked_open": 0.0,
+    "shattered": 0.0,
+    "p_success": 0.0025,
+    "p_success_recovery": 0.0025
+   },
+   {
+    "v": 0.2,
+    "intact": 0.9325,
+    "microcracked": 0.0325,
+    "check": 0.035,
+    "cracked_open": 0.0,
+    "shattered": 0.0,
+    "p_success": 0.035,
+    "p_success_recovery": 0.035
+   },
+   {
+    "v": 0.25,
+    "intact": 0.825,
+    "microcracked": 0.0625,
+    "check": 0.1125,
+    "cracked_open": 0.0,
+    "shattered": 0.0,
+    "p_success": 0.11,
+    "p_success_recovery": 0.1125
+   },
+   {
+    "v": 0.3,
+    "intact": 0.605,
+    "microcracked": 0.1125,
+    "check": 0.2825,
+    "cracked_open": 0.0,
+    "shattered": 0.0,
+    "p_success": 0.2625,
+    "p_success_recovery": 0.275
+   },
+   {
+    "v": 0.35,
+    "intact": 0.36,
+    "microcracked": 0.1325,
+    "check": 0.505,
+    "cracked_open": 0.0,
+    "shattered": 0.0025,
+    "p_success": 0.4525,
+    "p_success_recovery": 0.4775
+   },
+   {
+    "v": 0.4,
+    "intact": 0.185,
+    "microcracked": 0.0925,
+    "check": 0.7175,
+    "cracked_open": 0.0,
+    "shattered": 0.005,
+    "p_success": 0.63,
+    "p_success_recovery": 0.695
+   },
+   {
+    "v": 0.45,
+    "intact": 0.07,
+    "microcracked": 0.0725,
+    "check": 0.8325,
+    "cracked_open": 0.0,
+    "shattered": 0.025,
+    "p_success": 0.7325,
+    "p_success_recovery": 0.785
+   },
+   {
+    "v": 0.5,
+    "intact": 0.035,
+    "microcracked": 0.025,
+    "check": 0.89,
+    "cracked_open": 0.0,
+    "shattered": 0.05,
+    "p_success": 0.7725,
+    "p_success_recovery": 0.85
+   },
+   {
+    "v": 0.55,
+    "intact": 0.0025,
+    "microcracked": 0.02,
+    "check": 0.8975,
+    "cracked_open": 0.0,
+    "shattered": 0.08,
+    "p_success": 0.8025,
+    "p_success_recovery": 0.85
+   },
+   {
+    "v": 0.6,
+    "intact": 0.0,
+    "microcracked": 0.005,
+    "check": 0.8825,
+    "cracked_open": 0.0,
+    "shattered": 0.1125,
+    "p_success": 0.79,
+    "p_success_recovery": 0.85
+   },
+   {
+    "v": 0.65,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.8125,
+    "cracked_open": 0.0,
+    "shattered": 0.1875,
+    "p_success": 0.7125,
+    "p_success_recovery": 0.775
+   },
+   {
+    "v": 0.7,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.75,
+    "cracked_open": 0.0,
+    "shattered": 0.25,
+    "p_success": 0.6475,
+    "p_success_recovery": 0.7375
+   },
+   {
+    "v": 0.75,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.665,
+    "cracked_open": 0.0,
+    "shattered": 0.335,
+    "p_success": 0.5875,
+    "p_success_recovery": 0.6425
+   },
+   {
+    "v": 0.8,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.5625,
+    "cracked_open": 0.0,
+    "shattered": 0.4375,
+    "p_success": 0.5,
+    "p_success_recovery": 0.5525
+   },
+   {
+    "v": 0.85,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.475,
+    "cracked_open": 0.0,
+    "shattered": 0.525,
+    "p_success": 0.43,
+    "p_success_recovery": 0.46
+   },
+   {
+    "v": 0.9,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.3775,
+    "cracked_open": 0.0,
+    "shattered": 0.6225,
+    "p_success": 0.345,
+    "p_success_recovery": 0.365
+   },
+   {
+    "v": 0.95,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.29,
+    "cracked_open": 0.0,
+    "shattered": 0.71,
+    "p_success": 0.275,
+    "p_success_recovery": 0.285
+   },
+   {
+    "v": 1.0,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.2125,
+    "cracked_open": 0.0,
+    "shattered": 0.7875,
+    "p_success": 0.195,
+    "p_success_recovery": 0.205
+   },
+   {
+    "v": 1.05,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.1675,
+    "cracked_open": 0.0,
+    "shattered": 0.8325,
+    "p_success": 0.155,
+    "p_success_recovery": 0.165
+   },
+   {
+    "v": 1.1,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.1325,
+    "cracked_open": 0.0,
+    "shattered": 0.8675,
+    "p_success": 0.1225,
+    "p_success_recovery": 0.13
+   },
+   {
+    "v": 1.15,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.095,
+    "cracked_open": 0.0,
+    "shattered": 0.905,
+    "p_success": 0.08,
+    "p_success_recovery": 0.09
+   },
+   {
+    "v": 1.2,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.06,
+    "cracked_open": 0.0,
+    "shattered": 0.94,
+    "p_success": 0.05,
+    "p_success_recovery": 0.0575
+   },
+   {
+    "v": 1.25,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.04,
+    "cracked_open": 0.0,
+    "shattered": 0.96,
+    "p_success": 0.03,
+    "p_success_recovery": 0.0375
+   },
+   {
+    "v": 1.3,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.025,
+    "cracked_open": 0.0,
+    "shattered": 0.975,
+    "p_success": 0.0225,
+    "p_success_recovery": 0.025
+   },
+   {
+    "v": 1.35,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0125,
+    "cracked_open": 0.0,
+    "shattered": 0.9875,
+    "p_success": 0.01,
+    "p_success_recovery": 0.0125
+   },
+   {
+    "v": 1.4,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0075,
+    "cracked_open": 0.0,
+    "shattered": 0.9925,
+    "p_success": 0.0075,
+    "p_success_recovery": 0.0075
+   },
+   {
+    "v": 1.45,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0025,
+    "cracked_open": 0.0,
+    "shattered": 0.9975,
+    "p_success": 0.0025,
+    "p_success_recovery": 0.0025
+   },
+   {
+    "v": 1.5,
+    "intact": 0.0,
+    "microcracked": 0.0,
+    "check": 0.0,
+    "cracked_open": 0.0,
+    "shattered": 1.0,
+    "p_success": 0.0,
+    "p_success_recovery": 0.0
+   }
+  ]
+ }
+}

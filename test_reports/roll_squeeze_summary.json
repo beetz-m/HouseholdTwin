@@ -1,0 +1,68 @@
+{
+ "bench": "scripts/sim_roll_squeeze.py (FEM crumb-only roll between 30 mm pads)",
+ "runs": {
+  "1000Hz_120it": [
+   {
+    "E_kPa": 20.0,
+    "age_h": 5.0,
+    "k_incr_1to3N": 0.276
+   },
+   {
+    "E_kPa": 70.0,
+    "age_h": 48.0,
+    "k_incr_1to3N": 0.497
+   },
+   {
+    "E_kPa": 125.0,
+    "age_h": 96.0,
+    "k_incr_1to3N": 0.546
+   },
+   {
+    "E_kPa": 157.0,
+    "age_h": 168.0,
+    "k_incr_1to3N": 0.535
+   }
+  ],
+  "2000Hz_200it": [
+   {
+    "E_kPa": 20.0,
+    "age_h": 5.0,
+    "k_incr_1to3N": 0.289
+   },
+   {
+    "E_kPa": 70.0,
+    "age_h": 48.0,
+    "k_incr_1to3N": 0.631
+   },
+   {
+    "E_kPa": 125.0,
+    "age_h": 96.0,
+    "k_incr_1to3N": 0.797
+   },
+   {
+    "E_kPa": 157.0,
+    "age_h": 168.0,
+    "k_incr_1to3N": 0.876
+   }
+  ]
+ },
+ "convergence": [
+  {
+   "E_kPa": 20.0,
+   "change_pct": 4.5
+  },
+  {
+   "E_kPa": 70.0,
+   "change_pct": 21.2
+  },
+  {
+   "E_kPa": 125.0,
+   "change_pct": 31.5
+  },
+  {
+   "E_kPa": 157.0,
+   "change_pct": 38.9
+  }
+ ],
+ "model": "k = 0.29 N/mm * E / 20 kPa: converged fresh lane (+5 % between runs) scaled linearly (small-strain elasticity, same contact geometry). Stiffer lanes under-converged (k still rising with rate) -> lower bounds only."
+}

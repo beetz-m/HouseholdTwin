@@ -1,0 +1,404 @@
+{
+ "lemon": {
+  "ok": true,
+  "parts": [
+   [
+    "Peel",
+    "food:CitrusPeel",
+    "visible"
+   ],
+   [
+    "Peel/Flavedo",
+    "food:Flavedo",
+    "visible"
+   ],
+   [
+    "Peel/Albedo",
+    "food:Albedo",
+    "visible after peeling"
+   ],
+   [
+    "Peel/OilGlands",
+    "food:OilGland",
+    "visible"
+   ],
+   [
+    "StemButton",
+    "food:Calyx",
+    "visible"
+   ],
+   [
+    "Core",
+    "food:Columella",
+    "visible after cutting"
+   ],
+   [
+    "Segments",
+    "food:SegmentGroup",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_01",
+    "food:Segment",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_01/Membrane",
+    "food:SegmentMembrane",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_01/Vesicles",
+    "food:JuiceVesicles",
+    "visible after cutting"
+   ],
+   [
+    "Segments/Segment_01/Seed_2",
+    "food:CitrusSeed",
+    "visible after cutting"
+   ],
+   [
+    "Segments/Segment_02",
+    "food:Segment",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_02/Membrane",
+    "food:SegmentMembrane",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_02/Vesicles",
+    "food:JuiceVesicles",
+    "visible after cutting"
+   ],
+   [
+    "Segments/Segment_03",
+    "food:Segment",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_03/Membrane",
+    "food:SegmentMembrane",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_03/Vesicles",
+    "food:JuiceVesicles",
+    "visible after cutting"
+   ],
+   [
+    "Segments/Segment_04",
+    "food:Segment",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_04/Membrane",
+    "food:SegmentMembrane",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_04/Vesicles",
+    "food:JuiceVesicles",
+    "visible after cutting"
+   ],
+   [
+    "Segments/Segment_04/Seed_3",
+    "food:CitrusSeed",
+    "visible after cutting"
+   ],
+   [
+    "Segments/Segment_05",
+    "food:Segment",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_05/Membrane",
+    "food:SegmentMembrane",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_05/Vesicles",
+    "food:JuiceVesicles",
+    "visible after cutting"
+   ],
+   [
+    "Segments/Segment_05/Seed_5",
+    "food:CitrusSeed",
+    "visible after cutting"
+   ],
+   [
+    "Segments/Segment_06",
+    "food:Segment",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_06/Membrane",
+    "food:SegmentMembrane",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_06/Vesicles",
+    "food:JuiceVesicles",
+    "visible after cutting"
+   ],
+   [
+    "Segments/Segment_06/Seed_4",
+    "food:CitrusSeed",
+    "visible after cutting"
+   ],
+   [
+    "Segments/Segment_07",
+    "food:Segment",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_07/Membrane",
+    "food:SegmentMembrane",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_07/Vesicles",
+    "food:JuiceVesicles",
+    "visible after cutting"
+   ],
+   [
+    "Segments/Segment_07/Seed_6",
+    "food:CitrusSeed",
+    "visible after cutting"
+   ],
+   [
+    "Segments/Segment_08",
+    "food:Segment",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_08/Membrane",
+    "food:SegmentMembrane",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_08/Vesicles",
+    "food:JuiceVesicles",
+    "visible after cutting"
+   ],
+   [
+    "Segments/Segment_09",
+    "food:Segment",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_09/Membrane",
+    "food:SegmentMembrane",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_09/Vesicles",
+    "food:JuiceVesicles",
+    "visible after cutting"
+   ],
+   [
+    "Segments/Segment_09/Seed_1",
+    "food:CitrusSeed",
+    "visible after cutting"
+   ],
+   [
+    "Segments/Segment_10",
+    "food:Segment",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_10/Membrane",
+    "food:SegmentMembrane",
+    "visible after peeling"
+   ],
+   [
+    "Segments/Segment_10/Vesicles",
+    "food:JuiceVesicles",
+    "visible after cutting"
+   ]
+  ]
+ },
+ "cucumber": {
+  "ok": true,
+  "parts": [
+   [
+    "Skin",
+    "food:CucumberSkin",
+    "visible"
+   ],
+   [
+    "Flesh",
+    "food:Mesocarp",
+    "visible after cutting"
+   ],
+   [
+    "SeedCavity",
+    "food:SeedCavity",
+    "visible after cutting"
+   ],
+   [
+    "SeedCavity/Placenta_1",
+    "food:Placenta",
+    "visible after cutting"
+   ],
+   [
+    "SeedCavity/Placenta_2",
+    "food:Placenta",
+    "visible after cutting"
+   ],
+   [
+    "SeedCavity/Placenta_3",
+    "food:Placenta",
+    "visible after cutting"
+   ],
+   [
+    "SeedCavity/Core",
+    "food:CentralCore",
+    "visible after cutting"
+   ],
+   [
+    "SeedCavity/Seeds",
+    "food:CucumberSeed",
+    "visible after cutting"
+   ]
+  ]
+ },
+ "croissant": {
+  "ok": true,
+  "parts": [
+   [
+    "Crust",
+    "food:GlazedCrust",
+    "visible"
+   ],
+   [
+    "LaminatedCrumb",
+    "food:LaminatedCrumb",
+    "visible after cutting"
+   ],
+   [
+    "Flakes",
+    "food:Flake",
+    "visible"
+   ]
+  ]
+ },
+ "baguette": {
+  "ok": true,
+  "parts": [
+   [
+    "Crust",
+    "food:BreadCrust",
+    "visible"
+   ],
+   [
+    "Crust/UpperCrust",
+    "food:UpperCrust",
+    "visible"
+   ],
+   [
+    "Crust/ScoreCrust",
+    "food:ScoreCrust",
+    "visible"
+   ],
+   [
+    "Crust/BottomCrust",
+    "food:BottomCrust",
+    "visible"
+   ],
+   [
+    "Crumb",
+    "food:BreadCrumb",
+    "visible after cutting"
+   ],
+   [
+    "Crumb/TransitionZone",
+    "food:CrustCrumbTransition",
+    "visible after cutting"
+   ],
+   [
+    "Crumb/CrumbCore",
+    "food:CrumbCore",
+    "visible after cutting"
+   ],
+   [
+    "Crumb/GasCells",
+    "food:GasCell",
+    "visible after cutting"
+   ],
+   [
+    "Dusting",
+    "food:FlourDusting",
+    "visible"
+   ]
+  ]
+ },
+ "pepper": {
+  "ok": true,
+  "parts": [
+   [
+    "Pericarp",
+    "food:Pericarp",
+    "visible"
+   ],
+   [
+    "Pericarp/Skin",
+    "food:PepperSkin",
+    "visible"
+   ],
+   [
+    "Pericarp/Wall",
+    "food:PepperWall",
+    "visible after cutting"
+   ],
+   [
+    "Ribs",
+    "food:SeptumGroup",
+    "visible after cutting"
+   ],
+   [
+    "Ribs/Rib_1",
+    "food:Septum",
+    "visible after cutting"
+   ],
+   [
+    "Ribs/Rib_2",
+    "food:Septum",
+    "visible after cutting"
+   ],
+   [
+    "Ribs/Rib_3",
+    "food:Septum",
+    "visible after cutting"
+   ],
+   [
+    "Placenta",
+    "food:Placenta",
+    "visible after cutting"
+   ],
+   [
+    "Seeds",
+    "food:PepperSeed",
+    "visible after cutting"
+   ],
+   [
+    "Stem",
+    "food:StemGroup",
+    "visible"
+   ],
+   [
+    "Stem/Peduncle",
+    "food:Peduncle",
+    "visible"
+   ],
+   [
+    "Stem/Calyx",
+    "food:Calyx",
+    "visible"
+   ]
+  ]
+ },
+ "_runtime_s": 19.8,
+ "_date": "2026-10-20 06:08"
+}

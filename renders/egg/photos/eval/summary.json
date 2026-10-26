@@ -1,0 +1,111 @@
+{
+ "photos": 8,
+ "iou_mean": 0.9745023734734137,
+ "iou_min": 0.959385309949644,
+ "si_mae": 0.01912744588010691,
+ "si_rms": 0.023239041350777173,
+ "si_bias": -0.014230650901966194,
+ "w_over_L_mae": 0.02722074488479332,
+ "w_over_L_bias": -0.02722074488479332,
+ "colour_correct": "8/8",
+ "crack_false_positives": "0/8",
+ "rows": [
+  {
+   "photo": "egg_0",
+   "iou": 0.9927407699382472,
+   "si_true": 0.762357902734174,
+   "si_true_silhouette": 0.7633900768397635,
+   "si": 0.7539,
+   "w_over_L_true": 0.0292479493165574,
+   "w_over_L": 0.024,
+   "colour_true": "brown",
+   "colour": "brown",
+   "crack_seen": false
+  },
+  {
+   "photo": "egg_1",
+   "iou": 0.9819558082196084,
+   "si_true": 0.7814323628700232,
+   "si_true_silhouette": 0.7836843162020599,
+   "si": 0.7736,
+   "w_over_L_true": 0.032270411292455406,
+   "w_over_L": 0.014,
+   "colour_true": "brown",
+   "colour": "brown",
+   "crack_seen": false
+  },
+  {
+   "photo": "egg_2",
+   "iou": 0.9825784546413502,
+   "si_true": 0.7545450311703851,
+   "si_true_silhouette": 0.7528008227275778,
+   "si": 0.7343,
+   "w_over_L_true": 0.053463385128081325,
+   "w_over_L": 0.032,
+   "colour_true": "brown",
+   "colour": "brown",
+   "crack_seen": false
+  },
+  {
+   "photo": "egg_3",
+   "iou": 0.9779927001678653,
+   "si_true": 0.7138866993737164,
+   "si_true_silhouette": 0.71452750264763,
+   "si": 0.684,
+   "w_over_L_true": 0.05014192842889357,
+   "w_over_L": 0.02,
+   "colour_true": "white",
+   "colour": "white",
+   "crack_seen": false
+  },
+  {
+   "photo": "egg_4",
+   "iou": 0.960611334148905,
+   "si_true": 0.7615056541534845,
+   "si_true_silhouette": 0.7605058292750085,
+   "si": 0.7133,
+   "w_over_L_true": 0.060136710648777965,
+   "w_over_L": 0.03,
+   "colour_true": "white",
+   "colour": "white",
+   "crack_seen": false
+  },
+  {
+   "photo": "egg_5",
+   "iou": 0.959385309949644,
+   "si_true": 0.7385128200874371,
+   "si_true_silhouette": 0.7369961144368474,
+   "si": 0.7581,
+   "w_over_L_true": 0.045495755558819934,
+   "w_over_L": 0.002,
+   "colour_true": "brown",
+   "colour": "brown",
+   "crack_seen": false
+  },
+  {
+   "photo": "egg_6",
+   "iou": 0.9741035856573705,
+   "si_true": 0.8005298260763398,
+   "si_true_silhouette": 0.8011688307619302,
+   "si": 0.7908,
+   "w_over_L_true": 0.038446347609909386,
+   "w_over_L": 0.014,
+   "colour_true": "white",
+   "colour": "white",
+   "crack_seen": false
+  },
+  {
+   "photo": "egg_7",
+   "iou": 0.9666510250643193,
+   "si_true": 0.7709749107501694,
+   "si_true_silhouette": 0.7697033335673454,
+   "si": 0.7619,
+   "w_over_L_true": 0.0525634710948516,
+   "w_over_L": 0.008,
+   "colour_true": "brown",
+   "colour": "brown",
+   "crack_seen": false
+  }
+ ],
+ "note": "twin renders only (side view, oak board, white wall); no real photo evaluated"
+}

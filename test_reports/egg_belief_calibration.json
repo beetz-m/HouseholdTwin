@@ -1,0 +1,30 @@
+{
+ "eggs": 24,
+ "all_steps": {
+  "age_days": 0.991,
+  "mass_g": 0.987,
+  "air_cell_mm": 0.904,
+  "haugh_unit": 0.961,
+  "yolk_index": 0.861,
+  "albumen_pH": 0.904,
+  "F_crack_equator_N": 0.935,
+  "float_tilt_deg": 0.965
+ },
+ "final_step": {
+  "age_days": 1.0,
+  "mass_g": 1.0,
+  "air_cell_mm": 0.958,
+  "haugh_unit": 0.958,
+  "yolk_index": 0.875,
+  "albumen_pH": 0.875,
+  "F_crack_equator_N": 0.917,
+  "float_tilt_deg": 0.958
+ },
+ "strike_outcomes": {
+  "intact": 10,
+  "check": 0,
+  "cracked_open": 14,
+  "shattered": 0
+ },
+ "strike_p_open_mean": 0.504
+}

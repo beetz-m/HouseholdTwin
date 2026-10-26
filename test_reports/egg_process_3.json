@@ -1,0 +1,302 @@
+[
+ {
+  "scenario": "rim",
+  "steps": [
+   {
+    "designator": "CheckFreshness",
+    "outcomes": [
+     "best before in 16 d",
+     "weighed",
+     "crack seen"
+    ],
+    "belief": {
+     "age_days": [
+      11.78,
+      1.08
+     ],
+     "air_cell_mm": [
+      3.9,
+      0.39
+     ],
+     "haugh_unit": [
+      74.04,
+      3.25
+     ],
+     "p_clean_peel": [
+      0.11,
+      0.09
+     ]
+    },
+    "truth": {
+     "age_d": 11.33,
+     "air_cell_mm": 4.13,
+     "haugh_unit": 71.68,
+     "p_clean_peel": 0.16
+    }
+   },
+   {
+    "designator": "PickUpEgg",
+    "F": 9.57644110275689,
+    "corridor": [
+     0.8982456140350876,
+     18.254636591478693
+    ],
+    "outcome": "held"
+   },
+   {
+    "designator": "CrackEgg",
+    "v": 0.175,
+    "predicted": {
+     "intact": 0.401,
+     "check": 0.026,
+     "cracked_open": 0.56,
+     "shattered": 0.013
+    },
+    "outcomes": [
+     [
+      "strike",
+      "intact",
+      0.175
+     ],
+     [
+      "strike",
+      "cracked_open",
+      0.20124999999999998
+     ],
+     [
+      "open_up",
+      "released",
+      null
+     ],
+     [
+      "fish_out",
+      "0 left",
+      null
+     ]
+    ],
+    "success": true,
+    "shards_left": 0,
+    "yolk": "whole"
+   }
+  ],
+  "final_belief": {
+   "age_days": [
+    11.918,
+    1.024
+   ],
+   "haugh_unit": [
+    73.961,
+    2.307
+   ],
+   "yolk_index": [
+    0.42,
+    0.013
+   ],
+   "albumen_pH": [
+    8.432,
+    0.131
+   ],
+   "F_crack_equator_N": [
+    40.39,
+    9.781
+   ]
+  },
+  "truth": {
+   "age_days": 11.334803652427274,
+   "haugh_unit": 71.67764319514517,
+   "yolk_index": 0.38539425536662913,
+   "albumen_pH": 8.556759859941112,
+   "F_crack_equator_N": 29.639672615828687
+  },
+  "pieces": {
+   "egg": "/home/mbeetz/Documents/HouseholdTwin/assets/food/egg_3/whole.usdc",
+   "opened": "/home/mbeetz/Documents/HouseholdTwin/assets/food/egg_3/process/rim/opened/opened_contents.usdc",
+   "opened_fished": "/home/mbeetz/Documents/HouseholdTwin/assets/food/egg_3/process/rim/opened_fished/opened_contents.usdc"
+  }
+ },
+ {
+  "scenario": "flat",
+  "steps": [
+   {
+    "designator": "CheckFreshness",
+    "outcomes": [
+     "best before in 16 d",
+     "weighed",
+     "no crack seen",
+     "tilts"
+    ],
+    "belief": {
+     "age_days": [
+      11.98,
+      1.02
+     ],
+     "air_cell_mm": [
+      3.93,
+      0.34
+     ],
+     "haugh_unit": [
+      73.97,
+      3.61
+     ],
+     "p_clean_peel": [
+      0.13,
+      0.11
+     ]
+    },
+    "truth": {
+     "age_d": 11.33,
+     "air_cell_mm": 4.13,
+     "haugh_unit": 71.68,
+     "p_clean_peel": 0.16
+    }
+   },
+   {
+    "designator": "PickUpEgg",
+    "F": 10.57393483709273,
+    "corridor": [
+     0.7984962406015037,
+     20.349373433583956
+    ],
+    "outcome": "held"
+   },
+   {
+    "designator": "CrackEgg",
+    "v": 0.39999999999999997,
+    "predicted": {
+     "intact": 0.104,
+     "check": 0.711,
+     "cracked_open": 0.166,
+     "shattered": 0.019
+    },
+    "outcomes": [
+     [
+      "strike",
+      "check",
+      0.39999999999999997
+     ],
+     [
+      "open_up",
+      "released",
+      null
+     ]
+    ],
+    "success": true,
+    "shards_left": 0,
+    "yolk": "whole"
+   }
+  ],
+  "final_belief": {
+   "age_days": [
+    12.022,
+    1.031
+   ],
+   "haugh_unit": [
+    72.743,
+    2.494
+   ],
+   "yolk_index": [
+    0.416,
+    0.014
+   ],
+   "albumen_pH": [
+    8.478,
+    0.133
+   ],
+   "F_crack_equator_N": [
+    36.032,
+    7.717
+   ]
+  },
+  "truth": {
+   "age_days": 11.334803652427274,
+   "haugh_unit": 71.67764319514517,
+   "yolk_index": 0.38539425536662913,
+   "albumen_pH": 8.556759859941112,
+   "F_crack_equator_N": 29.639672615828687
+  },
+  "pieces": {
+   "egg": "/home/mbeetz/Documents/HouseholdTwin/assets/food/egg_3/whole.usdc",
+   "opened": "/home/mbeetz/Documents/HouseholdTwin/assets/food/egg_3/process/flat/opened/opened_contents.usdc"
+  }
+ },
+ {
+  "scenario": "boil",
+  "steps": [
+   {
+    "designator": "CheckFreshness",
+    "outcomes": [
+     "best before in 6 d",
+     "weighed",
+     "no crack seen",
+     "tilts"
+    ],
+    "belief": {
+     "age_days": [
+      21.84,
+      0.98
+     ],
+     "air_cell_mm": [
+      5.25,
+      0.25
+     ],
+     "haugh_unit": [
+      67.82,
+      4.25
+     ],
+     "p_clean_peel": [
+      0.37,
+      0.19
+     ]
+    },
+    "truth": {
+     "age_d": 21.33,
+     "air_cell_mm": 5.76,
+     "haugh_unit": 64.16,
+     "p_clean_peel": 0.51
+    }
+   },
+   {
+    "designator": "BoilEgg",
+    "time_min": 7.49,
+    "predicted_p_clean_peel": 0.368,
+    "outcomes": [
+     "creamy",
+     "torn"
+    ],
+    "success": false
+   }
+  ],
+  "final_belief": {
+   "age_days": [
+    21.832,
+    0.976
+   ],
+   "haugh_unit": [
+    67.77,
+    4.285
+   ],
+   "yolk_index": [
+    0.362,
+    0.018
+   ],
+   "albumen_pH": [
+    8.661,
+    0.128
+   ],
+   "F_crack_equator_N": [
+    34.705,
+    9.322
+   ]
+  },
+  "truth": {
+   "age_days": 21.334803652427276,
+   "haugh_unit": 64.15902683918517,
+   "yolk_index": 0.3244418744142482,
+   "albumen_pH": 8.807961777643785,
+   "F_crack_equator_N": 29.639672615828687
+  },
+  "pieces": {
+   "egg": "/home/mbeetz/Documents/HouseholdTwin/assets/food/egg_3/whole.usdc"
+  }
+ }
+]

@@ -1,0 +1,50 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {paragraph}{From the egg to the avocado}{3}{paragraph*.1}%
+\contentsline {paragraph}{From one microtheory to theory construction}{3}{paragraph*.2}%
+\contentsline {paragraph}{Hypotheses}{3}{paragraph*.3}%
+\contentsline {paragraph}{What this report is}{3}{paragraph*.4}%
+\contentsline {section}{\numberline {2}Related work}{3}{section.2}%
+\contentsline {section}{\numberline {3}The problem is an interaction episode, not a force}{4}{section.3}%
+\contentsline {paragraph}{Definition 1 (Avocado manipulation episode)}{4}{paragraph*.5}%
+\contentsline {paragraph}{Two tasks with one physics}{4}{paragraph*.6}%
+\contentsline {paragraph}{The squeeze corridor (Task A)}{4}{paragraph*.7}%
+\contentsline {paragraph}{The ripeness band (Task B)}{4}{paragraph*.8}%
+\contentsline {paragraph}{Why it is hard}{4}{paragraph*.9}%
+\contentsline {section}{\numberline {4}The avocado is a layered fruit around a hidden seed}{4}{section.4}%
+\contentsline {paragraph}{Partonomy at fidelity level L1}{4}{paragraph*.10}%
+\contentsline {section}{\numberline {5}The SDT is the state space; events are patches}{4}{section.5}%
+\contentsline {section}{\numberline {6}The physics is a reduced-order layer over the twin}{5}{section.6}%
+\contentsline {section}{\numberline {7}The episode is a probabilistic hybrid model over the SDT}{5}{section.7}%
+\contentsline {paragraph}{Definition 4 (SDT probabilistic hybrid automaton)}{5}{paragraph*.14}%
+\contentsline {paragraph}{Definition 5 (Avocado PHAM)}{6}{paragraph*.15}%
+\contentsline {section}{\numberline {8}The robot sees the SDT only through a noisy observation model}{7}{section.8}%
+\contentsline {section}{\numberline {9}The robot estimates selected SDT attributes}{7}{section.9}%
+\contentsline {paragraph}{Definition 6 (Implemented belief)}{7}{paragraph*.17}%
+\contentsline {section}{\numberline {10}Relating predicted physical evolution to intentions}{7}{section.10}%
+\contentsline {section}{\numberline {11}Task A: the chance constraint protects ripe fruit}{8}{section.11}%
+\contentsline {section}{\numberline {12}Task B: halving on purpose reverses one constraint at one place and time}{9}{section.12}%
+\contentsline {section}{\numberline {13}Does the represented structure matter? Ablations and misspecified plants}{9}{section.13}%
+\contentsline {paragraph}{Design: remove one distinction}{9}{paragraph*.24}%
+\contentsline {paragraph}{Design: change the plant, not the robot}{10}{paragraph*.26}%
+\contentsline {paragraph}{The direction of an error decides whether it can be corrected (H3)}{10}{paragraph*.29}%
+\contentsline {section}{\numberline {14}Relational axioms and scoped manipulation correctness}{10}{section.14}%
+\contentsline {paragraph}{The axioms}{10}{paragraph*.30}%
+\contentsline {paragraph}{Definition 7 and Proposition 1, transferred}{11}{paragraph*.31}%
+\contentsline {paragraph}{Replay audit}{11}{paragraph*.32}%
+\contentsline {section}{\numberline {15}Learning theories: growing the avocado theory from its failures}{11}{section.15}%
+\contentsline {paragraph}{The package}{11}{paragraph*.34}%
+\contentsline {paragraph}{The seed theory}{11}{paragraph*.35}%
+\contentsline {paragraph}{What was learned, and how well}{11}{paragraph*.39}%
+\contentsline {paragraph}{Restriction is learning too}{12}{paragraph*.40}%
+\contentsline {paragraph}{The commitment gate}{12}{paragraph*.41}%
+\contentsline {section}{\numberline {16}Programmable reinforcement learning inside the theory}{12}{section.16}%
+\contentsline {paragraph}{What this shows (H5)}{13}{paragraph*.45}%
+\contentsline {section}{\numberline {17}Adequacy, evidence and limits}{13}{section.17}%
+\contentsline {paragraph}{What the evidence says}{13}{paragraph*.46}%
+\contentsline {paragraph}{Four questions about fit}{14}{paragraph*.47}%
+\contentsline {paragraph}{Limits}{14}{paragraph*.48}%
+\contentsline {paragraph}{Further tests}{14}{paragraph*.49}%
+\contentsline {section}{\numberline {18}Conclusion}{14}{section.18}%
+\contentsline {section}{\numberline {A}Reproducing the results}{14}{appendix.A}%
+\contentsline {section}{\numberline {B}FPICU and FrameNet for avocado manipulation}{14}{appendix.B}%
+\contentsline {section}{\numberline {C}Development record}{15}{appendix.C}%

@@ -1,0 +1,530 @@
+{
+ "steps": [
+  {
+   "request": "Halve this firm avocado.",
+   "gap": {
+    "name": "RipenessDependentSeparation",
+    "layer": "material / causal process",
+    "mismatch": "T0 predicts clean halves; on firm fruit 50 of 60 episodes end {'torn': 31, 'not edible': 10, 'seed coat left': 9}",
+    "hypotheses": [
+     {
+      "h": "H1 ripeness controls whether the flesh releases at the seed",
+      "test": "vary stage 1.5-4.5 at a full cut (200 dev fruit)",
+      "result": "P(clean) rises from 0.09 (stage < 2.3) to 0.97 (stage > 3.3); fitted logistic centre 2.72, width 0.25 (plant law: 2.8, 0.15)",
+      "verdict": "supported"
+     },
+     {
+      "h": "H2 an incomplete cut leaves bridges that tear",
+      "test": "vary coverage 300 / 330 / 360 deg on ripe fruit",
+      "result": "300 deg: torn 30, stuck 0 /30; 330 deg: torn 30, stuck 0 /30; 360 deg: torn 0, stuck 0 /30",
+      "verdict": "supported as a second cause: a gap in the cut tears the bridge even on ripe fruit; T0 already has the distinction (Scored / PartlyScored) and the re-cut repair, so it adds no gap"
+     },
+     {
+      "h": "H3 too much twist torque tears the flesh",
+      "test": "vary the torque limit 0.3 / 1.5 / 3 N m on breaking fruit",
+      "result": "0.3 N m: torn 10, stuck 0 /30; 1.5 N m: torn 10, stuck 0 /30; 3.0 N m: torn 10, stuck 0 /30",
+      "verdict": "rejected: the share of torn fruit does not change with the torque limit"
+     }
+    ]
+   },
+   "before": {
+    "k": 10,
+    "n": 60,
+    "failures": {
+     "torn": 31,
+     "not edible": 10,
+     "seed coat left": 9
+    }
+   },
+   "patch": {
+    "disposition": "admit",
+    "dSigma": [
+     "RipenessStage",
+     "TornFlesh"
+    ],
+    "dA": [
+     "P(clean | stage) = logistic(stage; s0, w), fitted",
+     "stage advances at the fruit's own rate (lifetime model)"
+    ],
+    "retracted": [
+     "twist-separates"
+    ],
+    "rationale": "discriminating experiments support H1; the claim is specialised by a cut-day plan module (wait into the band) and verified on held-out fruit"
+   },
+   "fit": {
+    "s0": 2.7172593585409492,
+    "w": 0.25439890992523073,
+    "s90": 3.276230895876209,
+    "true_s0": 2.8,
+    "true_w": 0.15
+   },
+   "claim": [
+    "Gamma1 clean halves",
+    88,
+    90,
+    "verified",
+    {
+     "seed coat left": 2
+    }
+   ],
+   "version": 1
+  },
+  {
+   "request": "Pit it; the cavity must be clean.",
+   "gap": {
+    "name": "SeedCoatUnrepresented",
+    "layer": "observation / verification",
+    "mismatch": "T1 predicts a clean cavity; 51 of 90 episodes leave seed-coat sheets ({'seed coat left': 51})",
+    "hypotheses": [
+     {
+      "h": "H1 the seed coat sticks to the flesh in some fruit (a hidden property of the fruit)",
+      "test": "same fruit pitted with spoon and with knife twist (60 dev fruit)",
+      "result": "cavity outcome identical across methods in 60 of 60 fruit; seed coat left in 0.53 of them",
+      "verdict": "supported"
+     },
+     {
+      "h": "H2 the spoon technique leaves the coat",
+      "test": "as above",
+      "result": "0 method-dependent outcomes",
+      "verdict": "rejected"
+     },
+     {
+      "h": "repair: the spoon tip lifts the sheets",
+      "test": "one peel pass on 28 dev cavities with sheets",
+      "result": "success 0.82 per pass (plant law 0.85)",
+      "verdict": "supported"
+     }
+    ]
+   },
+   "before": {
+    "k": 39,
+    "n": 90,
+    "failures": {
+     "seed coat left": 51
+    }
+   },
+   "patch": {
+    "disposition": "admit",
+    "dSigma": [
+     "SeedCoatSide"
+    ],
+    "dA": [
+     "the seed coat stays in the cavity when it adheres to the flesh",
+     "a spoon-tip pass lifts the sheets"
+    ],
+    "rationale": "the distinction is perceivable after pitting and actionable by a repair"
+   },
+   "fit": {
+    "p_testa_flesh": 0.5333333333333333,
+    "p_peel": 0.8214285714285714
+   },
+   "claim": [
+    "Gamma2 clean cavity",
+    88,
+    90,
+    "verified",
+    {
+     "overripe": 1,
+     "spoiled": 1
+    }
+   ],
+   "version": 2
+  },
+  {
+   "request": "Use the new camera (lighter images).",
+   "gap": {
+    "name": "ColourRipenessMisspecified",
+    "layer": "observation",
+    "mismatch": "under the new camera 3 of 30 ripe fruit fail ({'overripe': 2, 'spoiled': 1}): the photo says firmer than it is",
+    "hypotheses": [
+     {
+      "h": "H1 the camera's lightness is biased",
+      "test": "photo L* against the stage implied by a gentle squeeze (60 dev fruit)",
+      "result": "mean residual +10.4 L* units (simulated camera bias +10)",
+      "verdict": "supported"
+     },
+     {
+      "h": "H2 these fruit ripen faster",
+      "test": "the same residual on day 0, before any ripening",
+      "result": "the residual is present before any time passes",
+      "verdict": "rejected"
+     }
+    ]
+   },
+   "before": {
+    "k": 27,
+    "n": 30,
+    "failures": {
+     "overripe": 2,
+     "spoiled": 1
+    }
+   },
+   "patch": {
+    "disposition": "restrict + version",
+    "dSigma": [
+     "TactileRipeness"
+    ],
+    "dA": [
+     "photo lightness offset of this camera"
+    ],
+    "rationale": "photo-only ripeness no longer suffices for commitment (scope restricted to photo + touch); the observation model is versioned with the estimated bias"
+   },
+   "fit": {
+    "bias": 10.43594310479606,
+    "true_bias": 10.0
+   },
+   "claim": [
+    "Gamma2 clean cavity (new camera)",
+    30,
+    30,
+    "verified",
+    {}
+   ],
+   "version": 3
+  },
+  {
+   "request": "Keep the other half for tomorrow's breakfast.",
+   "gap": {
+    "name": "BrowningUnrepresented",
+    "layer": "material / lifetime",
+    "mismatch": "T3 has no browning: 90 of 90 kept halves are brown after 15 h ({'ok': 88, 'seed coat left': 2})",
+    "hypotheses": [
+     {
+      "h": "H1 exposed flesh browns over hours unless covered, acidified or cooled",
+      "test": "lifetime model (dE = k sqrt(t), treatment factors; atk_browning ordering)",
+      "result": "untreated dE reaches the visible level within ~3 h; lemon + wrap + fridge stays below it for > 15 h",
+      "verdict": "supported (model evidence, ILLUSTRATIVE constants)"
+     }
+    ]
+   },
+   "before": {
+    "k": 0,
+    "n": 90,
+    "failures": {
+     "ok": 88,
+     "seed coat left": 2
+    }
+   },
+   "patch": {
+    "disposition": "admit",
+    "dSigma": [
+     "Browning"
+    ],
+    "dA": [
+     "dE = k sqrt(t x treatment factor)"
+    ],
+    "rationale": "the treatment action prevents the forbidden effect"
+   },
+   "claim": [
+    "Gamma4 half for tomorrow",
+    88,
+    90,
+    "verified",
+    {
+     "seed coat left": 2
+    }
+   ],
+   "version": 4
+  },
+  {
+   "request": "Halve and pit this other cultivar.",
+   "gap": {
+    "name": "CultivarOutsideFamily",
+    "layer": "scope",
+    "mismatch": "on a cultivar whose seed clings 10x harder (ILLUSTRATIVE) 19 of 60 fail ({'seed stuck': 18, 'seed coat left': 1})",
+    "hypotheses": []
+   },
+   "before": {
+    "k": 41,
+    "n": 60,
+    "failures": {
+     "seed stuck": 18,
+     "seed coat left": 1
+    }
+   },
+   "patch": {
+    "disposition": "restrict",
+    "rationale": "the claim is not extended: the knife twist that would free the seed is forbidden (safety rule), so the robot abstains or asks for this family"
+   },
+   "claim": [
+    "Gamma2 on a sticky cultivar",
+    41,
+    60,
+    "refuted",
+    {
+     "seed stuck": 18,
+     "seed coat left": 1
+    }
+   ],
+   "version": 5
+  }
+ ],
+ "T0": {
+  "claims": [
+   [
+    "Gamma0 halve&pit",
+    30,
+    30,
+    "verified"
+   ]
+  ],
+  "Sigma": [
+   "Whole",
+   "Scored",
+   "HalvesApart",
+   "SeedLocation"
+  ]
+ },
+ "gate": [
+  {
+   "situation": "ripe fruit, photo + touch",
+   "state": "warranted",
+   "reasons": [
+    "claim Gamma2 clean cavity verified (88/90), instance in scope (P = 0.97)"
+   ]
+  },
+  {
+   "situation": "photo only",
+   "state": "uncertain",
+   "reasons": [
+    "the scope requires tactile ripeness evidence; only photo"
+   ]
+  },
+  {
+   "situation": "knife twist proposed",
+   "state": "unsupported",
+   "reasons": [
+    "forbidden effect predicted: hazard P = 1.00"
+   ]
+  },
+  {
+   "situation": "sticky cultivar",
+   "state": "counterevidenced",
+   "reasons": [
+    "claim Gamma2 on a sticky cultivar retracted"
+   ]
+  },
+  {
+   "situation": "not an avocado?",
+   "state": "out-of-scope",
+   "reasons": [
+    "P(instance in Hass, any ripeness) = 0.30"
+   ]
+  },
+  {
+   "situation": "browning not represented",
+   "state": "unsupported",
+   "reasons": [
+    "concepts not operationally covered: Bruising"
+   ]
+  }
+ ],
+ "final": {
+  "version": 5,
+  "Sigma": [
+   [
+    "Whole",
+    "Whole(Avocado) fact of the SDT",
+    "precondition of CutRoundSeed"
+   ],
+   [
+    "Scored",
+    "Scored / PartlyScored facts (blade coverage)",
+    "TwistApart precondition; re-cut repair"
+   ],
+   [
+    "HalvesApart",
+    "Apart(HalfA,HalfB)",
+    "RemoveSeed precondition; verification"
+   ],
+   [
+    "SeedLocation",
+    "SeedIn / SeedOut facts",
+    "RemoveSeed; verification"
+   ],
+   [
+    "RipenessStage",
+    "belief over the stage (photo colour; SDT attribute of the avocado)",
+    "cut-day decision (wait), clean-twist band, quality"
+   ],
+   [
+    "TornFlesh",
+    "TornFlesh(HalfB) / FleshOnSeed facts; cavity inspection",
+    "verification; belief update (twist observation)"
+   ],
+   [
+    "SeedCoatSide",
+    "belief P(testa adheres to the flesh); TestaIn(Cavity) seen after pitting",
+    "PeelSeedCoat repair; cavity verification"
+   ],
+   [
+    "TactileRipeness",
+    "squeeze stiffness reading at a bruise-safe force (belief update)",
+    "daily gentle squeeze before the cut decision; commitment gate requires it"
+   ],
+   [
+    "Browning",
+    "dE of a cut face (lifetime model over the belief)",
+    "storage treatment of a kept half (lemon: PR2 motion; wrap, fridge: emulated)"
+   ]
+  ],
+  "A": [
+   [
+    "cut-round-seed",
+    "causal",
+    "a full cut round the seed scores the fruit down to the seed coat",
+    {}
+   ],
+   [
+    "spoon-lifts-seed",
+    "causal",
+    "a spoon levered under the seed lifts it out",
+    {}
+   ],
+   [
+    "clean-twist-band",
+    "causal",
+    "P(clean | stage) = logistic(stage; s0, w), fitted",
+    {
+     "s0": 2.7172593585409492,
+     "w": 0.25439890992523073,
+     "stage_90": 3.276230895876209
+    }
+   ],
+   [
+    "ripening",
+    "causal",
+    "stage advances at the fruit's own rate (lifetime model)",
+    {}
+   ],
+   [
+    "testa-side",
+    "constitutive",
+    "the seed coat stays in the cavity when it adheres to the flesh",
+    {
+     "p_flesh": 0.5333333333333333
+    }
+   ],
+   [
+    "peel-repair",
+    "causal",
+    "a spoon-tip pass lifts the sheets",
+    {
+     "p": 0.8214285714285714
+    }
+   ],
+   [
+    "camera-bias",
+    "constitutive",
+    "photo lightness offset of this camera",
+    {
+     "bias": 10.43594310479606
+    }
+   ],
+   [
+    "browning",
+    "causal",
+    "dE = k sqrt(t x treatment factor)",
+    {}
+   ]
+  ],
+  "M": [
+   [
+    "ripe Hass",
+    "Hass avocado, ripe (stage 3.6-4.6), on a board, PR2 kinematic",
+    "photo"
+   ],
+   [
+    "Hass, any ripeness",
+    "Hass avocado stage 1.4-4.6, five days, board, PR2 kinematic; ripeness commitments need touch",
+    "photo + touch"
+   ],
+   [
+    "sticky cultivar",
+    "seed adhesion 10x Hass (imagined cultivar): outside the warranted family",
+    "photo + touch"
+   ]
+  ],
+  "C": [
+   [
+    "Gamma0 halve&pit",
+    "maintained",
+    30,
+    30,
+    "verified"
+   ],
+   [
+    "Gamma1 clean halves",
+    "maintained",
+    88,
+    90,
+    "verified"
+   ],
+   [
+    "Gamma2 clean cavity",
+    "maintained",
+    88,
+    90,
+    "verified"
+   ],
+   [
+    "Gamma2 clean cavity (new camera)",
+    "maintained",
+    30,
+    30,
+    "verified"
+   ],
+   [
+    "Gamma4 half for tomorrow",
+    "maintained",
+    88,
+    90,
+    "verified"
+   ],
+   [
+    "Gamma2 on a sticky cultivar",
+    "retracted",
+    41,
+    60,
+    "refuted"
+   ]
+  ],
+  "log": [
+   {
+    "version": 1,
+    "gap": "RipenessDependentSeparation",
+    "layer": "material / causal process",
+    "disposition": "admit",
+    "rationale": "discriminating experiments support H1; the claim is specialised by a cut-day plan module (wait into the band) and verified on held-out fruit"
+   },
+   {
+    "version": 2,
+    "gap": "SeedCoatUnrepresented",
+    "layer": "observation / verification",
+    "disposition": "admit",
+    "rationale": "the distinction is perceivable after pitting and actionable by a repair"
+   },
+   {
+    "version": 3,
+    "gap": "ColourRipenessMisspecified",
+    "layer": "observation",
+    "disposition": "restrict + version",
+    "rationale": "photo-only ripeness no longer suffices for commitment (scope restricted to photo + touch); the observation model is versioned with the estimated bias"
+   },
+   {
+    "version": 4,
+    "gap": "BrowningUnrepresented",
+    "layer": "material / lifetime",
+    "disposition": "admit",
+    "rationale": "the treatment action prevents the forbidden effect"
+   },
+   {
+    "version": 5,
+    "gap": "CultivarOutsideFamily",
+    "layer": "scope",
+    "disposition": "restrict",
+    "rationale": "the claim is not extended: the knife twist that would free the seed is forbidden (safety rule), so the robot abstains or asks for this family"
+   }
+  ]
+ }
+}

@@ -1,0 +1,118 @@
+@prefix :      <https://aicor.knowledge/put-away#> .
+@prefix ccram: <https://aicor.knowledge/ccram#> .
+@prefix dul:   <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix soma:  <http://www.ease-crc.org/ont/SOMA.owl#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+# =====================================================================================================================
+# put-away -- putting things where they belong after breakfast (competence A of the concept page; M3), aligned to
+# SOMA. The belonging, misplacement, request and restoration concepts follow the AICOR placement account and its
+# runtime twin coraplex.household_norms (ResearchSpace fork: belonging.py BE1-BE2, misplacement.py MP1-MP3,
+# requests.py RQ1-RQ*, restoration.py RE1-RE*, enums.py): re-expressed here, not imported.
+#   1. objects and places      2. tasks with grammar axioms      3. belonging, verdicts, requests, obligations (states)
+#   4. closing events           5. failures
+# Status: PROPOSAL (2026-10-21).
+# =====================================================================================================================
+
+<https://aicor.knowledge/put-away> a owl:Ontology ;
+    rdfs:label "Put things where they belong" ;
+    owl:imports <https://aicor.knowledge/ccram-states> .
+
+# ---------------------------------------------------------------------------------------------------- 1. objects, places
+# objects: SOMA classes (soma:Cup, soma:Plate, soma:Knife, soma:Jar, soma:MilkPack) with the disposition to be moved
+:HouseholdObject a owl:Class ; ccram:typeKeyword "household-object" ;
+    owl:equivalentClass [ a owl:Class ; owl:unionOf ( soma:Cup soma:Plate soma:Knife soma:Jar soma:MilkPack ) ] ;
+    rdfs:comment "The movable things the activity is about (open world: an unknown thing is still one of these classes' kin, its belonging unknown)." .
+:CoffeeJar a owl:Class ; rdfs:subClassOf soma:Jar ; rdfs:comment "Ground coffee in a jar." .
+:SugarJar a owl:Class ; rdfs:subClassOf soma:Jar ; rdfs:comment "Sugar for the coffee: kept on the counter." .
+:UnknownJar a owl:Class ; rdfs:subClassOf soma:Jar ; rdfs:comment "A jar whose contents (and hence belonging) the robot does not know." .
+# places (destinations): SOMA furniture and appliances
+:BelongingPlace a owl:Class ; ccram:typeKeyword "place" ;
+    owl:equivalentClass [ a owl:Class ; owl:unionOf ( soma:Cupboard soma:Refrigerator soma:Dishwasher soma:TrashContainer soma:Countertop ) ] .
+:Resident a owl:Class ; owl:equivalentClass [ a owl:Class ; owl:intersectionOf ( dul:Person
+        [ a owl:Restriction ; owl:onProperty dul:isClassifiedBy ; owl:someValuesFrom :ResidentRole ] ) ] .
+:ResidentRole a owl:Class ; rdfs:subClassOf dul:Role ; rdfs:comment "Entitled to defeat the household's standing norms (RequestAuthority.RESIDENT)." .
+:GuestRole a owl:Class ; rdfs:subClassOf dul:Role ; rdfs:comment "May ask but not overrule (RequestAuthority.GUEST)." .
+
+# ---------------------------------------------------------------------------------------------------- 2. tasks
+:PuttingAway a owl:Class ; ccram:typeKeyword "putting-away" ; rdfs:subClassOf soma:PuttingDown ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:someValuesFrom soma:Patient ] ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:someValuesFrom soma:Destination ] ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:allValuesFrom
+      [ a owl:Class ; owl:unionOf ( soma:Patient soma:Destination ccram:Effector ) ] ] ;
+    ccram:telosState "at-belonging-place" ;
+    rdfs:comment "Taking an object to the place it belongs (its destination, D7) and placing it there (PL1-admissibly)." .
+:Surveying a owl:Class ; rdfs:subClassOf ccram:PerceptionAction ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:someValuesFrom soma:Location ] ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:allValuesFrom soma:Location ] ;
+    rdfs:comment "Looking over an area: which objects are there, in which state." .
+soma:Location ccram:roleKeyword "area" .
+:Asking a owl:Class ; ccram:typeKeyword "asking" ; rdfs:subClassOf soma:QueryingTask , soma:CommunicationTask ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:someValuesFrom soma:RecipientRole ] ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:someValuesFrom soma:Query ] ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:allValuesFrom
+      [ a owl:Class ; owl:unionOf ( soma:RecipientRole soma:Query ) ] ] ;
+    rdfs:comment "Abstaining from acting and asking a person (MP3 no belonging place; RQ3 / RQ6 a request that cannot be honoured as asked)." .
+
+# ---------------------------------------------------------------------------------------------------- 3. belonging states
+:belongsAt a owl:ObjectProperty ; ccram:relationKeyword "belongs-at" ; rdfs:subPropertyOf dul:associatedWith ;
+    ccram:fluent true ;
+    rdfs:comment "(belongs-at o place relation confidence): an applicable belonging norm (BE1) places o at place now; context-indexed and defeasible (rules)." .
+:prohibitedAt a owl:ObjectProperty ; ccram:relationKeyword "prohibited-at" ; rdfs:subPropertyOf dul:associatedWith ; ccram:fluent true ;
+    rdfs:comment "A belonging norm's prohibited state rules the place out for o now (e.g. a dirty cup from the cupboard)." .
+:applicablePlace a owl:ObjectProperty ; ccram:relationKeyword "applicable-place" ; rdfs:subPropertyOf :belongsAt ; ccram:fluent true ;
+    rdfs:comment "applicableBelongingPlace(o, C, t) (D7): the most confident applicable, not prohibited norm's destination." .
+:MisplacementVerdictValue a owl:Class ; rdfs:subClassOf dul:Region ; rdfs:comment "MisplacementVerdict of household_norms." .
+:hasPlacementVerdict a owl:ObjectProperty ; ccram:relationKeyword "placement-verdict" ; rdfs:subPropertyOf dul:hasRegion ;
+    rdfs:range :MisplacementVerdictValue ; ccram:fluent true ;
+    rdfs:comment "(placement-verdict o v), v in at-belonging-place / licensed / misplaced / indeterminate (assess_placement)." .
+:Misplaced a owl:Class ; ccram:typeKeyword "misplaced" ; rdfs:subClassOf ccram:ObjectStateClass ;
+    rdfs:comment "Neither at its applicable belonging place nor licensed by an activity (MP1)." .
+:InPlace a owl:Class ; ccram:typeKeyword "in-place" ; rdfs:subClassOf ccram:ObjectStateClass ; owl:disjointWith :Misplaced .
+:Licensed a owl:Class ; ccram:typeKeyword "licensed" ; rdfs:subClassOf ccram:ObjectStateClass ;
+    rdfs:comment "Away from its belonging place under an activity or request license (not misplaced)." .
+:NoKnownHome a owl:Class ; ccram:typeKeyword "no-known-home" ; rdfs:subClassOf ccram:ObjectStateClass ;
+    rdfs:comment "No belonging norm applies (MP3): inspect or ask, never guess." .
+:Flagged a owl:Class ; ccram:typeKeyword "flagged" ; rdfs:subClassOf ccram:ObjectStateClass ;
+    rdfs:comment "The robot has asked about it and left it." .
+:Dirty a owl:Class ; ccram:typeKeyword "dirty" ; rdfs:subClassOf ccram:ObjectStateClass .
+:Opened a owl:Class ; ccram:typeKeyword "opened" ; rdfs:subClassOf ccram:ObjectStateClass .
+:hasKind a owl:ObjectProperty ; ccram:relationKeyword "is-a" ; rdfs:subPropertyOf dul:isClassifiedBy ;
+    rdfs:comment "(is-a o kind): the object's recognised class (the survey's classification)." .
+:inContext a owl:ObjectProperty ; ccram:relationKeyword "context" ; rdfs:subPropertyOf dul:associatedWith ; ccram:fluent true ;
+    rdfs:comment "(context C): the household context belonging is indexed by (after-breakfast, ...)." .
+:Surveyed a owl:Class ; ccram:typeKeyword "surveyed" ; rdfs:subClassOf ccram:ObjectStateClass .
+:isSeenIn a owl:ObjectProperty ; ccram:relationKeyword "seen-in" ; rdfs:subPropertyOf dul:hasLocation ; ccram:fluent true .
+# requests and obligations (RQ, RE)
+:requestOf a owl:ObjectProperty ; ccram:relationKeyword "request" ; rdfs:subPropertyOf dul:associatedWith ; ccram:fluent true ;
+    rdfs:comment "(request r tier object place scope): a placement request, e.g. 'leave the coffee out' by a resident, episodic." .
+:requestEnded a owl:ObjectProperty ; ccram:relationKeyword "request-ended" ; rdfs:subPropertyOf dul:associatedWith ; ccram:fluent true .
+:requestConflict a owl:ObjectProperty ; ccram:relationKeyword "request-conflict" ; rdfs:subPropertyOf dul:associatedWith ; ccram:fluent true ;
+    rdfs:comment "A request conflicts with a standing norm and its tier may not overrule it (RQ3): abstain and ask." .
+:obligationOpen a owl:ObjectProperty ; ccram:relationKeyword "obligation-open" ; rdfs:subPropertyOf dul:associatedWith ; ccram:fluent true ;
+    rdfs:comment "(obligation-open o place r): a restoration debt against the stability the defeated norm established (RQ4 = RE1)." .
+:obligationDue a owl:ObjectProperty ; ccram:relationKeyword "obligation-due" ; rdfs:subPropertyOf :obligationOpen ; ccram:fluent true ;
+    rdfs:comment "The request's scope ended: the debt is dischargeable now (ObligationStatus.DISCHARGEABLE)." .
+:obligationDischarged a owl:ObjectProperty ; ccram:relationKeyword "obligation-discharged" ; rdfs:subPropertyOf dul:associatedWith ; ccram:fluent true .
+:asked a owl:ObjectProperty ; ccram:relationKeyword "asked" ; rdfs:subPropertyOf dul:associatedWith ; ccram:fluent true .
+
+# ---------------------------------------------------------------------------------------------------- 4. closing events
+# A belonging norm's prohibited state is a hard boundary: placing a dirty cup, plate or knife inside the cupboard.
+:DirtyIntoCupboard a owl:Class ;
+    owl:equivalentClass [ a owl:Class ; owl:intersectionOf ( dul:Action
+        [ a owl:Restriction ; owl:onProperty dul:executesTask ; owl:someValuesFrom :PuttingAway ]
+        [ a owl:Restriction ; owl:onProperty dul:hasParticipant ; owl:someValuesFrom [ a owl:Class ; owl:intersectionOf (
+            :Dirty [ a owl:Restriction ; owl:onProperty dul:isClassifiedBy ; owl:someValuesFrom soma:Patient ] ) ] ]
+        [ a owl:Restriction ; owl:onProperty dul:hasParticipant ; owl:someValuesFrom [ a owl:Class ; owl:intersectionOf (
+            soma:Cupboard [ a owl:Restriction ; owl:onProperty dul:isClassifiedBy ; owl:someValuesFrom soma:Destination ] ) ] ] ) ] ;
+    rdfs:subClassOf ccram:ProhibitedAction .
+
+# ---------------------------------------------------------------------------------------------------- 5. failures
+:NoBelongingPlace a owl:Class ; rdfs:subClassOf ccram:DesignatorFailure ; ccram:recoverable true ;
+    ccram:suggestsRepair "abstain and ask (MP3)" ; rdfs:comment "'its destination' has no referent: no belonging norm applies." .
+:PlaceNotAdmissible a owl:Class ; rdfs:subClassOf ccram:ManipulationFailure ; ccram:recoverable true ;
+    rdfs:comment "The belonging place fails a PL1 hard constraint now (e.g. the shelf is full): never place it somewhere merely admissible -- ask (T3)." .
+:ProhibitedPlacement a owl:Class ; rdfs:subClassOf ccram:ClosingEventViolation ;
+    rdfs:comment "A placement a belonging norm prohibits (DirtyIntoCupboard): prevented by the gate." .

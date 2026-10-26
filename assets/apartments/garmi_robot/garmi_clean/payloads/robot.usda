@@ -1,0 +1,773 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.3.2"
+    }
+    defaultPrim = "tn__r1000603_bC"
+    endTimeCode = 1000000
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    startTimeCode = 0
+    upAxis = "Z"
+)
+
+over "tn__r1000603_bC" (
+    prepend apiSchemas = ["IsaacRobotAPI"]
+)
+{
+    prepend rel isaac:physics:robotJoints = [
+        </tn__r1000603_bC/Physics/right_side_cover_link_joint>,
+        </tn__r1000603_bC/Physics/left_side_cover_link_joint>,
+        </tn__r1000603_bC/Physics/front_cover_link_joint>,
+        </tn__r1000603_bC/Physics/rear_cover_link_joint>,
+        </tn__r1000603_bC/Physics/front_lights_link_joint>,
+        </tn__r1000603_bC/Physics/rear_lights_link_joint>,
+        </tn__r1000603_bC/Physics/axle_joint>,
+        </tn__r1000603_bC/Physics/riser_link_joint>,
+        </tn__r1000603_bC/Physics/imu_0_joint>,
+        </tn__r1000603_bC/Physics/lidar2d_0_joint>,
+        </tn__r1000603_bC/Physics/lidar2d_1_joint>,
+        </tn__r1000603_bC/Physics/cover_joint>,
+        </tn__r1000603_bC/Physics/mounting_plate_joint>,
+        </tn__r1000603_bC/Physics/front_rocker>,
+        </tn__r1000603_bC/Physics/rear_rocker>,
+        </tn__r1000603_bC/Physics/front_left_wheel_joint>,
+        </tn__r1000603_bC/Physics/front_right_wheel_joint>,
+        </tn__r1000603_bC/Physics/rear_left_wheel_joint>,
+        </tn__r1000603_bC/Physics/rear_right_wheel_joint>,
+        </tn__r1000603_bC/Physics/lidar2d_0_laser_joint>,
+        </tn__r1000603_bC/Physics/lidar2d_1_laser_joint>,
+        </tn__r1000603_bC/Physics/imu_1_joint>,
+        </tn__r1000603_bC/Physics/lift_0_plate_joint>,
+        </tn__r1000603_bC/Physics/lift_0_base_joint>,
+        </tn__r1000603_bC/Physics/lift_0_lower_joint>,
+        </tn__r1000603_bC/Physics/lift_0_upper_joint>,
+        </tn__r1000603_bC/Physics/arm_0_fr3_joint0>,
+        </tn__r1000603_bC/Physics/arm_0_fr3_joint1>,
+        </tn__r1000603_bC/Physics/arm_0_fr3_joint2>,
+        </tn__r1000603_bC/Physics/arm_0_fr3_joint3>,
+        </tn__r1000603_bC/Physics/arm_0_fr3_joint4>,
+        </tn__r1000603_bC/Physics/arm_0_fr3_joint5>,
+        </tn__r1000603_bC/Physics/arm_0_fr3_joint6>,
+        </tn__r1000603_bC/Physics/arm_0_fr3_joint7>,
+        </tn__r1000603_bC/Physics/arm_1_fr3_joint0>,
+        </tn__r1000603_bC/Physics/arm_1_fr3_joint1>,
+        </tn__r1000603_bC/Physics/arm_1_fr3_joint2>,
+        </tn__r1000603_bC/Physics/arm_1_fr3_joint3>,
+        </tn__r1000603_bC/Physics/arm_1_fr3_joint4>,
+        </tn__r1000603_bC/Physics/arm_1_fr3_joint5>,
+        </tn__r1000603_bC/Physics/arm_1_fr3_joint6>,
+        </tn__r1000603_bC/Physics/arm_1_fr3_joint7>,
+        </tn__r1000603_bC/Physics/arm_0_gripper_fr3_hand_joint>,
+        </tn__r1000603_bC/Physics/arm_0_gripper_fr3_finger_joint1>,
+        </tn__r1000603_bC/Physics/arm_0_gripper_fr3_finger_joint2>,
+        </tn__r1000603_bC/Physics/arm_1_gripper_fr3_hand_joint>,
+        </tn__r1000603_bC/Physics/arm_1_gripper_fr3_finger_joint1>,
+        </tn__r1000603_bC/Physics/arm_1_gripper_fr3_finger_joint2>,
+        </tn__r1000603_bC/Physics/body_joint>,
+        </tn__r1000603_bC/Physics/head_fixed_joint>,
+        </tn__r1000603_bC/Physics/head_pan_joint>,
+        </tn__r1000603_bC/Physics/head_tilt_joint>,
+    ]
+    prepend rel isaac:physics:robotLinks = [
+        </tn__r1000603_bC/Geometry/base_link/chassis_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/right_side_cover_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/left_side_cover_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/front_cover_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/rear_cover_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/front_lights_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/rear_lights_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/axle_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/axle_link/front_rocker_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/axle_link/front_rocker_link/front_left_wheel_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/axle_link/front_rocker_link/front_right_wheel_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/axle_link/rear_rocker_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/axle_link/rear_rocker_link/rear_left_wheel_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/axle_link/rear_rocker_link/rear_right_wheel_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/imu_0_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/lidar2d_0_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/lidar2d_0_link/lidar2d_0_laser>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/lidar2d_1_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/lidar2d_1_link/lidar2d_1_laser>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/cover_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/mounting_plate_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/imu_1_base_link/imu_1_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_left_link/arm_0_fr3_link0>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_left_link/arm_0_fr3_link0/arm_0_fr3_link1>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_left_link/arm_0_fr3_link0/arm_0_fr3_link1/arm_0_fr3_link2>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_left_link/arm_0_fr3_link0/arm_0_fr3_link1/arm_0_fr3_link2/arm_0_fr3_link3>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_left_link/arm_0_fr3_link0/arm_0_fr3_link1/arm_0_fr3_link2/arm_0_fr3_link3/arm_0_fr3_link4>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_left_link/arm_0_fr3_link0/arm_0_fr3_link1/arm_0_fr3_link2/arm_0_fr3_link3/arm_0_fr3_link4/arm_0_fr3_link5>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_left_link/arm_0_fr3_link0/arm_0_fr3_link1/arm_0_fr3_link2/arm_0_fr3_link3/arm_0_fr3_link4/arm_0_fr3_link5/arm_0_fr3_link6>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_left_link/arm_0_fr3_link0/arm_0_fr3_link1/arm_0_fr3_link2/arm_0_fr3_link3/arm_0_fr3_link4/arm_0_fr3_link5/arm_0_fr3_link6/arm_0_fr3_link7>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_right_link/arm_1_fr3_link0>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_right_link/arm_1_fr3_link0/arm_1_fr3_link1>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_right_link/arm_1_fr3_link0/arm_1_fr3_link1/arm_1_fr3_link2>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_right_link/arm_1_fr3_link0/arm_1_fr3_link1/arm_1_fr3_link2/arm_1_fr3_link3>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_right_link/arm_1_fr3_link0/arm_1_fr3_link1/arm_1_fr3_link2/arm_1_fr3_link3/arm_1_fr3_link4>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_right_link/arm_1_fr3_link0/arm_1_fr3_link1/arm_1_fr3_link2/arm_1_fr3_link3/arm_1_fr3_link4/arm_1_fr3_link5>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_right_link/arm_1_fr3_link0/arm_1_fr3_link1/arm_1_fr3_link2/arm_1_fr3_link3/arm_1_fr3_link4/arm_1_fr3_link5/arm_1_fr3_link6>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_right_link/arm_1_fr3_link0/arm_1_fr3_link1/arm_1_fr3_link2/arm_1_fr3_link3/arm_1_fr3_link4/arm_1_fr3_link5/arm_1_fr3_link6/arm_1_fr3_link7>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_left_link/arm_0_fr3_link0/arm_0_fr3_link1/arm_0_fr3_link2/arm_0_fr3_link3/arm_0_fr3_link4/arm_0_fr3_link5/arm_0_fr3_link6/arm_0_fr3_link7/arm_0_fr3_link8/arm_0_gripper_fr3_hand>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_left_link/arm_0_fr3_link0/arm_0_fr3_link1/arm_0_fr3_link2/arm_0_fr3_link3/arm_0_fr3_link4/arm_0_fr3_link5/arm_0_fr3_link6/arm_0_fr3_link7/arm_0_fr3_link8/arm_0_gripper_fr3_hand/arm_0_gripper_fr3_leftfinger>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_left_link/arm_0_fr3_link0/arm_0_fr3_link1/arm_0_fr3_link2/arm_0_fr3_link3/arm_0_fr3_link4/arm_0_fr3_link5/arm_0_fr3_link6/arm_0_fr3_link7/arm_0_fr3_link8/arm_0_gripper_fr3_hand/arm_0_gripper_fr3_rightfinger>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_right_link/arm_1_fr3_link0/arm_1_fr3_link1/arm_1_fr3_link2/arm_1_fr3_link3/arm_1_fr3_link4/arm_1_fr3_link5/arm_1_fr3_link6/arm_1_fr3_link7/arm_1_fr3_link8/arm_1_gripper_fr3_hand>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_right_link/arm_1_fr3_link0/arm_1_fr3_link1/arm_1_fr3_link2/arm_1_fr3_link3/arm_1_fr3_link4/arm_1_fr3_link5/arm_1_fr3_link6/arm_1_fr3_link7/arm_1_fr3_link8/arm_1_gripper_fr3_hand/arm_1_gripper_fr3_leftfinger>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/arm_mount_right_link/arm_1_fr3_link0/arm_1_fr3_link1/arm_1_fr3_link2/arm_1_fr3_link3/arm_1_fr3_link4/arm_1_fr3_link5/arm_1_fr3_link6/arm_1_fr3_link7/arm_1_fr3_link8/arm_1_gripper_fr3_hand/arm_1_gripper_fr3_rightfinger>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/body_link>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/neck_1>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/neck_1/neck_2>,
+        </tn__r1000603_bC/Geometry/base_link/chassis_link/riser_link/default_mount/lift_0_plate_link/lift_0_base_link/lift_0_lower_link/lift_0_upper_link/lift_0_mount/lift_0_mount_rotated_link/neck_1/neck_2/head>,
+    ]
+    token isaac:robotType = "Manipulator"
+
+    over "Geometry"
+    {
+        over "base_link"
+        {
+            over "chassis_link" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+                over "right_side_cover_link" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                }
+
+                over "left_side_cover_link" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                }
+
+                over "front_cover_link" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                }
+
+                over "rear_cover_link" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                }
+
+                over "front_lights_link" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                }
+
+                over "rear_lights_link" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                }
+
+                over "axle_link" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "front_rocker_link" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                        over "front_left_wheel_link" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                        }
+
+                        over "front_right_wheel_link" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                        }
+                    }
+
+                    over "rear_rocker_link" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                        over "rear_left_wheel_link" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                        }
+
+                        over "rear_right_wheel_link" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                        }
+                    }
+                }
+
+                over "riser_link" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "default_mount"
+                    {
+                        over "imu_1_base_link"
+                        {
+                            over "imu_1_link" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                            }
+                        }
+
+                        over "lift_0_plate_link" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                            over "lift_0_base_link" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                                over "lift_0_lower_link" (
+                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                )
+                                {
+                                    over "lift_0_upper_link" (
+                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                    )
+                                    {
+                                        over "lift_0_mount"
+                                        {
+                                            over "lift_0_mount_rotated_link"
+                                            {
+                                                over "arm_mount_left_link"
+                                                {
+                                                    over "arm_0_fr3_link0" (
+                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                    )
+                                                    {
+                                                        over "arm_0_fr3_link1" (
+                                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                                        )
+                                                        {
+                                                            over "arm_0_fr3_link2" (
+                                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                                            )
+                                                            {
+                                                                over "arm_0_fr3_link3" (
+                                                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                )
+                                                                {
+                                                                    over "arm_0_fr3_link4" (
+                                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                    )
+                                                                    {
+                                                                        over "arm_0_fr3_link5" (
+                                                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                        )
+                                                                        {
+                                                                            over "arm_0_fr3_link6" (
+                                                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                            )
+                                                                            {
+                                                                                over "arm_0_fr3_link7" (
+                                                                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                                )
+                                                                                {
+                                                                                    over "arm_0_fr3_link8"
+                                                                                    {
+                                                                                        over "arm_0_gripper_fr3_hand" (
+                                                                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                                        )
+                                                                                        {
+                                                                                            over "arm_0_gripper_fr3_leftfinger" (
+                                                                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                                            )
+                                                                                            {
+                                                                                            }
+
+                                                                                            over "arm_0_gripper_fr3_rightfinger" (
+                                                                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                                            )
+                                                                                            {
+                                                                                            }
+
+                                                                                            over "arm_0_gripper_fr3_hand_tcp" (
+                                                                                                prepend apiSchemas = ["IsaacSiteAPI"]
+                                                                                            )
+                                                                                            {
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                over "arm_mount_right_link"
+                                                {
+                                                    over "arm_1_fr3_link0" (
+                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                    )
+                                                    {
+                                                        over "arm_1_fr3_link1" (
+                                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                                        )
+                                                        {
+                                                            over "arm_1_fr3_link2" (
+                                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                                            )
+                                                            {
+                                                                over "arm_1_fr3_link3" (
+                                                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                )
+                                                                {
+                                                                    over "arm_1_fr3_link4" (
+                                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                    )
+                                                                    {
+                                                                        over "arm_1_fr3_link5" (
+                                                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                        )
+                                                                        {
+                                                                            over "arm_1_fr3_link6" (
+                                                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                            )
+                                                                            {
+                                                                                over "arm_1_fr3_link7" (
+                                                                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                                )
+                                                                                {
+                                                                                    over "arm_1_fr3_link8"
+                                                                                    {
+                                                                                        over "arm_1_gripper_fr3_hand" (
+                                                                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                                        )
+                                                                                        {
+                                                                                            over "arm_1_gripper_fr3_leftfinger" (
+                                                                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                                            )
+                                                                                            {
+                                                                                            }
+
+                                                                                            over "arm_1_gripper_fr3_rightfinger" (
+                                                                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                                            )
+                                                                                            {
+                                                                                            }
+
+                                                                                            over "arm_1_gripper_fr3_hand_tcp" (
+                                                                                                prepend apiSchemas = ["IsaacSiteAPI"]
+                                                                                            )
+                                                                                            {
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                over "body_link" (
+                                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                                )
+                                                {
+                                                }
+
+                                                over "neck_1" (
+                                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                                )
+                                                {
+                                                    over "neck_2" (
+                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                    )
+                                                    {
+                                                        over "head" (
+                                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                                        )
+                                                        {
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                over "lidar2d_0_link" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "lidar2d_0_laser" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "lidar2d_1_link" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "lidar2d_1_laser" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "cover_link" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                }
+
+                over "imu_0_link" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                }
+
+                over "mounting_plate_link" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                }
+            }
+        }
+    }
+
+    over "Physics"
+    {
+        over "right_side_cover_link_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "left_side_cover_link_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "front_cover_link_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "rear_cover_link_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "front_lights_link_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "rear_lights_link_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "axle_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "riser_link_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "front_rocker" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "front_left_wheel_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "front_right_wheel_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "rear_rocker" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "rear_left_wheel_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "rear_right_wheel_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "imu_0_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "lidar2d_0_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "lidar2d_0_laser_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "lidar2d_1_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "lidar2d_1_laser_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "imu_1_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "lift_0_plate_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "lift_0_base_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "lift_0_lower_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "lift_0_upper_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_0_fr3_joint0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_0_fr3_joint1" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_0_fr3_joint2" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_0_fr3_joint3" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_0_fr3_joint4" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_0_fr3_joint5" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_0_fr3_joint6" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_0_fr3_joint7" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_1_fr3_joint0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_1_fr3_joint1" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_1_fr3_joint2" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_1_fr3_joint3" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_1_fr3_joint4" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_1_fr3_joint5" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_1_fr3_joint6" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_1_fr3_joint7" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_0_gripper_fr3_hand_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_0_gripper_fr3_finger_joint1" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_0_gripper_fr3_finger_joint2" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_1_gripper_fr3_hand_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_1_gripper_fr3_finger_joint1" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_1_gripper_fr3_finger_joint2" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "body_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "cover_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "mounting_plate_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "head_fixed_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "head_pan_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "head_tilt_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+    }
+}
+

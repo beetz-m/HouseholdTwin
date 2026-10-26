@@ -1,0 +1,575 @@
+{
+ "hot start, room-temp egg (20 C)": [
+  {
+   "t_min": 3.0,
+   "yolk": "runny",
+   "f65": 0.006044325050369375,
+   "T_centre_max": 21.729044287790366,
+   "white_set_fraction": 0.6676616915422886
+  },
+  {
+   "t_min": 3.5,
+   "yolk": "runny",
+   "f65": 0.026863666890530557,
+   "T_centre_max": 23.461264696691458,
+   "white_set_fraction": 0.7378109452736319
+  },
+  {
+   "t_min": 4.0,
+   "yolk": "runny",
+   "f65": 0.052384150436534584,
+   "T_centre_max": 25.80377586266526,
+   "white_set_fraction": 0.7950248756218905
+  },
+  {
+   "t_min": 4.5,
+   "yolk": "runny",
+   "f65": 0.08663532572196105,
+   "T_centre_max": 28.642897014292608,
+   "white_set_fraction": 0.8507462686567164
+  },
+  {
+   "t_min": 5.0,
+   "yolk": "runny",
+   "f65": 0.12827400940228342,
+   "T_centre_max": 31.842611845030813,
+   "white_set_fraction": 0.9009950248756219
+  },
+  {
+   "t_min": 5.5,
+   "yolk": "jammy",
+   "f65": 0.18401611820013433,
+   "T_centre_max": 35.27246812063428,
+   "white_set_fraction": 0.9447761194029851
+  },
+  {
+   "t_min": 6.0,
+   "yolk": "jammy",
+   "f65": 0.25386165211551376,
+   "T_centre_max": 38.82044310323989,
+   "white_set_fraction": 0.9741293532338309
+  },
+  {
+   "t_min": 6.5,
+   "yolk": "jammy",
+   "f65": 0.3237071860308932,
+   "T_centre_max": 42.396702361107586,
+   "white_set_fraction": 0.9940298507462687
+  },
+  {
+   "t_min": 7.0,
+   "yolk": "jammy",
+   "f65": 0.40362659503022164,
+   "T_centre_max": 45.93272407323317,
+   "white_set_fraction": 0.9995024875621891
+  },
+  {
+   "t_min": 7.5,
+   "yolk": "creamy",
+   "f65": 0.49294828744123576,
+   "T_centre_max": 49.37846212605216,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 8.0,
+   "yolk": "creamy",
+   "f65": 0.5883143049026192,
+   "T_centre_max": 52.698987128380246,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 8.5,
+   "yolk": "creamy",
+   "f65": 0.6816655473472129,
+   "T_centre_max": 55.871285593324295,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 9.0,
+   "yolk": "creamy",
+   "f65": 0.7743451981195433,
+   "T_centre_max": 58.88148349010525,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 9.5,
+   "yolk": "firm",
+   "f65": 0.8710543989254533,
+   "T_centre_max": 61.722572418868076,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 10.0,
+   "yolk": "firm",
+   "f65": 0.9691067830758898,
+   "T_centre_max": 64.39259317336587,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 10.5,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 66.89322478979277,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 11.0,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 69.22870318525277,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 11.5,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 71.40499819056883,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 12.0,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 73.4292045844534,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 12.5,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 75.30908298699462,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 13.0,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 77.05272634703812,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 13.5,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 78.66831759836613,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 14.0,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 80.1639573986687,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 14.5,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 81.54754104049418,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 15.0,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 82.82668047063301,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 15.5,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 84.0086490869327,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 16.0,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 85.10035106740227,
+   "white_set_fraction": 1.0
+  }
+ ],
+ "hot start, fridge egg (4 C)": [
+  {
+   "t_min": 3.0,
+   "yolk": "runny",
+   "f65": 0.0,
+   "T_centre_max": 6.083720039131983,
+   "white_set_fraction": 0.5601990049751244
+  },
+  {
+   "t_min": 3.5,
+   "yolk": "runny",
+   "f65": 0.0,
+   "T_centre_max": 8.171267711397395,
+   "white_set_fraction": 0.6328358208955224
+  },
+  {
+   "t_min": 4.0,
+   "yolk": "runny",
+   "f65": 0.01208865010073875,
+   "T_centre_max": 10.99429398834019,
+   "white_set_fraction": 0.699502487562189
+  },
+  {
+   "t_min": 4.5,
+   "yolk": "runny",
+   "f65": 0.03022162525184688,
+   "T_centre_max": 14.415798965942363,
+   "white_set_fraction": 0.7562189054726368
+  },
+  {
+   "t_min": 5.0,
+   "yolk": "runny",
+   "f65": 0.056413700470114174,
+   "T_centre_max": 18.27186555683201,
+   "white_set_fraction": 0.8099502487562189
+  },
+  {
+   "t_min": 5.5,
+   "yolk": "runny",
+   "f65": 0.08865010073875083,
+   "T_centre_max": 22.405282094097718,
+   "white_set_fraction": 0.8582089552238806
+  },
+  {
+   "t_min": 6.0,
+   "yolk": "runny",
+   "f65": 0.12961719274680994,
+   "T_centre_max": 26.681046816725004,
+   "white_set_fraction": 0.9034825870646767
+  },
+  {
+   "t_min": 6.5,
+   "yolk": "jammy",
+   "f65": 0.180658159838818,
+   "T_centre_max": 30.990897717232222,
+   "white_set_fraction": 0.9437810945273631
+  },
+  {
+   "t_min": 7.0,
+   "yolk": "jammy",
+   "f65": 0.24311618535930155,
+   "T_centre_max": 35.252257216460485,
+   "white_set_fraction": 0.972636815920398
+  },
+  {
+   "t_min": 7.5,
+   "yolk": "jammy",
+   "f65": 0.3109469442578912,
+   "T_centre_max": 39.40481333139621,
+   "white_set_fraction": 0.9915422885572139
+  },
+  {
+   "t_min": 8.0,
+   "yolk": "jammy",
+   "f65": 0.38482202820685024,
+   "T_centre_max": 43.40647166753518,
+   "white_set_fraction": 0.9995024875621891
+  },
+  {
+   "t_min": 8.5,
+   "yolk": "creamy",
+   "f65": 0.4694425789120215,
+   "T_centre_max": 47.22949802272415,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 9.0,
+   "yolk": "creamy",
+   "f65": 0.5580926796507724,
+   "T_centre_max": 50.857172411152476,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 9.5,
+   "yolk": "creamy",
+   "f65": 0.6501007387508395,
+   "T_centre_max": 54.28104881248205,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 10.0,
+   "yolk": "creamy",
+   "f65": 0.7414372061786434,
+   "T_centre_max": 57.49876613200502,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 10.5,
+   "yolk": "creamy",
+   "f65": 0.8341168569509738,
+   "T_centre_max": 60.5123478235964,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 11.0,
+   "yolk": "firm",
+   "f65": 0.9321692411014103,
+   "T_centre_max": 63.326898710432864,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 11.5,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 65.94961320401885,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 12.0,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 68.38904142228996,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 12.5,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 70.65453590740377,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 13.0,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 72.75584970027671,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 13.5,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 74.70284428521045,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 14.0,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 76.50528199326745,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 14.5,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 78.17267766418527,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 15.0,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 79.71420466973723,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 15.5,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 81.13862838681635,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 16.0,
+   "yolk": "firm",
+   "f65": 1.0,
+   "T_centre_max": 82.45426923507455,
+   "white_set_fraction": 1.0
+  }
+ ],
+ "cold start, off the heat after the boil": [
+  {
+   "t_min": 3.0,
+   "yolk": "runny",
+   "f65": 0.0,
+   "T_centre_max": 4.106732562841483,
+   "white_set_fraction": 0.0
+  },
+  {
+   "t_min": 3.5,
+   "yolk": "runny",
+   "f65": 0.0,
+   "T_centre_max": 4.280279732506242,
+   "white_set_fraction": 0.0
+  },
+  {
+   "t_min": 4.0,
+   "yolk": "runny",
+   "f65": 0.0,
+   "T_centre_max": 4.593575169465243,
+   "white_set_fraction": 0.0
+  },
+  {
+   "t_min": 4.5,
+   "yolk": "runny",
+   "f65": 0.0,
+   "T_centre_max": 5.084715356771974,
+   "white_set_fraction": 0.0
+  },
+  {
+   "t_min": 5.0,
+   "yolk": "runny",
+   "f65": 0.0,
+   "T_centre_max": 5.78305041468009,
+   "white_set_fraction": 0.0
+  },
+  {
+   "t_min": 5.5,
+   "yolk": "runny",
+   "f65": 0.0,
+   "T_centre_max": 6.708708914066268,
+   "white_set_fraction": 0.0
+  },
+  {
+   "t_min": 6.0,
+   "yolk": "runny",
+   "f65": 0.0,
+   "T_centre_max": 7.873489687356196,
+   "white_set_fraction": 0.014925373134328358
+  },
+  {
+   "t_min": 6.5,
+   "yolk": "runny",
+   "f65": 0.0,
+   "T_centre_max": 9.282279665394103,
+   "white_set_fraction": 0.11442786069651742
+  },
+  {
+   "t_min": 7.0,
+   "yolk": "runny",
+   "f65": 0.0,
+   "T_centre_max": 10.934563382413296,
+   "white_set_fraction": 0.21741293532338307
+  },
+  {
+   "t_min": 7.5,
+   "yolk": "runny",
+   "f65": 0.0,
+   "T_centre_max": 12.825788370810525,
+   "white_set_fraction": 0.32288557213930347
+  },
+  {
+   "t_min": 8.0,
+   "yolk": "runny",
+   "f65": 0.0,
+   "T_centre_max": 14.948514465826353,
+   "white_set_fraction": 0.42338308457711443
+  },
+  {
+   "t_min": 8.5,
+   "yolk": "runny",
+   "f65": 0.0,
+   "T_centre_max": 17.29333523584185,
+   "white_set_fraction": 0.5293532338308458
+  },
+  {
+   "t_min": 9.0,
+   "yolk": "runny",
+   "f65": 0.0,
+   "T_centre_max": 19.849599972934115,
+   "white_set_fraction": 0.6368159203980099
+  },
+  {
+   "t_min": 9.5,
+   "yolk": "runny",
+   "f65": 0.013431833445265278,
+   "T_centre_max": 22.605951418177092,
+   "white_set_fraction": 0.7203980099502487
+  },
+  {
+   "t_min": 10.0,
+   "yolk": "runny",
+   "f65": 0.04499664204163868,
+   "T_centre_max": 25.550734314891308,
+   "white_set_fraction": 0.7895522388059701
+  },
+  {
+   "t_min": 10.5,
+   "yolk": "runny",
+   "f65": 0.08327736736064473,
+   "T_centre_max": 28.672034835289463,
+   "white_set_fraction": 0.8497512437810946
+  },
+  {
+   "t_min": 11.0,
+   "yolk": "runny",
+   "f65": 0.12424445936870383,
+   "T_centre_max": 31.95427269535834,
+   "white_set_fraction": 0.900497512437811
+  },
+  {
+   "t_min": 11.5,
+   "yolk": "jammy",
+   "f65": 0.17998656816655473,
+   "T_centre_max": 35.36871842954464,
+   "white_set_fraction": 0.945771144278607
+  },
+  {
+   "t_min": 12.0,
+   "yolk": "jammy",
+   "f65": 0.251846877098724,
+   "T_centre_max": 38.86924975175014,
+   "white_set_fraction": 0.9746268656716418
+  },
+  {
+   "t_min": 12.5,
+   "yolk": "jammy",
+   "f65": 0.32236400268636667,
+   "T_centre_max": 42.39919801777191,
+   "white_set_fraction": 0.9945273631840796
+  },
+  {
+   "t_min": 13.0,
+   "yolk": "jammy",
+   "f65": 0.40094022834116855,
+   "T_centre_max": 45.901456463024935,
+   "white_set_fraction": 0.9995024875621891
+  },
+  {
+   "t_min": 13.5,
+   "yolk": "creamy",
+   "f65": 0.49093351242444594,
+   "T_centre_max": 49.32567789022359,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 14.0,
+   "yolk": "creamy",
+   "f65": 0.5862995298858295,
+   "T_centre_max": 52.631556990606214,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 14.5,
+   "yolk": "creamy",
+   "f65": 0.6783075889858966,
+   "T_centre_max": 55.789334236670356,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 15.0,
+   "yolk": "creamy",
+   "f65": 0.7696440564137005,
+   "T_centre_max": 58.77881706896218,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 15.5,
+   "yolk": "firm",
+   "f65": 0.8656816655473473,
+   "T_centre_max": 61.587813014307876,
+   "white_set_fraction": 1.0
+  },
+  {
+   "t_min": 16.0,
+   "yolk": "firm",
+   "f65": 0.9630624580255205,
+   "T_centre_max": 64.2104745861261,
+   "white_set_fraction": 1.0
+  }
+ ]
+}

@@ -1,0 +1,4331 @@
+{
+ "note": "M2 strike evaluation, held-out instances 1000.. (paired)",
+ "n": 30,
+ "results": {
+  "belief": [
+   {
+    "instance": 1000,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.42
+    ],
+    "p_success": [
+     0.858
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1001,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.41
+    ],
+    "p_success": [
+     0.841
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1002,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.42
+    ],
+    "p_success": [
+     0.865
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1003,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.42
+    ],
+    "p_success": [
+     0.862
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1004,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.41
+    ],
+    "p_success": [
+     0.855
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1005,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.4
+    ],
+    "p_success": [
+     0.835
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1006,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.42
+    ],
+    "p_success": [
+     0.864
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1007,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.41,
+     0.61
+    ],
+    "p_success": [
+     0.855,
+     0.926
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1008,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.42
+    ],
+    "p_success": [
+     0.865
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1009,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.41
+    ],
+    "p_success": [
+     0.855
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1010,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.41
+    ],
+    "p_success": [
+     0.848
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1011,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.42
+    ],
+    "p_success": [
+     0.872
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1012,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.42
+    ],
+    "p_success": [
+     0.861
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1013,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.42
+    ],
+    "p_success": [
+     0.874
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1014,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.41
+    ],
+    "p_success": [
+     0.847
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1015,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.43
+    ],
+    "p_success": [
+     0.865
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1016,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.43
+    ],
+    "p_success": [
+     0.873
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1017,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.43
+    ],
+    "p_success": [
+     0.87
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1018,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.42
+    ],
+    "p_success": [
+     0.874
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1019,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.4
+    ],
+    "p_success": [
+     0.863
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1020,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.4
+    ],
+    "p_success": [
+     0.828
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1021,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.41
+    ],
+    "p_success": [
+     0.846
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1022,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.43
+    ],
+    "p_success": [
+     0.877
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1023,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.43
+    ],
+    "p_success": [
+     0.877
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1024,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.42
+    ],
+    "p_success": [
+     0.87
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1025,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.42,
+     0.6
+    ],
+    "p_success": [
+     0.863,
+     0.916
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1026,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.41,
+     0.6
+    ],
+    "p_success": [
+     0.857,
+     0.92
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1027,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.41
+    ],
+    "p_success": [
+     0.842
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1028,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.42
+    ],
+    "p_success": [
+     0.872
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1029,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.41,
+     0.58
+    ],
+    "p_success": [
+     0.853,
+     0.924
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   }
+  ],
+  "study": [
+   {
+    "instance": 1000,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1001,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1002,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1003,
+    "failure": "egg-shattered",
+    "ok": false,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "shattered",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1004,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1005,
+    "failure": "egg-shattered",
+    "ok": false,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "shattered",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1006,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1007,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1008,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1009,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1010,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1011,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1012,
+    "failure": "egg-shattered",
+    "ok": false,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "shattered",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1013,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1014,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1015,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1016,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1017,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1018,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1019,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1020,
+    "failure": "yolk-broken",
+    "ok": false,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "broken",
+    "shards_left": 1
+   },
+   {
+    "instance": 1021,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1022,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1023,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1024,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1025,
+    "failure": null,
+    "ok": true,
+    "strikes": 3,
+    "surfaces": [
+     "bowl-rim",
+     "bowl-rim",
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25,
+     0.287,
+     0.331
+    ],
+    "p_success": [
+     null,
+     null,
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1026,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "bowl-rim",
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25,
+     0.287
+    ],
+    "p_success": [
+     null,
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1027,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1028,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1029,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "bowl-rim",
+     "bowl-rim"
+    ],
+    "speeds": [
+     0.25,
+     0.287
+    ],
+    "p_success": [
+     null,
+     null
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   }
+  ],
+  "belief-weak": [
+   {
+    "instance": 1000,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.37
+    ],
+    "p_success": [
+     0.854,
+     0.937
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1001,
+    "failure": null,
+    "ok": true,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.24,
+     0.33,
+     0.44
+    ],
+    "p_success": [
+     0.864,
+     0.909,
+     0.954
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1002,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.36
+    ],
+    "p_success": [
+     0.862,
+     0.925
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1003,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.26
+    ],
+    "p_success": [
+     0.887
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1004,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.24,
+     0.37
+    ],
+    "p_success": [
+     0.845,
+     0.939
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1005,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.24
+    ],
+    "p_success": [
+     0.836
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1006,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     0.861
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1007,
+    "failure": null,
+    "ok": true,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.36,
+     0.47
+    ],
+    "p_success": [
+     0.861,
+     0.918,
+     0.944
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1008,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.28
+    ],
+    "p_success": [
+     0.901
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1009,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.35
+    ],
+    "p_success": [
+     0.862,
+     0.914
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1010,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.36
+    ],
+    "p_success": [
+     0.855,
+     0.928
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1011,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.36
+    ],
+    "p_success": [
+     0.868,
+     0.92
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1012,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     0.859
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1013,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     0.871
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1014,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.33
+    ],
+    "p_success": [
+     0.89,
+     0.896
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1015,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.26
+    ],
+    "p_success": [
+     0.872
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1016,
+    "failure": null,
+    "ok": true,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.26,
+     0.36,
+     0.45
+    ],
+    "p_success": [
+     0.888,
+     0.919,
+     0.945
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1017,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.26
+    ],
+    "p_success": [
+     0.879
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1018,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.27,
+     0.34
+    ],
+    "p_success": [
+     0.896,
+     0.871
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1019,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.24,
+     0.34
+    ],
+    "p_success": [
+     0.873,
+     0.918
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1020,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.23
+    ],
+    "p_success": [
+     0.839
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1021,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.24,
+     0.39
+    ],
+    "p_success": [
+     0.837,
+     0.942
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1022,
+    "failure": null,
+    "ok": true,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.36,
+     0.44
+    ],
+    "p_success": [
+     0.864,
+     0.93,
+     0.942
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1023,
+    "failure": null,
+    "ok": true,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.33,
+     0.45
+    ],
+    "p_success": [
+     0.871,
+     0.887,
+     0.961
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1024,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.36
+    ],
+    "p_success": [
+     0.867,
+     0.912
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1025,
+    "failure": "goal-unachievable",
+    "ok": false,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.24,
+     0.34,
+     0.43
+    ],
+    "p_success": [
+     0.846,
+     0.921,
+     0.95
+    ],
+    "probes": 1,
+    "shell": "intact",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1026,
+    "failure": "goal-unachievable",
+    "ok": false,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.36,
+     0.45
+    ],
+    "p_success": [
+     0.864,
+     0.92,
+     0.941
+    ],
+    "probes": 0,
+    "shell": "intact",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1027,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.35
+    ],
+    "p_success": [
+     0.873,
+     0.924
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1028,
+    "failure": null,
+    "ok": true,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.34,
+     0.47
+    ],
+    "p_success": [
+     0.869,
+     0.907,
+     0.942
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1029,
+    "failure": null,
+    "ok": true,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.26,
+     0.34,
+     0.47
+    ],
+    "p_success": [
+     0.883,
+     0.862,
+     0.962
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   }
+  ],
+  "belief-strong": [
+   {
+    "instance": 1000,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.7
+    ],
+    "p_success": [
+     0.928
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1001,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.63
+    ],
+    "p_success": [
+     0.908
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1002,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.66
+    ],
+    "p_success": [
+     0.94
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1003,
+    "failure": "egg-shattered",
+    "ok": false,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.67
+    ],
+    "p_success": [
+     0.922
+    ],
+    "probes": 1,
+    "shell": "shattered",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1004,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.65
+    ],
+    "p_success": [
+     0.916
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1005,
+    "failure": "egg-shattered",
+    "ok": false,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.67
+    ],
+    "p_success": [
+     0.916
+    ],
+    "probes": 1,
+    "shell": "shattered",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1006,
+    "failure": "egg-shattered",
+    "ok": false,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.64
+    ],
+    "p_success": [
+     0.922
+    ],
+    "probes": 1,
+    "shell": "shattered",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1007,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.66
+    ],
+    "p_success": [
+     0.933
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1008,
+    "failure": "egg-shattered",
+    "ok": false,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.69
+    ],
+    "p_success": [
+     0.947
+    ],
+    "probes": 1,
+    "shell": "shattered",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1009,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.67
+    ],
+    "p_success": [
+     0.93
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1010,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.65
+    ],
+    "p_success": [
+     0.94
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1011,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.66
+    ],
+    "p_success": [
+     0.914
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1012,
+    "failure": "egg-shattered",
+    "ok": false,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.65
+    ],
+    "p_success": [
+     0.92
+    ],
+    "probes": 1,
+    "shell": "shattered",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1013,
+    "failure": "egg-shattered",
+    "ok": false,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.67
+    ],
+    "p_success": [
+     0.919
+    ],
+    "probes": 1,
+    "shell": "shattered",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1014,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.66
+    ],
+    "p_success": [
+     0.918
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1015,
+    "failure": "egg-shattered",
+    "ok": false,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.67
+    ],
+    "p_success": [
+     0.933
+    ],
+    "probes": 1,
+    "shell": "shattered",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1016,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.68
+    ],
+    "p_success": [
+     0.937
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1017,
+    "failure": "egg-shattered",
+    "ok": false,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.68
+    ],
+    "p_success": [
+     0.93
+    ],
+    "probes": 1,
+    "shell": "shattered",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1018,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.66
+    ],
+    "p_success": [
+     0.956
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1019,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.63
+    ],
+    "p_success": [
+     0.914
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1020,
+    "failure": "egg-shattered",
+    "ok": false,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.58
+    ],
+    "p_success": [
+     0.866
+    ],
+    "probes": 1,
+    "shell": "shattered",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1021,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.67
+    ],
+    "p_success": [
+     0.942
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1022,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.65
+    ],
+    "p_success": [
+     0.922
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1023,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.63
+    ],
+    "p_success": [
+     0.904
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1024,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.68
+    ],
+    "p_success": [
+     0.932
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1025,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.63
+    ],
+    "p_success": [
+     0.9
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1026,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.66
+    ],
+    "p_success": [
+     0.914
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1027,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.65
+    ],
+    "p_success": [
+     0.922
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1028,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.66
+    ],
+    "p_success": [
+     0.926
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1029,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.66
+    ],
+    "p_success": [
+     0.92
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   }
+  ],
+  "cautious": [
+   {
+    "instance": 1000,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.57
+    ],
+    "p_success": [
+     0.333,
+     0.98
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1001,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.24,
+     0.56
+    ],
+    "p_success": [
+     0.304,
+     0.977
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1002,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.56
+    ],
+    "p_success": [
+     0.33,
+     0.98
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1003,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     0.329
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1004,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.24,
+     0.55
+    ],
+    "p_success": [
+     0.289,
+     0.978
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1005,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.24
+    ],
+    "p_success": [
+     0.297
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1006,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     0.344
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1007,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.56
+    ],
+    "p_success": [
+     0.328,
+     0.977
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1008,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     0.326
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1009,
+    "failure": "egg-shattered",
+    "ok": false,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.55
+    ],
+    "p_success": [
+     0.337,
+     0.98
+    ],
+    "probes": 0,
+    "shell": "shattered",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1010,
+    "failure": "egg-shattered",
+    "ok": false,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.55
+    ],
+    "p_success": [
+     0.331,
+     0.98
+    ],
+    "probes": 0,
+    "shell": "shattered",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1011,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.56
+    ],
+    "p_success": [
+     0.334,
+     0.977
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1012,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     0.328
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1013,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.25
+    ],
+    "p_success": [
+     0.325
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1014,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.24,
+     0.56
+    ],
+    "p_success": [
+     0.296,
+     0.979
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1015,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.26
+    ],
+    "p_success": [
+     0.356
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1016,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.26,
+     0.57
+    ],
+    "p_success": [
+     0.338,
+     0.983
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1017,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.24
+    ],
+    "p_success": [
+     0.287
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1018,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.55
+    ],
+    "p_success": [
+     0.337,
+     0.981
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1019,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.24,
+     0.55
+    ],
+    "p_success": [
+     0.299,
+     0.98
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1020,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.24
+    ],
+    "p_success": [
+     0.305
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1021,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.24,
+     0.56
+    ],
+    "p_success": [
+     0.297,
+     0.974
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1022,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.57
+    ],
+    "p_success": [
+     0.335,
+     0.978
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1023,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.54
+    ],
+    "p_success": [
+     0.331,
+     0.983
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1024,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.55
+    ],
+    "p_success": [
+     0.346,
+     0.977
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1025,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.56
+    ],
+    "p_success": [
+     0.307,
+     0.979
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1026,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.55
+    ],
+    "p_success": [
+     0.346,
+     0.977
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1027,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.24,
+     0.54
+    ],
+    "p_success": [
+     0.299,
+     0.979
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1028,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.25,
+     0.54
+    ],
+    "p_success": [
+     0.336,
+     0.982
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1029,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.24,
+     0.54
+    ],
+    "p_success": [
+     0.288,
+     0.979
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   }
+  ],
+  "cautious-weak": [
+   {
+    "instance": 1000,
+    "failure": null,
+    "ok": true,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.15,
+     0.34,
+     0.37
+    ],
+    "p_success": [
+     0.333,
+     0.98,
+     0.926
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1001,
+    "failure": "goal-unachievable",
+    "ok": false,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.14,
+     0.32,
+     0.35
+    ],
+    "p_success": [
+     0.274,
+     0.974,
+     0.872
+    ],
+    "probes": 0,
+    "shell": "microcracked",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1002,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.15,
+     0.34
+    ],
+    "p_success": [
+     0.33,
+     0.98
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1003,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.15,
+     0.33
+    ],
+    "p_success": [
+     0.329,
+     0.981
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1004,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.14,
+     0.33
+    ],
+    "p_success": [
+     0.26,
+     0.977
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1005,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.14,
+     0.32
+    ],
+    "p_success": [
+     0.268,
+     0.98
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1006,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.15,
+     0.33
+    ],
+    "p_success": [
+     0.344,
+     0.979
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1007,
+    "failure": "goal-unachievable",
+    "ok": false,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.15,
+     0.34,
+     0.37
+    ],
+    "p_success": [
+     0.329,
+     0.976,
+     0.894
+    ],
+    "probes": 0,
+    "shell": "intact",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1008,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.15,
+     0.33
+    ],
+    "p_success": [
+     0.326,
+     0.979
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1009,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.15,
+     0.33
+    ],
+    "p_success": [
+     0.337,
+     0.98
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1010,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.15,
+     0.33
+    ],
+    "p_success": [
+     0.331,
+     0.98
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1011,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.15,
+     0.33
+    ],
+    "p_success": [
+     0.334,
+     0.977
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1012,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.15,
+     0.33
+    ],
+    "p_success": [
+     0.328,
+     0.981
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1013,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.15,
+     0.32
+    ],
+    "p_success": [
+     0.325,
+     0.978
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1014,
+    "failure": null,
+    "ok": true,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.14,
+     0.32,
+     0.36
+    ],
+    "p_success": [
+     0.269,
+     0.975,
+     0.911
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1015,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.15,
+     0.33
+    ],
+    "p_success": [
+     0.317,
+     0.977
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1016,
+    "failure": null,
+    "ok": true,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.16,
+     0.34,
+     0.38
+    ],
+    "p_success": [
+     0.372,
+     0.984,
+     0.931
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1017,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.14,
+     0.33
+    ],
+    "p_success": [
+     0.257,
+     0.975
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1018,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.15,
+     0.33
+    ],
+    "p_success": [
+     0.337,
+     0.981
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1019,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.14,
+     0.33
+    ],
+    "p_success": [
+     0.269,
+     0.978
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1020,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.14,
+     0.33
+    ],
+    "p_success": [
+     0.277,
+     0.974
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1021,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.14,
+     0.33
+    ],
+    "p_success": [
+     0.27,
+     0.971
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1022,
+    "failure": "goal-unachievable",
+    "ok": false,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.15,
+     0.35,
+     0.35
+    ],
+    "p_success": [
+     0.335,
+     0.978,
+     0.934
+    ],
+    "probes": 0,
+    "shell": "microcracked",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1023,
+    "failure": null,
+    "ok": true,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.15,
+     0.33,
+     0.37
+    ],
+    "p_success": [
+     0.331,
+     0.983,
+     0.923
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1024,
+    "failure": null,
+    "ok": true,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.15,
+     0.33,
+     0.38
+    ],
+    "p_success": [
+     0.346,
+     0.977,
+     0.895
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1025,
+    "failure": "goal-unachievable",
+    "ok": false,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.15,
+     0.34,
+     0.37
+    ],
+    "p_success": [
+     0.307,
+     0.978,
+     0.91
+    ],
+    "probes": 0,
+    "shell": "intact",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1026,
+    "failure": "goal-unachievable",
+    "ok": false,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.15,
+     0.33,
+     0.37
+    ],
+    "p_success": [
+     0.346,
+     0.977,
+     0.906
+    ],
+    "probes": 0,
+    "shell": "intact",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1027,
+    "failure": null,
+    "ok": true,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.14,
+     0.32,
+     0.36
+    ],
+    "p_success": [
+     0.268,
+     0.977,
+     0.904
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1028,
+    "failure": null,
+    "ok": true,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.15,
+     0.32,
+     0.37
+    ],
+    "p_success": [
+     0.336,
+     0.981,
+     0.902
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1029,
+    "failure": "goal-unachievable",
+    "ok": false,
+    "strikes": 3,
+    "surfaces": [
+     "counter",
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.14,
+     0.32,
+     0.35
+    ],
+    "p_success": [
+     0.263,
+     0.978,
+     0.89
+    ],
+    "probes": 0,
+    "shell": "intact",
+    "yolk": "whole",
+    "shards_left": 0
+   }
+  ],
+  "cautious-strong": [
+   {
+    "instance": 1000,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.42
+    ],
+    "p_success": [
+     0.415
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1001,
+    "failure": "egg-shattered",
+    "ok": false,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.37,
+     0.78
+    ],
+    "p_success": [
+     0.332,
+     0.993
+    ],
+    "probes": 1,
+    "shell": "shattered",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1002,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.41
+    ],
+    "p_success": [
+     0.424
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1003,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.4
+    ],
+    "p_success": [
+     0.382
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1004,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.39
+    ],
+    "p_success": [
+     0.349
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1005,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.4
+    ],
+    "p_success": [
+     0.35
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1006,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.38
+    ],
+    "p_success": [
+     0.306
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1007,
+    "failure": "egg-shattered",
+    "ok": false,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.4,
+     0.81
+    ],
+    "p_success": [
+     0.404,
+     0.994
+    ],
+    "probes": 1,
+    "shell": "shattered",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1008,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.44
+    ],
+    "p_success": [
+     0.464
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1009,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.4
+    ],
+    "p_success": [
+     0.332
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1010,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.4
+    ],
+    "p_success": [
+     0.379
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1011,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.39
+    ],
+    "p_success": [
+     0.324
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1012,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.39
+    ],
+    "p_success": [
+     0.345
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1013,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.4
+    ],
+    "p_success": [
+     0.373
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1014,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.39
+    ],
+    "p_success": [
+     0.355
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1015,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.41
+    ],
+    "p_success": [
+     0.411
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1016,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.42
+    ],
+    "p_success": [
+     0.423
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1017,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.41
+    ],
+    "p_success": [
+     0.34
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1018,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.43
+    ],
+    "p_success": [
+     0.427
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1019,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.38
+    ],
+    "p_success": [
+     0.322
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1020,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.38
+    ],
+    "p_success": [
+     0.295
+    ],
+    "probes": 0,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1021,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.42
+    ],
+    "p_success": [
+     0.467
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1022,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.39
+    ],
+    "p_success": [
+     0.363
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1023,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.38
+    ],
+    "p_success": [
+     0.345
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1024,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.41
+    ],
+    "p_success": [
+     0.384
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1025,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.37,
+     0.79
+    ],
+    "p_success": [
+     0.339,
+     0.99
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1026,
+    "failure": null,
+    "ok": true,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.4,
+     0.85
+    ],
+    "p_success": [
+     0.357,
+     0.992
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1027,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.39
+    ],
+    "p_success": [
+     0.323
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1028,
+    "failure": null,
+    "ok": true,
+    "strikes": 1,
+    "surfaces": [
+     "counter"
+    ],
+    "speeds": [
+     0.4
+    ],
+    "p_success": [
+     0.378
+    ],
+    "probes": 1,
+    "shell": "opened",
+    "yolk": "whole",
+    "shards_left": 0
+   },
+   {
+    "instance": 1029,
+    "failure": "egg-shattered",
+    "ok": false,
+    "strikes": 2,
+    "surfaces": [
+     "counter",
+     "counter"
+    ],
+    "speeds": [
+     0.4,
+     0.84
+    ],
+    "p_success": [
+     0.384,
+     0.993
+    ],
+    "probes": 1,
+    "shell": "shattered",
+    "yolk": "whole",
+    "shards_left": 0
+   }
+  ]
+ }
+}

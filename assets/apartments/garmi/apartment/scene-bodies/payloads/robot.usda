@@ -1,0 +1,852 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.3.2"
+    }
+    defaultPrim = "tn__scenebodies_nG"
+    endTimeCode = 1000000
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    startTimeCode = 0
+    upAxis = "Z"
+)
+
+over "tn__scenebodies_nG" (
+    prepend apiSchemas = ["IsaacRobotAPI"]
+)
+{
+    prepend rel isaac:physics:robotJoints = [
+        </tn__scenebodies_nG/Physics/world_T_wall_0>,
+        </tn__scenebodies_nG/Physics/world_T_kitchen_cabinet>,
+        </tn__scenebodies_nG/Physics/world_T_flowers_0>,
+        </tn__scenebodies_nG/Physics/world_T_bookshelf_0>,
+        </tn__scenebodies_nG/Physics/world_T_coffee_table_0>,
+        </tn__scenebodies_nG/Physics/world_T_basin_0>,
+        </tn__scenebodies_nG/Physics/world_T_nightstand_0>,
+        </tn__scenebodies_nG/Physics/world_T_bed_0>,
+        </tn__scenebodies_nG/Physics/world_T_sofa_0>,
+        </tn__scenebodies_nG/Physics/world_T_toilet_0>,
+        </tn__scenebodies_nG/Physics/world_T_trash_can_0>,
+        </tn__scenebodies_nG/Physics/world_T_pipe_0>,
+        </tn__scenebodies_nG/Physics/world_T_door_2>,
+        </tn__scenebodies_nG/Physics/world_T_door_1>,
+        </tn__scenebodies_nG/Physics/world_T_door_0>,
+        </tn__scenebodies_nG/Physics/world_T_green_plants_0>,
+        </tn__scenebodies_nG/Physics/world_T_radiator_0>,
+        </tn__scenebodies_nG/Physics/world_T_handrail_1>,
+        </tn__scenebodies_nG/Physics/world_T_handrail_0>,
+        </tn__scenebodies_nG/Physics/world_T_hand_sanitizer_0>,
+        </tn__scenebodies_nG/Physics/world_T_toilet_paper_holder_0>,
+        </tn__scenebodies_nG/Physics/world_T_bay_window_platform_1>,
+        </tn__scenebodies_nG/Physics/world_T_bay_window_platform_0>,
+        </tn__scenebodies_nG/Physics/world_T_window_14>,
+        </tn__scenebodies_nG/Physics/world_T_window_13>,
+        </tn__scenebodies_nG/Physics/world_T_window_12>,
+        </tn__scenebodies_nG/Physics/world_T_window_11>,
+        </tn__scenebodies_nG/Physics/world_T_window_10>,
+        </tn__scenebodies_nG/Physics/world_T_window_9>,
+        </tn__scenebodies_nG/Physics/world_T_window_8>,
+        </tn__scenebodies_nG/Physics/world_T_window_7>,
+        </tn__scenebodies_nG/Physics/world_T_window_6>,
+        </tn__scenebodies_nG/Physics/world_T_window_5>,
+        </tn__scenebodies_nG/Physics/world_T_window_4>,
+        </tn__scenebodies_nG/Physics/world_T_window_3>,
+        </tn__scenebodies_nG/Physics/world_T_window_2>,
+        </tn__scenebodies_nG/Physics/world_T_window_1>,
+        </tn__scenebodies_nG/Physics/world_T_window_0>,
+        </tn__scenebodies_nG/Physics/cabinet_door_4_joint>,
+        </tn__scenebodies_nG/Physics/cabinet_door_3_joint>,
+        </tn__scenebodies_nG/Physics/cabinet_door_2_joint>,
+        </tn__scenebodies_nG/Physics/cabinet_door_1_joint>,
+        </tn__scenebodies_nG/Physics/drawer_4_joint>,
+        </tn__scenebodies_nG/Physics/drawer_3_joint>,
+        </tn__scenebodies_nG/Physics/drawer_2_joint>,
+        </tn__scenebodies_nG/Physics/drawer_1_joint>,
+        </tn__scenebodies_nG/Physics/cabinet_door_4_T_cabinet_door_4_handle>,
+        </tn__scenebodies_nG/Physics/cabinet_door_3_T_cabinet_door_3_handle>,
+        </tn__scenebodies_nG/Physics/cabinet_door_2_T_cabinet_door_2_handle>,
+        </tn__scenebodies_nG/Physics/cabinet_door_1_T_cabinet_door_1_handle>,
+        </tn__scenebodies_nG/Physics/drawer_4_T_drawer_4_handle>,
+        </tn__scenebodies_nG/Physics/drawer_3_T_drawer_3_handle>,
+        </tn__scenebodies_nG/Physics/drawer_2_T_drawer_2_handle>,
+        </tn__scenebodies_nG/Physics/drawer_1_T_drawer_1_handle>,
+        </tn__scenebodies_nG/Physics/door_2_leaf>,
+        </tn__scenebodies_nG/Physics/door_1_leaf>,
+        </tn__scenebodies_nG/Physics/door_0_leaf>,
+    ]
+    prepend rel isaac:physics:robotLinks = [
+        </tn__scenebodies_nG/Geometry/world/wall_0>,
+        </tn__scenebodies_nG/Geometry/world/kitchen_cabinet>,
+        </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_4>,
+        </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_4/cabinet_door_4_handle>,
+        </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_3>,
+        </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_3/cabinet_door_3_handle>,
+        </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_2>,
+        </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_2/cabinet_door_2_handle>,
+        </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_1>,
+        </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_1/cabinet_door_1_handle>,
+        </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_4>,
+        </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_4/drawer_4_handle>,
+        </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_3>,
+        </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_3/drawer_3_handle>,
+        </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_2>,
+        </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_2/drawer_2_handle>,
+        </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_1>,
+        </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_1/drawer_1_handle>,
+        </tn__scenebodies_nG/Geometry/world/flowers_0>,
+        </tn__scenebodies_nG/Geometry/world/bookshelf_0>,
+        </tn__scenebodies_nG/Geometry/world/coffee_table_0>,
+        </tn__scenebodies_nG/Geometry/world/basin_0>,
+        </tn__scenebodies_nG/Geometry/world/nightstand_0>,
+        </tn__scenebodies_nG/Geometry/world/bed_0>,
+        </tn__scenebodies_nG/Geometry/world/sofa_0>,
+        </tn__scenebodies_nG/Geometry/world/toilet_0>,
+        </tn__scenebodies_nG/Geometry/world/trash_can_0>,
+        </tn__scenebodies_nG/Geometry/world/pipe_0>,
+        </tn__scenebodies_nG/Geometry/world/door_2>,
+        </tn__scenebodies_nG/Geometry/world/door_2/door_2_leaf>,
+        </tn__scenebodies_nG/Geometry/world/door_1>,
+        </tn__scenebodies_nG/Geometry/world/door_1/door_1_leaf>,
+        </tn__scenebodies_nG/Geometry/world/door_0>,
+        </tn__scenebodies_nG/Geometry/world/door_0/door_0_leaf>,
+        </tn__scenebodies_nG/Geometry/world/green_plants_0>,
+        </tn__scenebodies_nG/Geometry/world/radiator_0>,
+        </tn__scenebodies_nG/Geometry/world/handrail_1>,
+        </tn__scenebodies_nG/Geometry/world/handrail_0>,
+        </tn__scenebodies_nG/Geometry/world/hand_sanitizer_0>,
+        </tn__scenebodies_nG/Geometry/world/toilet_paper_holder_0>,
+        </tn__scenebodies_nG/Geometry/world/bay_window_platform_1>,
+        </tn__scenebodies_nG/Geometry/world/bay_window_platform_0>,
+        </tn__scenebodies_nG/Geometry/world/window_14>,
+        </tn__scenebodies_nG/Geometry/world/window_13>,
+        </tn__scenebodies_nG/Geometry/world/window_12>,
+        </tn__scenebodies_nG/Geometry/world/window_11>,
+        </tn__scenebodies_nG/Geometry/world/window_10>,
+        </tn__scenebodies_nG/Geometry/world/window_9>,
+        </tn__scenebodies_nG/Geometry/world/window_8>,
+        </tn__scenebodies_nG/Geometry/world/window_7>,
+        </tn__scenebodies_nG/Geometry/world/window_6>,
+        </tn__scenebodies_nG/Geometry/world/window_5>,
+        </tn__scenebodies_nG/Geometry/world/window_4>,
+        </tn__scenebodies_nG/Geometry/world/window_3>,
+        </tn__scenebodies_nG/Geometry/world/window_2>,
+        </tn__scenebodies_nG/Geometry/world/window_1>,
+        </tn__scenebodies_nG/Geometry/world/window_0>,
+    ]
+    token isaac:robotType = "Default"
+
+    over "Geometry"
+    {
+        over "world"
+        {
+            over "wall_0" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "kitchen_cabinet" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+                over "cabinet_door_4" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "cabinet_door_4_handle" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "cabinet_door_3" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "cabinet_door_3_handle" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "cabinet_door_2" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "cabinet_door_2_handle" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "cabinet_door_1" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "cabinet_door_1_handle" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "drawer_4" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "drawer_4_handle" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "drawer_3" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "drawer_3_handle" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "drawer_2" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "drawer_2_handle" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "drawer_1" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "drawer_1_handle" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                    }
+                }
+            }
+
+            over "flowers_0" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "bookshelf_0" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "coffee_table_0" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "basin_0" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "nightstand_0" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "bed_0" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "sofa_0" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "toilet_0" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "trash_can_0" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "pipe_0" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "door_2" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+                over "door_2_leaf" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "door_2_handle_inner" (
+                        prepend apiSchemas = ["IsaacSiteAPI"]
+                    )
+                    {
+                    }
+
+                    over "door_2_handle_outer" (
+                        prepend apiSchemas = ["IsaacSiteAPI"]
+                    )
+                    {
+                    }
+                }
+            }
+
+            over "door_1" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+                over "door_1_leaf" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "door_1_handle_inner" (
+                        prepend apiSchemas = ["IsaacSiteAPI"]
+                    )
+                    {
+                    }
+
+                    over "door_1_handle_outer" (
+                        prepend apiSchemas = ["IsaacSiteAPI"]
+                    )
+                    {
+                    }
+                }
+            }
+
+            over "door_0" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+                over "door_0_leaf" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "door_0_handle_inner" (
+                        prepend apiSchemas = ["IsaacSiteAPI"]
+                    )
+                    {
+                    }
+
+                    over "door_0_handle_outer" (
+                        prepend apiSchemas = ["IsaacSiteAPI"]
+                    )
+                    {
+                    }
+                }
+            }
+
+            over "green_plants_0" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "radiator_0" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "handrail_1" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "handrail_0" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "hand_sanitizer_0" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "toilet_paper_holder_0" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "bay_window_platform_1" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "bay_window_platform_0" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "window_14" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "window_13" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "window_12" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "window_11" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "window_10" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "window_9" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "window_8" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "window_7" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "window_6" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "window_5" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "window_4" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "window_3" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "window_2" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "window_1" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "window_0" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+        }
+    }
+
+    over "Physics"
+    {
+        over "world_T_wall_0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_kitchen_cabinet" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "cabinet_door_4_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "cabinet_door_4_T_cabinet_door_4_handle" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "cabinet_door_3_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "cabinet_door_3_T_cabinet_door_3_handle" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "cabinet_door_2_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "cabinet_door_2_T_cabinet_door_2_handle" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "cabinet_door_1_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "cabinet_door_1_T_cabinet_door_1_handle" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "drawer_4_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "drawer_4_T_drawer_4_handle" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "drawer_3_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "drawer_3_T_drawer_3_handle" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "drawer_2_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "drawer_2_T_drawer_2_handle" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "drawer_1_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "drawer_1_T_drawer_1_handle" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_flowers_0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_bookshelf_0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_coffee_table_0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_basin_0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_nightstand_0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_bed_0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_sofa_0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_toilet_0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_trash_can_0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_pipe_0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_door_2" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "door_2_leaf" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_door_1" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "door_1_leaf" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_door_0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "door_0_leaf" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_green_plants_0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_radiator_0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_handrail_1" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_handrail_0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_hand_sanitizer_0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_toilet_paper_holder_0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_bay_window_platform_1" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_bay_window_platform_0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_window_14" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_window_13" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_window_12" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_window_11" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_window_10" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_window_9" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_window_8" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_window_7" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_window_6" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_window_5" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_window_4" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_window_3" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_window_2" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_window_1" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "world_T_window_0" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+    }
+}
+

@@ -1,0 +1,143 @@
+@prefix :      <https://aicor.knowledge/egg-cracking#> .
+@prefix ccram: <https://aicor.knowledge/ccram#> .
+@prefix dul:   <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix soma:  <http://www.ease-crc.org/ont/SOMA.owl#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+# =====================================================================================================================
+# egg-cracking -- cracking eggs into a batch bowl (HouseholdTwin egg SDT: food/egg_emulator.py, food/egg_tasks.py,
+# docs/EGG_SDT.md), aligned to SOMA. Restates the twin's egg knowledge; no new domain knowledge.
+#   1. objects and parts        2. tasks with grammar axioms (required: some, admissible: only)
+#   3. the egg-shell microtheory's closing events      4. failures
+# Status: PROPOSAL (2026-10-21).
+# =====================================================================================================================
+
+<https://aicor.knowledge/egg-cracking> a owl:Ontology ;
+    rdfs:label "Cracking eggs into a batch" ;
+    owl:imports <https://aicor.knowledge/ccram-nouns> .
+
+# ---------------------------------------------------------------------------------------------------- 1. objects
+:Egg a owl:Class ; rdfs:subClassOf dul:PhysicalBody ,
+    [ a owl:Restriction ; owl:onProperty soma:hasDisposition ; owl:someValuesFrom soma:Graspability ] ,
+    [ a owl:Restriction ; owl:onProperty soma:hasDisposition ; owl:someValuesFrom soma:Containment ] ;
+    rdfs:comment "A hen's egg: the shell contains the contents (albumen, yolk); food/egg.py part graph." .
+:EggShell a owl:Class ; rdfs:subClassOf dul:PhysicalBody ; rdfs:comment "Calcite shell with two membranes." .
+:Yolk a owl:Class ; rdfs:subClassOf dul:PhysicalBody ; rdfs:comment "Held by the vitelline membrane; breaks on shards." .
+:Albumen a owl:Class ; rdfs:subClassOf dul:Substance ; rdfs:comment "The white (thick and thin albumen)." .
+:ShellFragment a owl:Class ; rdfs:subClassOf dul:PhysicalBody ,
+    [ a owl:Restriction ; owl:onProperty soma:hasDisposition ; owl:someValuesFrom soma:Graspability ] .
+:StrikeSurface a owl:Class ; rdfs:subClassOf dul:PhysicalObject ;
+    rdfs:comment "What an egg is struck against (egg_crack.strike tool: flat | rim | another egg)." .
+:BowlRim a owl:Class ; rdfs:subClassOf :StrikeSurface , soma:DesignedComponent ;
+    rdfs:comment "Thin ceramic bowl rim (edge radius 1.5 mm in the crack study)." .
+:FlatSurface a owl:Class ; rdfs:subClassOf :StrikeSurface ; rdfs:comment "Flat counter (granite)." .
+:CrackingCup a owl:Class ; rdfs:subClassOf soma:Cup ; ccram:typeKeyword "cup" ;
+    rdfs:comment "Small cup an egg is opened into first: catches shell and bad eggs before the batch (egg_tasks CrackEgg 'into')." .
+:BatchBowl a owl:Class ; rdfs:subClassOf soma:Bowl ;
+    rdfs:comment "The bowl collecting the eggs of a recipe; never opened into directly." .
+:StrikeSpeedValue a owl:Class ; rdfs:subClassOf dul:Region ; ccram:typeKeyword "strike-speed" .
+:GripForceValue a owl:Class ; rdfs:subClassOf dul:Region ; ccram:typeKeyword "grip-force" .
+
+# ---------------------------------------------------------------------------------------------------- 2. tasks
+:StrikeSpeed a owl:Class ; rdfs:subClassOf soma:GoalRole ; ccram:roleKeyword "speed" ;
+    rdfs:comment "Normal impact speed [m/s] of a strike." .
+:GripForce a owl:Class ; rdfs:subClassOf soma:GoalRole ; ccram:roleKeyword "force" ;
+    rdfs:comment "Force per pad [N] of a grip." .
+
+:PickingUpEgg a owl:Class ; ccram:typeKeyword "picking-up" ; rdfs:subClassOf soma:PickingUp ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:someValuesFrom soma:Patient ] ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:allValuesFrom
+      [ a owl:Class ; owl:unionOf ( soma:Patient :GripForce ccram:Effector ) ] ] ;
+    ccram:telosState "held" .
+:Cracking a owl:Class ; rdfs:subClassOf soma:Manipulating ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:someValuesFrom soma:Patient ] ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:someValuesFrom soma:Tool ] ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:allValuesFrom
+      [ a owl:Class ; owl:unionOf ( soma:Patient soma:Tool :StrikeSpeed ccram:Effector ) ] ] ;
+    ccram:telosState "cracked" ;
+    rdfs:comment "Striking the egg's equator once against a surface: a dent and a sideways crack, no shatter." .
+:OpeningEgg a owl:Class ; ccram:typeKeyword "opening" ; rdfs:subClassOf soma:Opening ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:someValuesFrom soma:Patient ] ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:someValuesFrom soma:Destination ] ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:allValuesFrom
+      [ a owl:Class ; owl:unionOf ( soma:Patient soma:Destination ccram:Effector ) ] ] ;
+    ccram:telosState "released" ;
+    rdfs:comment "Pulling the cracked halves apart over a vessel: the contents fall in (egg_crack.open_up)." .
+:FishingOut a owl:Class ; rdfs:subClassOf soma:PickingUp ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:someValuesFrom soma:Container ] ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:allValuesFrom
+      [ a owl:Class ; owl:unionOf ( soma:Container soma:Tool ccram:Effector ) ] ] ;
+    ccram:telosState "shell-free" ;
+    rdfs:comment "Scooping shell fragments out of a vessel with a half shell (egg_crack.fish_out)." .
+:Inspecting a owl:Class ; rdfs:subClassOf ccram:PerceptionAction ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:someValuesFrom soma:Container ] ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:allValuesFrom soma:Container ] ;
+    rdfs:comment "Looking into a vessel: shell fragments and the yolk (food/egg_bowl_monitor.py)." .
+:FloatTesting a owl:Class ; rdfs:subClassOf ccram:PerceptionAction ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:someValuesFrom soma:Patient ] ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:allValuesFrom soma:Patient ] ;
+    rdfs:comment "Freshness probe: an egg in water lies flat, tilts, stands or floats with its air cell (food/egg_lifetime.py); it wets the shell." .
+:Weighing a owl:Class ; rdfs:subClassOf ccram:PerceptionAction ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:someValuesFrom soma:Patient ] ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:allValuesFrom soma:Patient ] .
+:Emptying a owl:Class ; rdfs:subClassOf soma:Pouring ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:someValuesFrom soma:Patient ] ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:someValuesFrom soma:Destination ] ,
+    [ a owl:Restriction ; owl:onProperty dul:isTaskOf ; owl:allValuesFrom
+      [ a owl:Class ; owl:unionOf ( soma:Patient soma:Destination ccram:Effector ) ] ] ;
+    rdfs:comment "Tipping the contents of a vessel (the cup) into another (the batch bowl)." .
+
+# ---------------------------------------------------------------------------------------------------- 3. closing events
+# Opening an egg straight into the batch bowl: a bad egg or shell spoils the whole batch ("small cup first").
+:OpenIntoBatchBowl a owl:Class ;
+    owl:equivalentClass [ a owl:Class ; owl:intersectionOf ( dul:Action
+        [ a owl:Restriction ; owl:onProperty dul:executesTask ; owl:someValuesFrom :OpeningEgg ]
+        [ a owl:Restriction ; owl:onProperty dul:hasParticipant ; owl:someValuesFrom [ a owl:Class ; owl:intersectionOf (
+            :BatchBowl [ a owl:Restriction ; owl:onProperty dul:isClassifiedBy ; owl:someValuesFrom soma:Destination ] ) ] ] ) ] ;
+    rdfs:subClassOf ccram:ProhibitedAction .
+
+# ---------------------------------------------------------------------------------------------------- 4. failures
+:NoCrack a owl:Class ; rdfs:subClassOf ccram:ManipulationFailure ; ccram:recoverable true ;
+    ccram:suggestsRepair "strike again, a little faster (+15 %, docs/EGG_SDT.md)" .
+:EggShattered a owl:Class ; rdfs:subClassOf ccram:ManipulationFailure ; ccram:recoverable false ;
+    rdfs:comment "Contents everywhere: clean up, take a new egg." .
+:EggCrushed a owl:Class ; rdfs:subClassOf ccram:ManipulationFailure ; ccram:recoverable false .
+:EggSlipped a owl:Class ; rdfs:subClassOf ccram:ManipulationFailure ; ccram:recoverable true ;
+    ccram:suggestsRepair "regrasp with a higher force inside the corridor" .
+:YolkBroken a owl:Class ; rdfs:subClassOf ccram:ManipulationFailure ; ccram:recoverable true ;
+    rdfs:comment "The yolk spreads: fine for a batter or scrambled eggs, a failure for frying or separating -- the handler in scope decides." .
+:ShellLeftInContents a owl:Class ; rdfs:subClassOf ccram:ManipulationFailure ; ccram:recoverable true .
+:BatchSpoiled a owl:Class ; rdfs:subClassOf ccram:ClosingEventViolation ;
+    rdfs:comment "An unfit egg (or one opened directly into the batch) would spoil the batch: prevented by the gate." .
+
+# ---------------------------------------------------------------------------------------------------- 5. egg states (D9)
+# the egg's state vocabulary (fluents, ccram-states.ttl scheme)
+:ShellStateRegion a owl:Class ; rdfs:subClassOf dul:Region ;
+    rdfs:comment "Observed shell states: intact (incl. invisible micro-cracks), cracked (check or cracked open), opened, shattered." .
+:ShellIntact a owl:Class ; rdfs:subClassOf :ShellStateRegion .
+:ShellCracked a owl:Class ; rdfs:subClassOf :ShellStateRegion .
+:ShellOpened a owl:Class ; rdfs:subClassOf :ShellStateRegion .
+:ShellShattered a owl:Class ; rdfs:subClassOf :ShellStateRegion .
+:hasShellState a owl:ObjectProperty ; ccram:relationKeyword "shell-state" ; rdfs:subPropertyOf dul:hasRegion ;
+    rdfs:range :ShellStateRegion ; ccram:fluent true .
+:EggWithWholeYolk a owl:Class ; ccram:typeKeyword "yolk-whole" ; rdfs:subClassOf :Egg , ccram:ObjectStateClass .
+:EggWithBrokenYolk a owl:Class ; ccram:typeKeyword "broken-yolk" ; rdfs:subClassOf :Egg , ccram:ObjectStateClass ;
+    owl:disjointWith :EggWithWholeYolk .
+:ShellFreeVessel a owl:Class ; ccram:typeKeyword "shell-free" ; rdfs:subClassOf ccram:ObjectStateClass ;
+    rdfs:comment "A vessel in which the last inspection saw no shell fragment." .
+:shellFragmentsSeen a owl:DatatypeProperty ; ccram:relationKeyword "shell-seen" ; rdfs:range xsd:integer ; ccram:fluent true .
+:floatObservation a owl:ObjectProperty ; ccram:relationKeyword "float-observed" ; rdfs:subPropertyOf dul:associatedWith ;
+    rdfs:comment "(float-observed egg sinks|floats tilt-deg): what the float test showed." .
+:hasFloatClass a owl:ObjectProperty ; ccram:relationKeyword "float-class" ; rdfs:subPropertyOf dul:hasRegion ;
+    rdfs:comment "Float posture class: flat, tilts, stands, floats (food/egg_lifetime.py)." .
+:FloatTested a owl:Class ; ccram:typeKeyword "float-tested" ; rdfs:subClassOf :Egg , ccram:ObjectStateClass .
+:FreshEgg a owl:Class ; ccram:typeKeyword "fresh" ; rdfs:subClassOf :Egg , ccram:ObjectStateClass ;
+    rdfs:comment "Sinks and lies flat or tilts in water (small air cell)." .
+:UseSoonEgg a owl:Class ; ccram:typeKeyword "use-soon" ; rdfs:subClassOf :Egg , ccram:ObjectStateClass ;
+    rdfs:comment "Stands on its end in water: older, still usable." .
+:StaleEgg a owl:Class ; ccram:typeKeyword "stale" ; rdfs:subClassOf :Egg , ccram:ObjectStateClass ; owl:disjointWith :FreshEgg ;
+    rdfs:comment "Floats: lost too much moisture; not for the batch (USDA float test; food/egg_lifetime.py)." .
+:UnfitForBatch a owl:Class ; ccram:typeKeyword "unfit" ; rdfs:subClassOf ccram:ObjectStateClass ;
+    rdfs:comment "A vessel whose contents must not go into the batch (a stale egg's contents, or shell seen in it)." .

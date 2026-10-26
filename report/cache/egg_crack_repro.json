@@ -1,0 +1,23 @@
+{
+ "best": {
+  "flat counter (granite)": [
+   0.45,
+   0.875
+  ],
+  "thin bowl rim (r 1.5 mm)": [
+   0.25,
+   0.7575
+  ],
+  "thick bowl rim (r 4 mm)": [
+   0.35,
+   0.77
+  ],
+  "another egg": [
+   0.5,
+   0.85
+  ]
+ },
+ "m_eff_fraction": 0.53,
+ "_runtime_s": 2.5,
+ "_date": "2026-10-20 06:08"
+}

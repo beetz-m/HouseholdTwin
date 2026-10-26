@@ -1,0 +1,2692 @@
+{
+ "programs": [
+  {
+   "name": "RL from T1 (no seed-coat concept), shielded",
+   "concepts": [
+    "Whole",
+    "Scored",
+    "HalvesApart",
+    "SeedLocation",
+    "RipenessStage",
+    "TornFlesh"
+   ],
+   "actions": {
+    "day": [
+     "cut",
+     "wait"
+    ],
+    "removal": [
+     "spoon",
+     "knife_twist"
+    ]
+   },
+   "kpis": {
+    "requirement": 1.0,
+    "eating_quality": 0.2,
+    "gouge": -0.3,
+    "torn": -0.4,
+    "seed_coat_left": -0.3,
+    "day": -0.02
+   },
+   "forbidden": {
+    "hazard": "shield"
+   },
+   "curve": [
+    {
+     "round": 0,
+     "eps": 0.4,
+     "mean_reward": 0.11468361997807303,
+     "success": 0.3171428571428571
+    },
+    {
+     "round": 1,
+     "eps": 0.3428571428571429,
+     "mean_reward": 0.24423705334407794,
+     "success": 0.3842857142857143
+    },
+    {
+     "round": 2,
+     "eps": 0.28571428571428575,
+     "mean_reward": 0.2601542354409328,
+     "success": 0.38857142857142857
+    },
+    {
+     "round": 3,
+     "eps": 0.22857142857142856,
+     "mean_reward": 0.27057536771119867,
+     "success": 0.3914285714285714
+    },
+    {
+     "round": 4,
+     "eps": 0.17142857142857146,
+     "mean_reward": 0.31666804607967297,
+     "success": 0.4228571428571429
+    },
+    {
+     "round": 5,
+     "eps": 0.11428571428571428,
+     "mean_reward": 0.3093279541623906,
+     "success": 0.4157142857142857
+    },
+    {
+     "round": 6,
+     "eps": 0.05714285714285716,
+     "mean_reward": 0.363691275806423,
+     "success": 0.44571428571428573
+    },
+    {
+     "round": 7,
+     "eps": 0.05,
+     "mean_reward": 0.37481230650364716,
+     "success": 0.45285714285714285
+    }
+   ],
+   "eval": {
+    "unripe": {
+     "ok": 12,
+     "n": 30,
+     "hazard": 0,
+     "mean_day": 4.033333333333333,
+     "failures": {
+      "seed coat left": 16,
+      "ok": 0,
+      "torn": 1,
+      "not edible": 1
+     },
+     "per_seed": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false
+     ]
+    },
+    "breaking": {
+     "ok": 13,
+     "n": 30,
+     "hazard": 0,
+     "mean_day": 2.066666666666667,
+     "failures": {
+      "seed coat left": 17,
+      "ok": 0
+     },
+     "per_seed": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true,
+      false,
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false
+     ]
+    },
+    "ripe": {
+     "ok": 13,
+     "n": 30,
+     "hazard": 0,
+     "mean_day": 0.43333333333333335,
+     "failures": {
+      "seed coat left": 17,
+      "ok": 0
+     },
+     "per_seed": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true,
+      false,
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false
+     ]
+    }
+   },
+   "policy": [
+    {
+     "state": [
+      "day",
+      "0",
+      "0",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": -0.083,
+      "cut": -0.55
+     },
+     "visits": 44
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "0",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.233,
+      "cut": -0.659
+     },
+     "visits": 2139
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "1",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.325,
+      "cut": -0.53
+     },
+     "visits": 428
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "2",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "cut": -0.153,
+      "wait": 0.511
+     },
+     "visits": 331
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "3",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.445,
+      "cut": 0.187
+     },
+     "visits": 950
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "4",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.307,
+      "cut": 0.369
+     },
+     "visits": 1336
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "5",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": -0.063
+     },
+     "visits": 2
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "5",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.304,
+      "cut": 0.478
+     },
+     "visits": 370
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "0",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.167,
+      "cut": -0.563
+     },
+     "visits": 29
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "0",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "cut": -0.66,
+      "wait": 0.231
+     },
+     "visits": 376
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "1",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.108
+     },
+     "visits": 3
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "1",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.33,
+      "cut": -0.395
+     },
+     "visits": 1486
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "2",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.332,
+      "cut": -0.071
+     },
+     "visits": 354
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "3",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "cut": 0.088,
+      "wait": 0.404
+     },
+     "visits": 140
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "4",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "cut": 0.341,
+      "wait": 0.499
+     },
+     "visits": 463
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "5",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.25,
+      "cut": 0.472
+     },
+     "visits": 847
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "6",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": -0.188
+     },
+     "visits": 3
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "6",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.121,
+      "cut": 0.444
+     },
+     "visits": 90
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "1",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": -0.014
+     },
+     "visits": 5
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "1",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.27,
+      "cut": -0.328
+     },
+     "visits": 234
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "2",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.361
+     },
+     "visits": 4
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "2",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.352,
+      "cut": -0.115
+     },
+     "visits": 1044
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "3",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.38,
+      "cut": 0.197
+     },
+     "visits": 561
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "4",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.377,
+      "cut": 0.121
+     },
+     "visits": 225
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "5",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.47,
+      "cut": 0.496
+     },
+     "visits": 506
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "6",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.072,
+      "cut": -0.24
+     },
+     "visits": 12
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "6",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.13,
+      "cut": 0.394
+     },
+     "visits": 261
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "2",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.346
+     },
+     "visits": 12
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "3",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.257
+     },
+     "visits": 7
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "3",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.348,
+      "cut": -0.073
+     },
+     "visits": 492
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "4",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": -0.221
+     },
+     "visits": 1
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "4",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.377,
+      "cut": 0.355
+     },
+     "visits": 960
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "5",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.36,
+      "cut": 0.221
+     },
+     "visits": 381
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "6",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "cut": 0.331,
+      "wait": 0.005
+     },
+     "visits": 107
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "6",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "cut": 0.58,
+      "wait": 0.206
+     },
+     "visits": 144
+    },
+    {
+     "state": [
+      "day",
+      "4",
+      "4",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "cut": 0.253
+     },
+     "visits": 3
+    },
+    {
+     "state": [
+      "day",
+      "4",
+      "4",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "cut": 0.412,
+      "wait": 0.231
+     },
+     "visits": 92
+    },
+    {
+     "state": [
+      "day",
+      "4",
+      "5",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "cut": 0.005
+     },
+     "visits": 3
+    },
+    {
+     "state": [
+      "day",
+      "4",
+      "5",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.352,
+      "cut": 0.374
+     },
+     "visits": 1335
+    },
+    {
+     "state": [
+      "day",
+      "4",
+      "6",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": -0.164,
+      "cut": 0.132
+     },
+     "visits": 159
+    },
+    {
+     "state": [
+      "day",
+      "4",
+      "6",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "cut": 0.356,
+      "wait": 0.375
+     },
+     "visits": 279
+    },
+    {
+     "state": [
+      "removal",
+      "False"
+     ],
+     "best": "spoon",
+     "values": {
+      "spoon": 0.371
+     },
+     "visits": 5130
+    },
+    {
+     "state": [
+      "removal",
+      "True"
+     ],
+     "best": "spoon",
+     "values": {
+      "spoon": -0.689
+     },
+     "visits": 470
+    }
+   ]
+  },
+  {
+   "name": "RL from T3, shielded",
+   "concepts": [
+    "Whole",
+    "Scored",
+    "HalvesApart",
+    "SeedLocation",
+    "RipenessStage",
+    "TornFlesh",
+    "SeedCoatSide",
+    "TactileRipeness"
+   ],
+   "actions": {
+    "day": [
+     "cut",
+     "wait"
+    ],
+    "removal": [
+     "spoon",
+     "knife_twist"
+    ],
+    "peel": [
+     0,
+     1,
+     2
+    ]
+   },
+   "kpis": {
+    "requirement": 1.0,
+    "eating_quality": 0.2,
+    "gouge": -0.3,
+    "torn": -0.4,
+    "seed_coat_left": -0.3,
+    "day": -0.02
+   },
+   "forbidden": {
+    "hazard": "shield"
+   },
+   "curve": [
+    {
+     "round": 0,
+     "eps": 0.4,
+     "mean_reward": 0.25646473024461586,
+     "success": 0.4057142857142857
+    },
+    {
+     "round": 1,
+     "eps": 0.3428571428571429,
+     "mean_reward": 0.6725623089708515,
+     "success": 0.6885714285714286
+    },
+    {
+     "round": 2,
+     "eps": 0.28571428571428575,
+     "mean_reward": 0.7528347441520558,
+     "success": 0.7485714285714286
+    },
+    {
+     "round": 3,
+     "eps": 0.22857142857142856,
+     "mean_reward": 0.7432989913986249,
+     "success": 0.7442857142857143
+    },
+    {
+     "round": 4,
+     "eps": 0.17142857142857146,
+     "mean_reward": 0.8301854878720977,
+     "success": 0.8042857142857143
+    },
+    {
+     "round": 5,
+     "eps": 0.11428571428571428,
+     "mean_reward": 0.8886236811098275,
+     "success": 0.8485714285714285
+    },
+    {
+     "round": 6,
+     "eps": 0.05714285714285716,
+     "mean_reward": 0.979566045891604,
+     "success": 0.9114285714285715
+    },
+    {
+     "round": 7,
+     "eps": 0.05,
+     "mean_reward": 0.9831304030443733,
+     "success": 0.9157142857142857
+    }
+   ],
+   "eval": {
+    "unripe": {
+     "ok": 30,
+     "n": 30,
+     "hazard": 0,
+     "mean_day": 3.7,
+     "failures": {
+      "ok": 0
+     },
+     "per_seed": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "breaking": {
+     "ok": 28,
+     "n": 30,
+     "hazard": 0,
+     "mean_day": 1.6333333333333333,
+     "failures": {
+      "seed coat left": 2,
+      "ok": 0
+     },
+     "per_seed": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    },
+    "ripe": {
+     "ok": 30,
+     "n": 30,
+     "hazard": 0,
+     "mean_day": 0.5333333333333333,
+     "failures": {
+      "ok": 0
+     },
+     "per_seed": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ]
+    }
+   },
+   "policy": [
+    {
+     "state": [
+      "day",
+      "0",
+      "0",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.57,
+      "cut": -0.668
+     },
+     "visits": 674
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "0",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.688,
+      "cut": -0.608
+     },
+     "visits": 960
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "1",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.989
+     },
+     "visits": 15
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "1",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.774,
+      "cut": -0.498
+     },
+     "visits": 538
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "2",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 1.135
+     },
+     "visits": 5
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "2",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.87,
+      "cut": -0.3
+     },
+     "visits": 340
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "3",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.921
+     },
+     "visits": 14
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "3",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.924,
+      "cut": -0.009
+     },
+     "visits": 519
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "4",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 1.058,
+      "cut": 0.758
+     },
+     "visits": 56
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "4",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.953,
+      "cut": 0.513
+     },
+     "visits": 836
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "5",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.608,
+      "cut": 1.02
+     },
+     "visits": 1219
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "5",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.984,
+      "cut": 0.8
+     },
+     "visits": 301
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "6",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.387,
+      "cut": 1.097
+     },
+     "visits": 123
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "0",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "cut": -0.613,
+      "wait": 0.697
+     },
+     "visits": 523
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "1",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.749,
+      "cut": -0.501
+     },
+     "visits": 650
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "1",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.648,
+      "cut": -0.72
+     },
+     "visits": 7
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "2",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.838,
+      "cut": -0.249
+     },
+     "visits": 375
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "2",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.862,
+      "cut": -0.333
+     },
+     "visits": 37
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "3",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.908,
+      "cut": 0.236
+     },
+     "visits": 329
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "3",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.863,
+      "cut": -0.126
+     },
+     "visits": 83
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "4",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.987,
+      "cut": 0.419
+     },
+     "visits": 151
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "4",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "cut": 0.445,
+      "wait": 0.969
+     },
+     "visits": 246
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "5",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.987,
+      "cut": 0.865
+     },
+     "visits": 476
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "5",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.637,
+      "cut": 0.928
+     },
+     "visits": 451
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "6",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.406,
+      "cut": 1.016
+     },
+     "visits": 670
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "6",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 1.031,
+      "cut": 0.618
+     },
+     "visits": 44
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "1",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.774,
+      "cut": -0.425
+     },
+     "visits": 294
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "2",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.784,
+      "cut": -0.232
+     },
+     "visits": 454
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "3",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.865,
+      "cut": 0.391
+     },
+     "visits": 365
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "3",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 1.107,
+      "cut": -0.341
+     },
+     "visits": 3
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "4",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.945,
+      "cut": 0.616
+     },
+     "visits": 403
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "4",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "cut": 0.737
+     },
+     "visits": 8
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "5",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.82,
+      "cut": 0.954
+     },
+     "visits": 501
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "5",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "cut": 0.962,
+      "wait": 0.344
+     },
+     "visits": 44
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "6",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.428,
+      "cut": 0.991
+     },
+     "visits": 827
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "6",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": -0.18,
+      "cut": 1.157
+     },
+     "visits": 6
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "1",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": -0.313
+     },
+     "visits": 3
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "2",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.748,
+      "cut": -0.242
+     },
+     "visits": 75
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "3",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.932,
+      "cut": -0.042
+     },
+     "visits": 273
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "4",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "cut": 0.573,
+      "wait": 0.901
+     },
+     "visits": 394
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "5",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.789,
+      "cut": 0.968
+     },
+     "visits": 485
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "5",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "cut": 1.074
+     },
+     "visits": 1
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "6",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.284,
+      "cut": 0.907
+     },
+     "visits": 411
+    },
+    {
+     "state": [
+      "day",
+      "4",
+      "2",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "cut": -0.315
+     },
+     "visits": 2
+    },
+    {
+     "state": [
+      "day",
+      "4",
+      "3",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "cut": -0.579,
+      "wait": 0.625
+     },
+     "visits": 11
+    },
+    {
+     "state": [
+      "day",
+      "4",
+      "4",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "cut": 0.184,
+      "wait": 0.927
+     },
+     "visits": 102
+    },
+    {
+     "state": [
+      "day",
+      "4",
+      "4",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "cut": 1.047
+     },
+     "visits": 1
+    },
+    {
+     "state": [
+      "day",
+      "4",
+      "5",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.994,
+      "cut": 0.669
+     },
+     "visits": 363
+    },
+    {
+     "state": [
+      "day",
+      "4",
+      "6",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "cut": 0.521,
+      "wait": 0.286
+     },
+     "visits": 353
+    },
+    {
+     "state": [
+      "peel",
+      "False"
+     ],
+     "best": "2",
+     "values": {
+      "0": 0.689,
+      "1": 0.779,
+      "2": 0.917
+     },
+     "visits": 2767
+    },
+    {
+     "state": [
+      "peel",
+      "True"
+     ],
+     "best": "2",
+     "values": {
+      "0": -0.31,
+      "2": 0.861,
+      "1": 0.617
+     },
+     "visits": 2833
+    },
+    {
+     "state": [
+      "removal",
+      "False"
+     ],
+     "best": "spoon",
+     "values": {
+      "spoon": 0.881
+     },
+     "visits": 5148
+    },
+    {
+     "state": [
+      "removal",
+      "True"
+     ],
+     "best": "spoon",
+     "values": {
+      "spoon": -0.577
+     },
+     "visits": 452
+    }
+   ]
+  },
+  {
+   "name": "RL from T3, hazard as a soft penalty 0.05",
+   "concepts": [
+    "Whole",
+    "Scored",
+    "HalvesApart",
+    "SeedLocation",
+    "RipenessStage",
+    "TornFlesh",
+    "SeedCoatSide",
+    "TactileRipeness"
+   ],
+   "actions": {
+    "day": [
+     "cut",
+     "wait"
+    ],
+    "removal": [
+     "spoon",
+     "knife_twist"
+    ],
+    "peel": [
+     0,
+     1,
+     2
+    ]
+   },
+   "kpis": {
+    "requirement": 1.0,
+    "eating_quality": 0.2,
+    "gouge": -0.3,
+    "torn": -0.4,
+    "seed_coat_left": -0.3,
+    "day": -0.02
+   },
+   "forbidden": {
+    "hazard": 0.05
+   },
+   "curve": [
+    {
+     "round": 0,
+     "eps": 0.4,
+     "mean_reward": 0.26925044453033015,
+     "success": 0.32
+    },
+    {
+     "round": 1,
+     "eps": 0.3428571428571429,
+     "mean_reward": 0.6460670768322729,
+     "success": 0.09857142857142857
+    },
+    {
+     "round": 2,
+     "eps": 0.28571428571428575,
+     "mean_reward": 0.7692470956210351,
+     "success": 0.11857142857142858
+    },
+    {
+     "round": 3,
+     "eps": 0.22857142857142856,
+     "mean_reward": 0.7691817550545349,
+     "success": 0.07571428571428572
+    },
+    {
+     "round": 4,
+     "eps": 0.17142857142857146,
+     "mean_reward": 0.8371854878720976,
+     "success": 0.08142857142857143
+    },
+    {
+     "round": 5,
+     "eps": 0.11428571428571428,
+     "mean_reward": 0.8722395215388901,
+     "success": 0.06428571428571428
+    },
+    {
+     "round": 6,
+     "eps": 0.05714285714285716,
+     "mean_reward": 0.9160368055239748,
+     "success": 0.03571428571428571
+    },
+    {
+     "round": 7,
+     "eps": 0.05,
+     "mean_reward": 0.9723446887586589,
+     "success": 0.02857142857142857
+    }
+   ],
+   "eval": {
+    "unripe": {
+     "ok": 0,
+     "n": 30,
+     "hazard": 30,
+     "mean_day": 3.7,
+     "failures": {
+      "unsafe tool": 30
+     },
+     "per_seed": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ]
+    },
+    "breaking": {
+     "ok": 0,
+     "n": 30,
+     "hazard": 30,
+     "mean_day": 1.6333333333333333,
+     "failures": {
+      "unsafe tool": 30
+     },
+     "per_seed": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ]
+    },
+    "ripe": {
+     "ok": 0,
+     "n": 30,
+     "hazard": 30,
+     "mean_day": 0.5333333333333333,
+     "failures": {
+      "unsafe tool": 30
+     },
+     "per_seed": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ]
+    }
+   },
+   "policy": [
+    {
+     "state": [
+      "day",
+      "0",
+      "0",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.544,
+      "cut": -0.521
+     },
+     "visits": 674
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "0",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.654,
+      "cut": -0.489
+     },
+     "visits": 960
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "1",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 1.006
+     },
+     "visits": 15
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "1",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.795,
+      "cut": -0.408
+     },
+     "visits": 538
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "2",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 1.095
+     },
+     "visits": 5
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "2",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.841,
+      "cut": -0.216
+     },
+     "visits": 340
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "3",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.899
+     },
+     "visits": 14
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "3",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.907,
+      "cut": 0.021
+     },
+     "visits": 519
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "4",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.998,
+      "cut": 0.762
+     },
+     "visits": 56
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "4",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.961,
+      "cut": 0.49
+     },
+     "visits": 836
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "5",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.599,
+      "cut": 1.013
+     },
+     "visits": 1219
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "5",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.959,
+      "cut": 0.778
+     },
+     "visits": 301
+    },
+    {
+     "state": [
+      "day",
+      "0",
+      "6",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.417,
+      "cut": 1.064
+     },
+     "visits": 123
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "0",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "cut": -0.503,
+      "wait": 0.644
+     },
+     "visits": 523
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "1",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.691,
+      "cut": -0.399
+     },
+     "visits": 650
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "1",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.648,
+      "cut": -0.47
+     },
+     "visits": 7
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "2",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.848,
+      "cut": -0.171
+     },
+     "visits": 375
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "2",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.994,
+      "cut": -0.333
+     },
+     "visits": 37
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "3",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.908,
+      "cut": 0.236
+     },
+     "visits": 329
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "3",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.84,
+      "cut": -0.226
+     },
+     "visits": 83
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "4",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.967,
+      "cut": 0.41
+     },
+     "visits": 151
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "4",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "cut": 0.406,
+      "wait": 0.936
+     },
+     "visits": 246
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "5",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.993,
+      "cut": 0.822
+     },
+     "visits": 476
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "5",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.619,
+      "cut": 0.928
+     },
+     "visits": 451
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "6",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.436,
+      "cut": 0.997
+     },
+     "visits": 670
+    },
+    {
+     "state": [
+      "day",
+      "1",
+      "6",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.978,
+      "cut": 0.578
+     },
+     "visits": 44
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "1",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.746,
+      "cut": -0.362
+     },
+     "visits": 294
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "2",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.686,
+      "cut": -0.21
+     },
+     "visits": 454
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "3",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.873,
+      "cut": 0.166
+     },
+     "visits": 365
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "3",
+      "1"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 1.057,
+      "cut": -0.341
+     },
+     "visits": 3
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "4",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.958,
+      "cut": 0.552
+     },
+     "visits": 403
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "4",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "cut": 0.737
+     },
+     "visits": 8
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "5",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.79,
+      "cut": 0.932
+     },
+     "visits": 501
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "5",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "cut": 0.948,
+      "wait": 0.508
+     },
+     "visits": 44
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "6",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.441,
+      "cut": 0.99
+     },
+     "visits": 827
+    },
+    {
+     "state": [
+      "day",
+      "2",
+      "6",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": -0.18,
+      "cut": 1.127
+     },
+     "visits": 6
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "1",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": -0.146
+     },
+     "visits": 3
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "2",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.759,
+      "cut": -0.267
+     },
+     "visits": 75
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "3",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.927,
+      "cut": -0.103
+     },
+     "visits": 273
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "4",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "cut": 0.577,
+      "wait": 0.801
+     },
+     "visits": 388
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "5",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.859,
+      "cut": 0.969
+     },
+     "visits": 512
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "5",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "cut": 1.024
+     },
+     "visits": 1
+    },
+    {
+     "state": [
+      "day",
+      "3",
+      "6",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "wait": 0.316,
+      "cut": 0.902
+     },
+     "visits": 421
+    },
+    {
+     "state": [
+      "day",
+      "4",
+      "2",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "cut": -0.065
+     },
+     "visits": 2
+    },
+    {
+     "state": [
+      "day",
+      "4",
+      "3",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "cut": -0.579,
+      "wait": 0.587
+     },
+     "visits": 11
+    },
+    {
+     "state": [
+      "day",
+      "4",
+      "4",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "cut": 0.219,
+      "wait": 0.93
+     },
+     "visits": 102
+    },
+    {
+     "state": [
+      "day",
+      "4",
+      "4",
+      "1"
+     ],
+     "best": "cut",
+     "values": {
+      "cut": 1.047
+     },
+     "visits": 1
+    },
+    {
+     "state": [
+      "day",
+      "4",
+      "5",
+      "0"
+     ],
+     "best": "wait",
+     "values": {
+      "wait": 0.98,
+      "cut": 0.657
+     },
+     "visits": 280
+    },
+    {
+     "state": [
+      "day",
+      "4",
+      "6",
+      "0"
+     ],
+     "best": "cut",
+     "values": {
+      "cut": 0.56,
+      "wait": 0.347
+     },
+     "visits": 368
+    },
+    {
+     "state": [
+      "peel",
+      "False"
+     ],
+     "best": "2",
+     "values": {
+      "0": 0.691,
+      "1": 0.819,
+      "2": 0.892
+     },
+     "visits": 2767
+    },
+    {
+     "state": [
+      "peel",
+      "True"
+     ],
+     "best": "2",
+     "values": {
+      "0": -0.303,
+      "1": 0.628,
+      "2": 0.853
+     },
+     "visits": 2833
+    },
+    {
+     "state": [
+      "removal",
+      "False"
+     ],
+     "best": "knife_twist",
+     "values": {
+      "knife_twist": 0.923,
+      "spoon": 0.621
+     },
+     "visits": 5138
+    },
+    {
+     "state": [
+      "removal",
+      "True"
+     ],
+     "best": "knife_twist",
+     "values": {
+      "knife_twist": -0.452,
+      "spoon": -0.643
+     },
+     "visits": 462
+    }
+   ]
+  }
+ ],
+ "seconds": 347.4
+}

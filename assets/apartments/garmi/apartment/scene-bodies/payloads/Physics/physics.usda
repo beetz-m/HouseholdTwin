@@ -1,0 +1,1296 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.3.2"
+    }
+    defaultPrim = "tn__scenebodies_nG"
+    endTimeCode = 1000000
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    startTimeCode = 0
+    upAxis = "Z"
+)
+
+over "tn__scenebodies_nG"
+{
+    over "Geometry"
+    {
+        over "world"
+        {
+            over "wall_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "kitchen_cabinet" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+
+                over "cabinet_door_4" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI"]
+                )
+                {
+                    over "cabinet_door_4_handle" (
+                        prepend apiSchemas = ["PhysicsRigidBodyAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "cabinet_door_3" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI"]
+                )
+                {
+                    over "cabinet_door_3_handle" (
+                        prepend apiSchemas = ["PhysicsRigidBodyAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "cabinet_door_2" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI"]
+                )
+                {
+                    over "cabinet_door_2_handle" (
+                        prepend apiSchemas = ["PhysicsRigidBodyAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "cabinet_door_1" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI"]
+                )
+                {
+                    over "cabinet_door_1_handle" (
+                        prepend apiSchemas = ["PhysicsRigidBodyAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "drawer_4" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI"]
+                )
+                {
+                    over "drawer_4_handle" (
+                        prepend apiSchemas = ["PhysicsRigidBodyAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "drawer_3" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI"]
+                )
+                {
+                    over "drawer_3_handle" (
+                        prepend apiSchemas = ["PhysicsRigidBodyAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "drawer_2" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI"]
+                )
+                {
+                    over "drawer_2_handle" (
+                        prepend apiSchemas = ["PhysicsRigidBodyAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "drawer_1" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI"]
+                )
+                {
+                    over "drawer_1_handle" (
+                        prepend apiSchemas = ["PhysicsRigidBodyAPI"]
+                    )
+                    {
+                    }
+                }
+            }
+
+            over "flowers_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "book_10" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "book_9" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "book_8" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "book_7" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "book_6" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "book_5" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "book_4" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "book_3" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "book_2" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "book_1" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "book_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "bookshelf_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "coffee_table_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "basin_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "nightstand_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "bed_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "chair_1" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "chair_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "dining_table_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "floor_lamp_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "sofa_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "toilet_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "trash_can_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "pipe_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "door_2" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+
+                over "door_2_leaf" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI"]
+                )
+                {
+                }
+            }
+
+            over "door_1" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+
+                over "door_1_leaf" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI"]
+                )
+                {
+                }
+            }
+
+            over "door_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+
+                over "door_0_leaf" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI"]
+                )
+                {
+                }
+            }
+
+            over "green_plants_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "radiator_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "handrail_1" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "handrail_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "hand_sanitizer_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "toilet_paper_holder_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "bay_window_platform_1" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "bay_window_platform_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "window_14" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "window_13" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "window_12" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "window_11" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "window_10" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "window_9" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "window_8" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "window_7" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "window_6" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "window_5" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "window_4" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "window_3" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "window_2" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "window_1" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+
+            over "window_0" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+            }
+        }
+    }
+
+    over "Physics"
+    {
+        def PhysicsRevoluteJoint "cabinet_door_4_joint" (
+            prepend apiSchemas = ["NewtonJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.6981317
+            float drive:angular:physics:stiffness = 6.981317
+            uniform token drive:angular:physics:type = "force"
+            float newton:velocityLimit = 0
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_4>
+            point3f physics:localPos0 = (1.2335, -0.26923, -0.425)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, 0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 5156.62
+            custom float urdf:limit:effort = 0
+        }
+
+        def PhysicsRevoluteJoint "cabinet_door_3_joint" (
+            prepend apiSchemas = ["NewtonJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.6981317
+            float drive:angular:physics:stiffness = 6.981317
+            uniform token drive:angular:physics:type = "force"
+            float newton:velocityLimit = 0
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_3>
+            point3f physics:localPos0 = (1.2335, -0.26923, 0.525)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, 0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 5156.62
+            custom float urdf:limit:effort = 0
+        }
+
+        def PhysicsRevoluteJoint "cabinet_door_2_joint" (
+            prepend apiSchemas = ["NewtonJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.6981317
+            float drive:angular:physics:stiffness = 6.981317
+            uniform token drive:angular:physics:type = "force"
+            float newton:velocityLimit = 0
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_2>
+            point3f physics:localPos0 = (0.62458, -0.26923, -0.6)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, 0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 5156.62
+            custom float urdf:limit:effort = 0
+        }
+
+        def PhysicsRevoluteJoint "cabinet_door_1_joint" (
+            prepend apiSchemas = ["NewtonJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.6981317
+            float drive:angular:physics:stiffness = 6.981317
+            uniform token drive:angular:physics:type = "force"
+            float newton:velocityLimit = 0
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_1>
+            point3f physics:localPos0 = (0.1835, -0.26923, -0.5)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, 0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 5156.62
+            custom float urdf:limit:effort = 0
+        }
+
+        def PhysicsPrismaticJoint "drawer_4_joint" (
+            prepend apiSchemas = ["NewtonJointAPI", "PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+            float drive:linear:physics:damping = 40
+            float drive:linear:physics:stiffness = 400
+            uniform token drive:linear:physics:type = "force"
+            float newton:velocityLimit = 0
+            uniform token physics:axis = "X"
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_4>
+            point3f physics:localPos0 = (0.41, -0.017725, -0.2)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0, 0.70710665, -0.7071069, 0)
+            quatf physics:localRot1 = (0, 0, -1, 0)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 0.466
+            custom float urdf:limit:effort = 0
+        }
+
+        def PhysicsPrismaticJoint "drawer_3_joint" (
+            prepend apiSchemas = ["NewtonJointAPI", "PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+            float drive:linear:physics:damping = 40
+            float drive:linear:physics:stiffness = 400
+            uniform token drive:linear:physics:type = "force"
+            float newton:velocityLimit = 0
+            uniform token physics:axis = "X"
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_3>
+            point3f physics:localPos0 = (-0.99, -0.017725, -0.7)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0, 0.70710665, -0.7071069, 0)
+            quatf physics:localRot1 = (0, 0, -1, 0)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 0.466
+            custom float urdf:limit:effort = 0
+        }
+
+        def PhysicsPrismaticJoint "drawer_2_joint" (
+            prepend apiSchemas = ["NewtonJointAPI", "PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+            float drive:linear:physics:damping = 40
+            float drive:linear:physics:stiffness = 400
+            uniform token drive:linear:physics:type = "force"
+            float newton:velocityLimit = 0
+            uniform token physics:axis = "X"
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_2>
+            point3f physics:localPos0 = (-0.99, -0.017725, -0.4)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0, 0.70710665, -0.7071069, 0)
+            quatf physics:localRot1 = (0, 0, -1, 0)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 0.466
+            custom float urdf:limit:effort = 0
+        }
+
+        def PhysicsPrismaticJoint "drawer_1_joint" (
+            prepend apiSchemas = ["NewtonJointAPI", "PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+            float drive:linear:physics:damping = 40
+            float drive:linear:physics:stiffness = 400
+            uniform token drive:linear:physics:type = "force"
+            float newton:velocityLimit = 0
+            uniform token physics:axis = "X"
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_1>
+            point3f physics:localPos0 = (-0.99, -0.017725, -0.2)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0, 0.70710665, -0.7071069, 0)
+            quatf physics:localRot1 = (0, 0, -1, 0)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 0.466
+            custom float urdf:limit:effort = 0
+        }
+
+        def PhysicsRevoluteJoint "door_2_leaf" (
+            prepend apiSchemas = ["NewtonJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.6981317
+            float drive:angular:physics:stiffness = 6.981317
+            uniform token drive:angular:physics:type = "force"
+            float newton:velocityLimit = 0
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG/Geometry/world/door_2>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/door_2/door_2_leaf>
+            point3f physics:localPos0 = (-0.49, 4.440892e-16, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 10313.24
+            custom float urdf:limit:effort = 0
+        }
+
+        def PhysicsRevoluteJoint "door_1_leaf" (
+            prepend apiSchemas = ["NewtonJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.6981317
+            float drive:angular:physics:stiffness = 6.981317
+            uniform token drive:angular:physics:type = "force"
+            float newton:velocityLimit = 0
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG/Geometry/world/door_1>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/door_1/door_1_leaf>
+            point3f physics:localPos0 = (-0.69, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 5156.62
+            custom float urdf:limit:effort = 0
+        }
+
+        def PhysicsRevoluteJoint "door_0_leaf" (
+            prepend apiSchemas = ["NewtonJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.6981317
+            float drive:angular:physics:stiffness = 6.981317
+            uniform token drive:angular:physics:type = "force"
+            float newton:velocityLimit = 0
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG/Geometry/world/door_0>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/door_0/door_0_leaf>
+            point3f physics:localPos0 = (0.69, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -5156.62
+            float physics:upperLimit = 0
+            custom float urdf:limit:effort = 0
+        }
+
+        def PhysicsFixedJoint "world_T_wall_0"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/wall_0>
+            point3f physics:localPos0 = (-1.49675, 4.80204, 1.5)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_kitchen_cabinet"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet>
+            point3f physics:localPos0 = (0.9, 7.42077, 1)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, 0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "cabinet_door_4_T_cabinet_door_4_handle"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_4>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_4/cabinet_door_4_handle>
+            point3f physics:localPos0 = (-0.030767, 0.561093, 0.351015)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (0.7071069, 0, 0, 0.70710665)
+        }
+
+        def PhysicsFixedJoint "cabinet_door_3_T_cabinet_door_3_handle"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_3>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_3/cabinet_door_3_handle>
+            point3f physics:localPos0 = (-0.030767, 0.561093, -0.351015)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (0.7071069, 0, 0, 0.70710665)
+        }
+
+        def PhysicsFixedJoint "cabinet_door_2_T_cabinet_door_2_handle"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_2>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_2/cabinet_door_2_handle>
+            point3f physics:localPos0 = (-0.030767, 0.411093, 0.176)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (0.7071069, 0, 0, 0.70710665)
+        }
+
+        def PhysicsFixedJoint "cabinet_door_1_T_cabinet_door_1_handle"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_1>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/cabinet_door_1/cabinet_door_1_handle>
+            point3f physics:localPos0 = (-0.030767, 0.411093, 0.276015)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (0.7071069, 0, 0, 0.70710665)
+        }
+
+        def PhysicsFixedJoint "drawer_4_T_drawer_4_handle"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_4>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_4/drawer_4_handle>
+            point3f physics:localPos0 = (-0.280272, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0.70710665, 4.3294474e-17, 1.2277171e-16)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "drawer_3_T_drawer_3_handle"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_3>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_3/drawer_3_handle>
+            point3f physics:localPos0 = (-0.280272, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0.70710665, 4.3294474e-17, 1.2277171e-16)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "drawer_2_T_drawer_2_handle"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_2>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_2/drawer_2_handle>
+            point3f physics:localPos0 = (-0.280272, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0.70710665, 4.3294474e-17, 1.2277171e-16)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "drawer_1_T_drawer_1_handle"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_1>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/kitchen_cabinet/drawer_1/drawer_1_handle>
+            point3f physics:localPos0 = (-0.280272, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0.70710665, 4.3294474e-17, 1.2277171e-16)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_flowers_0"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/flowers_0>
+            point3f physics:localPos0 = (-1.966427, 2.575398, 1.483402)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, -0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_bookshelf_0"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/bookshelf_0>
+            point3f physics:localPos0 = (-1.906946, 2.738356, 0.7)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, -0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_coffee_table_0"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/coffee_table_0>
+            point3f physics:localPos0 = (0.625846, 2.709269, 0.165794)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_basin_0"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/basin_0>
+            point3f physics:localPos0 = (-3.754221, 7.572044, 0.682839)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_nightstand_0"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/nightstand_0>
+            point3f physics:localPos0 = (-3.879375, 1.517044, 0.4)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, 0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_bed_0"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/bed_0>
+            point3f physics:localPos0 = (-4.677148, 2.354354, 0.35)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (-1.7320511e-7, 0, 0, 1)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_sofa_0"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/sofa_0>
+            point3f physics:localPos0 = (1.165909, 2.098992, 0.441346)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (-1.7320511e-7, 0, 0, 1)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_toilet_0"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/toilet_0>
+            point3f physics:localPos0 = (-4.867619, 6.148109, 0.680788)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, 0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_trash_can_0"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/trash_can_0>
+            point3f physics:localPos0 = (-3.305245, 7.47079, 0.2685)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, -0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_pipe_0"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/pipe_0>
+            point3f physics:localPos0 = (-0.359245, 8.022044, 1.64175)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_door_2"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/door_2>
+            point3f physics:localPos0 = (-3.005159, 6.397044, 1.035)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, -0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_door_1"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/door_1>
+            point3f physics:localPos0 = (-0.826745, 1.298858, 1.035)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_door_0"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/door_0>
+            point3f physics:localPos0 = (-1.716787, 4.717129, 1.035)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, 0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_green_plants_0"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/green_plants_0>
+            point3f physics:localPos0 = (1.5, 7.288135, 1.722943)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, -0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_radiator_0"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/radiator_0>
+            point3f physics:localPos0 = (-0.954399, 8.059034, 0.406153)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_handrail_1"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/handrail_1>
+            point3f physics:localPos0 = (-4.816746, 6.493581, 0.615737)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, 0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_handrail_0"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/handrail_0>
+            point3f physics:localPos0 = (-4.816746, 5.820483, 0.615737)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, 0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_hand_sanitizer_0"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/hand_sanitizer_0>
+            point3f physics:localPos0 = (-3.215605, 7.689656, 1.024952)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, -0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_toilet_paper_holder_0"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/toilet_paper_holder_0>
+            point3f physics:localPos0 = (-3.238531, 7.367195, 1.147403)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, -0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_bay_window_platform_1"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/bay_window_platform_1>
+            point3f physics:localPos0 = (-4.143554, 8.275713, 0.985)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.5000002, -0.5, -0.49999985, 0.5)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_bay_window_platform_0"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/bay_window_platform_0>
+            point3f physics:localPos0 = (-0.239155, 8.246205, 0.96)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.5000002, -0.5, -0.49999985, 0.5)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_window_14"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/window_14>
+            point3f physics:localPos0 = (-4.146423, 8.357819, 1.9)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_window_13"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/window_13>
+            point3f physics:localPos0 = (-0.216745, 8.35829, 1.9)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_window_12"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/window_12>
+            point3f physics:localPos0 = (-5.3372, 4.687181, 1.57)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, -0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_window_11"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/window_11>
+            point3f physics:localPos0 = (-5.3372, 3.357181, 1.57)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, -0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_window_10"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/window_10>
+            point3f physics:localPos0 = (-5.3372, 2.027181, 1.57)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, -0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_window_9"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/window_9>
+            point3f physics:localPos0 = (-4.311745, 1.240798, 1.57)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (-1.7320511e-7, 0, 0, 1)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_window_8"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/window_8>
+            point3f physics:localPos0 = (-2.686745, 1.240923, 1.57)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_window_7"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/window_7>
+            point3f physics:localPos0 = (-1.661702, 3.292044, 1.57)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, 0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_window_6"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/window_6>
+            point3f physics:localPos0 = (-1.661702, 2.002044, 1.57)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, 0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_window_5"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/window_5>
+            point3f physics:localPos0 = (1.098255, 1.240638, 1.57)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_window_4"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/window_4>
+            point3f physics:localPos0 = (2.342298, 2.027044, 1.57)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, -0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_window_3"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/window_3>
+            point3f physics:localPos0 = (2.342298, 3.367044, 1.57)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, -0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_window_2"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/window_2>
+            point3f physics:localPos0 = (2.342298, 4.707044, 1.57)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, -0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_window_1"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/window_1>
+            point3f physics:localPos0 = (2.342298, 6.047044, 1.57)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, -0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "world_T_window_0"
+        {
+            custom rel physics:body0
+            append rel physics:body0 = </tn__scenebodies_nG>
+            custom rel physics:body1
+            append rel physics:body1 = </tn__scenebodies_nG/Geometry/world/window_0>
+            point3f physics:localPos0 = (2.342298, 7.387044, 1.57)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.7071069, 0, 0, -0.70710665)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+    }
+}
+

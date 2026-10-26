@@ -1,0 +1,651 @@
+{
+ "table_fit": {
+  "4C": {
+   "weight_loss_pct": 0.0,
+   "albumen_height_mm": 0.0,
+   "yolk_index": 0.0,
+   "albumen_pH": 0.0
+  },
+  "25C": {
+   "weight_loss_pct": 0.0,
+   "albumen_height_mm": 4.440892098500626e-16,
+   "yolk_index": 0.0,
+   "albumen_pH": 0.0
+  }
+ },
+ "air_cell_anchors": {
+  "6C_28d": {
+   "model_mm": 5.5,
+   "gr": "< 4 mm"
+  },
+  "22C_25d": {
+   "model_mm": 6.0,
+   "gr": "> 6 mm"
+  }
+ },
+ "float_timeline": {
+  "fridge": [
+   {
+    "day": 0,
+    "tilt": 8.0,
+    "cls": "lies flat",
+    "SG": 1.087,
+    "air": 1.5,
+    "hu": 81.3,
+    "grade": "AA"
+   },
+   {
+    "day": 2,
+    "tilt": 10.0,
+    "cls": "lies flat",
+    "SG": 1.0853,
+    "air": 1.92,
+    "hu": 80.0,
+    "grade": "AA"
+   },
+   {
+    "day": 4,
+    "tilt": 12.000000000000002,
+    "cls": "lies flat",
+    "SG": 1.0836,
+    "air": 2.28,
+    "hu": 78.6,
+    "grade": "AA"
+   },
+   {
+    "day": 6,
+    "tilt": 14.0,
+    "cls": "lies flat",
+    "SG": 1.0814,
+    "air": 2.67,
+    "hu": 77.4,
+    "grade": "AA"
+   },
+   {
+    "day": 8,
+    "tilt": 18.0,
+    "cls": "lies flat",
+    "SG": 1.0788,
+    "air": 3.09,
+    "hu": 76.2,
+    "grade": "AA"
+   },
+   {
+    "day": 10,
+    "tilt": 20.0,
+    "cls": "tilts",
+    "SG": 1.0761,
+    "air": 3.47,
+    "hu": 75.1,
+    "grade": "A"
+   },
+   {
+    "day": 12,
+    "tilt": 24.000000000000004,
+    "cls": "tilts",
+    "SG": 1.0733,
+    "air": 3.83,
+    "hu": 74.3,
+    "grade": "A"
+   },
+   {
+    "day": 14,
+    "tilt": 28.0,
+    "cls": "tilts",
+    "SG": 1.0706,
+    "air": 4.16,
+    "hu": 73.6,
+    "grade": "A"
+   },
+   {
+    "day": 16,
+    "tilt": 29.999999999999996,
+    "cls": "tilts",
+    "SG": 1.0684,
+    "air": 4.41,
+    "hu": 73.2,
+    "grade": "A"
+   },
+   {
+    "day": 18,
+    "tilt": 34.0,
+    "cls": "tilts",
+    "SG": 1.0668,
+    "air": 4.59,
+    "hu": 73.0,
+    "grade": "A"
+   },
+   {
+    "day": 20,
+    "tilt": 38.0,
+    "cls": "tilts",
+    "SG": 1.0652,
+    "air": 4.75,
+    "hu": 72.8,
+    "grade": "A"
+   },
+   {
+    "day": 22,
+    "tilt": 40.0,
+    "cls": "tilts",
+    "SG": 1.0636,
+    "air": 4.91,
+    "hu": 71.9,
+    "grade": "B"
+   },
+   {
+    "day": 24,
+    "tilt": 44.0,
+    "cls": "tilts",
+    "SG": 1.0621,
+    "air": 5.06,
+    "hu": 71.0,
+    "grade": "B"
+   },
+   {
+    "day": 26,
+    "tilt": 50.0,
+    "cls": "tilts",
+    "SG": 1.0605,
+    "air": 5.22,
+    "hu": 70.5,
+    "grade": "B"
+   },
+   {
+    "day": 28,
+    "tilt": 59.99999999999999,
+    "cls": "tilts",
+    "SG": 1.0587,
+    "air": 5.39,
+    "hu": 70.6,
+    "grade": "B"
+   },
+   {
+    "day": 30,
+    "tilt": 84.0,
+    "cls": "stands on its end",
+    "SG": 1.057,
+    "air": 5.54,
+    "hu": 70.6,
+    "grade": "B"
+   },
+   {
+    "day": 32,
+    "tilt": 84.0,
+    "cls": "stands on its end",
+    "SG": 1.0553,
+    "air": 5.7,
+    "hu": 70.6,
+    "grade": "B"
+   },
+   {
+    "day": 34,
+    "tilt": 84.0,
+    "cls": "stands on its end",
+    "SG": 1.0535,
+    "air": 5.85,
+    "hu": 70.7,
+    "grade": "B"
+   },
+   {
+    "day": 36,
+    "tilt": 84.0,
+    "cls": "stands on its end",
+    "SG": 1.0518,
+    "air": 6.0,
+    "hu": 70.7,
+    "grade": "B"
+   },
+   {
+    "day": 38,
+    "tilt": 84.0,
+    "cls": "stands on its end",
+    "SG": 1.05,
+    "air": 6.15,
+    "hu": 70.8,
+    "grade": "B"
+   },
+   {
+    "day": 40,
+    "tilt": 84.0,
+    "cls": "stands on its end",
+    "SG": 1.0483,
+    "air": 6.29,
+    "hu": 70.8,
+    "grade": "B"
+   },
+   {
+    "day": 42,
+    "tilt": 84.0,
+    "cls": "stands on its end",
+    "SG": 1.0466,
+    "air": 6.44,
+    "hu": 70.8,
+    "grade": "B"
+   },
+   {
+    "day": 44,
+    "tilt": 84.0,
+    "cls": "stands on its end",
+    "SG": 1.0448,
+    "air": 6.58,
+    "hu": 70.9,
+    "grade": "B"
+   },
+   {
+    "day": 46,
+    "tilt": 84.0,
+    "cls": "stands on its end",
+    "SG": 1.0431,
+    "air": 6.71,
+    "hu": 70.9,
+    "grade": "B"
+   },
+   {
+    "day": 48,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.0413,
+    "air": 6.85,
+    "hu": 71.0,
+    "grade": "B"
+   },
+   {
+    "day": 50,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.0396,
+    "air": 6.98,
+    "hu": 71.0,
+    "grade": "B"
+   },
+   {
+    "day": 52,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.0379,
+    "air": 7.11,
+    "hu": 71.0,
+    "grade": "B"
+   },
+   {
+    "day": 54,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.0361,
+    "air": 7.24,
+    "hu": 71.1,
+    "grade": "B"
+   },
+   {
+    "day": 56,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.0344,
+    "air": 7.37,
+    "hu": 71.1,
+    "grade": "B"
+   },
+   {
+    "day": 58,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.0326,
+    "air": 7.49,
+    "hu": 71.2,
+    "grade": "B"
+   },
+   {
+    "day": 60,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.0309,
+    "air": 7.62,
+    "hu": 71.2,
+    "grade": "B"
+   }
+  ],
+  "counter": [
+   {
+    "day": 0,
+    "tilt": 8.0,
+    "cls": "lies flat",
+    "SG": 1.087,
+    "air": 1.5,
+    "hu": 81.3,
+    "grade": "AA"
+   },
+   {
+    "day": 2,
+    "tilt": 12.000000000000002,
+    "cls": "lies flat",
+    "SG": 1.0844,
+    "air": 2.13,
+    "hu": 77.6,
+    "grade": "AA"
+   },
+   {
+    "day": 4,
+    "tilt": 14.0,
+    "cls": "lies flat",
+    "SG": 1.0818,
+    "air": 2.62,
+    "hu": 73.5,
+    "grade": "AA"
+   },
+   {
+    "day": 6,
+    "tilt": 18.0,
+    "cls": "lies flat",
+    "SG": 1.0787,
+    "air": 3.11,
+    "hu": 71.0,
+    "grade": "A"
+   },
+   {
+    "day": 8,
+    "tilt": 22.0,
+    "cls": "tilts",
+    "SG": 1.0751,
+    "air": 3.61,
+    "hu": 70.2,
+    "grade": "A"
+   },
+   {
+    "day": 10,
+    "tilt": 26.0,
+    "cls": "tilts",
+    "SG": 1.0716,
+    "air": 4.04,
+    "hu": 69.5,
+    "grade": "A"
+   },
+   {
+    "day": 12,
+    "tilt": 29.999999999999996,
+    "cls": "tilts",
+    "SG": 1.0685,
+    "air": 4.39,
+    "hu": 68.5,
+    "grade": "A"
+   },
+   {
+    "day": 14,
+    "tilt": 36.0,
+    "cls": "tilts",
+    "SG": 1.0655,
+    "air": 4.72,
+    "hu": 67.4,
+    "grade": "A"
+   },
+   {
+    "day": 16,
+    "tilt": 42.0,
+    "cls": "tilts",
+    "SG": 1.0629,
+    "air": 4.99,
+    "hu": 66.2,
+    "grade": "B"
+   },
+   {
+    "day": 18,
+    "tilt": 50.0,
+    "cls": "tilts",
+    "SG": 1.0607,
+    "air": 5.19,
+    "hu": 64.6,
+    "grade": "B"
+   },
+   {
+    "day": 20,
+    "tilt": 59.99999999999999,
+    "cls": "tilts",
+    "SG": 1.0586,
+    "air": 5.4,
+    "hu": 63.0,
+    "grade": "B"
+   },
+   {
+    "day": 22,
+    "tilt": 84.0,
+    "cls": "stands on its end",
+    "SG": 1.0563,
+    "air": 5.61,
+    "hu": 60.6,
+    "grade": "B"
+   },
+   {
+    "day": 24,
+    "tilt": 84.0,
+    "cls": "stands on its end",
+    "SG": 1.054,
+    "air": 5.81,
+    "hu": 58.0,
+    "grade": "B"
+   },
+   {
+    "day": 26,
+    "tilt": 84.0,
+    "cls": "stands on its end",
+    "SG": 1.0516,
+    "air": 6.02,
+    "hu": 55.3,
+    "grade": "B"
+   },
+   {
+    "day": 28,
+    "tilt": 84.0,
+    "cls": "stands on its end",
+    "SG": 1.0489,
+    "air": 6.24,
+    "hu": 52.5,
+    "grade": "B"
+   },
+   {
+    "day": 30,
+    "tilt": 84.0,
+    "cls": "stands on its end",
+    "SG": 1.0463,
+    "air": 6.46,
+    "hu": 49.4,
+    "grade": "B"
+   },
+   {
+    "day": 32,
+    "tilt": 84.0,
+    "cls": "stands on its end",
+    "SG": 1.0437,
+    "air": 6.67,
+    "hu": 46.2,
+    "grade": "B"
+   },
+   {
+    "day": 34,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.041,
+    "air": 6.87,
+    "hu": 42.7,
+    "grade": "B"
+   },
+   {
+    "day": 36,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.0384,
+    "air": 7.07,
+    "hu": 38.9,
+    "grade": "B"
+   },
+   {
+    "day": 38,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.0358,
+    "air": 7.27,
+    "hu": 34.7,
+    "grade": "B"
+   },
+   {
+    "day": 40,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.0331,
+    "air": 7.46,
+    "hu": 30.1,
+    "grade": "B"
+   },
+   {
+    "day": 42,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.0305,
+    "air": 7.64,
+    "hu": 24.9,
+    "grade": "B"
+   },
+   {
+    "day": 44,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.0279,
+    "air": 7.83,
+    "hu": 19.1,
+    "grade": "B"
+   },
+   {
+    "day": 46,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.0252,
+    "air": 8.01,
+    "hu": 12.3,
+    "grade": "B"
+   },
+   {
+    "day": 48,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.0226,
+    "air": 8.19,
+    "hu": 4.2,
+    "grade": "B"
+   },
+   {
+    "day": 50,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.02,
+    "air": 8.36,
+    "hu": -5.6,
+    "grade": "B"
+   },
+   {
+    "day": 52,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.0173,
+    "air": 8.53,
+    "hu": -10.8,
+    "grade": "B"
+   },
+   {
+    "day": 54,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.0147,
+    "air": 8.7,
+    "hu": -10.3,
+    "grade": "B"
+   },
+   {
+    "day": 56,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.0121,
+    "air": 8.87,
+    "hu": -9.9,
+    "grade": "B"
+   },
+   {
+    "day": 58,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.0094,
+    "air": 9.04,
+    "hu": -9.6,
+    "grade": "B"
+   },
+   {
+    "day": 60,
+    "tilt": 90.0,
+    "cls": "stands on its end",
+    "SG": 1.0068,
+    "air": 9.2,
+    "hu": -9.2,
+    "grade": "B"
+   }
+  ]
+ },
+ "history": [
+  {
+   "after": "10 d fridge",
+   "age_d": 10.0,
+   "mass_g": 60.971,
+   "SG": 1.076,
+   "air_cell_mm": 3.469,
+   "haugh_unit": 75.053,
+   "yolk_index": 0.43,
+   "albumen_pH": 8.4,
+   "float": "tilts",
+   "float_tilt_deg": 20.0,
+   "usda_grade": "A",
+   "eu_class": "A extra",
+   "past_best_before": false,
+   "p_clean_peel": 0.065
+  },
+  {
+   "after": "5 d counter",
+   "age_d": 15.0,
+   "mass_g": 60.497,
+   "SG": 1.068,
+   "air_cell_mm": 4.477,
+   "haugh_unit": 70.265,
+   "yolk_index": 0.415,
+   "albumen_pH": 8.646,
+   "float": "tilts",
+   "float_tilt_deg": 32.0,
+   "usda_grade": "A",
+   "eu_class": "A",
+   "past_best_before": false,
+   "p_clean_peel": 0.264
+  },
+  {
+   "after": "10 d fridge",
+   "age_d": 25.0,
+   "mass_g": 60.041,
+   "SG": 1.06,
+   "air_cell_mm": 5.292,
+   "haugh_unit": 70.538,
+   "yolk_index": 0.366,
+   "albumen_pH": 8.707,
+   "float": "tilts",
+   "float_tilt_deg": 54.0,
+   "usda_grade": "B",
+   "eu_class": "A",
+   "past_best_before": false,
+   "p_clean_peel": 0.349
+  }
+ ],
+ "best_day": {
+  "boil_and_peel": [
+   28.0,
+   0.2410984565635311
+  ],
+  "fry": [
+   0.0,
+   0.9033333333333333
+  ]
+ },
+ "q10_weight_loss": 1.2003491548553755
+}

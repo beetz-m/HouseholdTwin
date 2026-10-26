@@ -1,0 +1,234 @@
+{
+ "episodes": 1350,
+ "steps": 8699,
+ "pre_violations": 0,
+ "branch_mismatches": 0,
+ "guard_mismatches": 0,
+ "frame_violations": 0,
+ "counterexamples": 22,
+ "examples": [
+  {
+   "state": [
+    "Apart(HalfA,HalfB)",
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "Ripe(Avocado)",
+    "SeedIn(HalfA)"
+   ],
+   "action": "RemoveSeed(spoon)",
+   "outcomes": [
+    [
+     "-SeedIn(HalfA)",
+     "SeedOut(HalfA)"
+    ],
+    [
+     "-SeedIn(HalfA)",
+     "SeedOut(HalfA)",
+     "TestaIn(Cavity)"
+    ],
+    [
+     "-SeedIn(HalfA)",
+     "Gouge(Cavity)",
+     "SeedOut(HalfA)"
+    ],
+    [
+     "-SeedIn(HalfA)",
+     "Gouge(Cavity)",
+     "SeedOut(HalfA)",
+     "TestaIn(Cavity)"
+    ]
+   ]
+  },
+  {
+   "state": [
+    "Apart(HalfA,HalfB)",
+    "FleshOnSeed(Seed)",
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "SeedIn(HalfA)",
+    "TornFlesh(HalfB)"
+   ],
+   "action": "RemoveSeed(spoon)",
+   "outcomes": [
+    [
+     "-SeedIn(HalfA)",
+     "SeedOut(HalfA)"
+    ],
+    [
+     "-SeedIn(HalfA)",
+     "SeedOut(HalfA)",
+     "TestaIn(Cavity)"
+    ],
+    [
+     "-SeedIn(HalfA)",
+     "Gouge(Cavity)",
+     "SeedOut(HalfA)"
+    ],
+    [
+     "-SeedIn(HalfA)",
+     "Gouge(Cavity)",
+     "SeedOut(HalfA)",
+     "TestaIn(Cavity)"
+    ]
+   ]
+  },
+  {
+   "state": [
+    "Apart(HalfA,HalfB)",
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "SeedIn(HalfA)"
+   ],
+   "action": "RemoveSeed(spoon)",
+   "outcomes": [
+    [
+     "-SeedIn(HalfA)",
+     "SeedOut(HalfA)"
+    ],
+    [
+     "-SeedIn(HalfA)",
+     "SeedOut(HalfA)",
+     "TestaIn(Cavity)"
+    ],
+    [
+     "-SeedIn(HalfA)",
+     "Gouge(Cavity)",
+     "SeedOut(HalfA)"
+    ],
+    [
+     "-SeedIn(HalfA)",
+     "Gouge(Cavity)",
+     "SeedOut(HalfA)",
+     "TestaIn(Cavity)"
+    ]
+   ]
+  },
+  {
+   "state": [
+    "Apart(HalfA,HalfB)",
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "Ripe(Avocado)",
+    "SeedOut(HalfA)",
+    "TestaIn(Cavity)"
+   ],
+   "action": "PeelSeedCoat",
+   "outcomes": [
+    [
+     "-TestaIn(Cavity)"
+    ],
+    [
+     "Gouge(Cavity)"
+    ],
+    [
+     "-TestaIn(Cavity)",
+     "Gouge(Cavity)"
+    ],
+    []
+   ]
+  },
+  {
+   "state": [
+    "Apart(HalfA,HalfB)",
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "Ripe(Avocado)",
+    "SeedOut(HalfA)",
+    "TestaIn(Cavity)",
+    "UnsafeToolUse(KnifeStrike)"
+   ],
+   "action": "PeelSeedCoat",
+   "outcomes": [
+    [
+     "-TestaIn(Cavity)"
+    ],
+    [
+     "Gouge(Cavity)"
+    ],
+    [
+     "-TestaIn(Cavity)",
+     "Gouge(Cavity)"
+    ],
+    []
+   ]
+  },
+  {
+   "state": [
+    "Apart(HalfA,HalfB)",
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "Overripe(Avocado)",
+    "Ripe(Avocado)",
+    "SeedIn(HalfA)"
+   ],
+   "action": "RemoveSeed(spoon)",
+   "outcomes": [
+    [
+     "-SeedIn(HalfA)",
+     "SeedOut(HalfA)"
+    ],
+    [
+     "-SeedIn(HalfA)",
+     "SeedOut(HalfA)",
+     "TestaIn(Cavity)"
+    ],
+    [
+     "-SeedIn(HalfA)",
+     "Gouge(Cavity)",
+     "SeedOut(HalfA)"
+    ],
+    [
+     "-SeedIn(HalfA)",
+     "Gouge(Cavity)",
+     "SeedOut(HalfA)",
+     "TestaIn(Cavity)"
+    ]
+   ]
+  }
+ ],
+ "by_action": {
+  "Squeeze": 2,
+  "Wait": 2,
+  "RemoveSeed": 7,
+  "TwistApart": 1,
+  "PeelSeedCoat": 10
+ },
+ "twist_examples": [
+  {
+   "state": [
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "Scored(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "outcomes": [
+    [
+     "-Scored(Avocado)",
+     "-SeedIn(Avocado)",
+     "-Whole(Avocado)",
+     "Apart(HalfA,HalfB)",
+     "FleshOnSeed(Seed)",
+     "SeedIn(HalfA)",
+     "TornFlesh(HalfB)"
+    ],
+    [
+     "-Scored(Avocado)",
+     "-SeedIn(Avocado)",
+     "-Whole(Avocado)",
+     "Apart(HalfA,HalfB)",
+     "SeedIn(HalfA)"
+    ]
+   ]
+  }
+ ],
+ "axioms": {
+  "Squeeze": "occurs(Squeeze(F), j) & holds(Whole, i) & meets(i, j) -> holds(Bruised, j') iff F > F_bruise(stage)",
+  "Wait": "occurs(Wait(h, store), j) -> stage advances at rate x Q10(store); Ripe at stage 4; Overripe past the ripe window; Spoiled past spoil_days (lifetime model)",
+  "CutRoundSeed": "occurs(CutRoundSeed, j) & holds(Whole, i) -> holds(Scored) if the blade's force suffices all round, else holds(PartlyScored)",
+  "TwistApart": "occurs(TwistApart, j) & holds(Scored, i) -> Apart; TornFlesh unless the flesh releases at the seed (p_clean(stage)); Stuck if bridges + adhesion exceed the torque limit",
+  "RemoveSeed": "occurs(RemoveSeed(m), j) & holds(Apart & SeedIn(HalfA), i) -> SeedOut; TestaIn(Cavity) if the testa adheres to the flesh; Gouge possible (spoon); UnsafeToolUse iff m = knife strike",
+  "PeelSeedCoat": "occurs(PeelSeedCoat, j) & holds(TestaIn(Cavity), i) -> not TestaIn w.p. peel_coat_success",
+  "Photo": "observation only (frame)"
+ }
+}

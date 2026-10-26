@@ -1,0 +1,159 @@
+[
+ {
+  "path": "crack-egg-cleanly/grip",
+  "designator": "(an action (type picking-up) (object ?egg) (force (some grip-force)))",
+  "schema": "picking-up",
+  "t0": 0.0,
+  "bindings": {
+   "object": {
+    "symbol": "egg-1",
+    "servant": "egg-carton",
+    "status": "recorded",
+    "candidates": 2
+   },
+   "force": {
+    "symbol": 4.2,
+    "servant": "grip-corridor",
+    "status": "anchored",
+    "note": "H8 corridor 0.9-19.7 N (geometric mean); P(slip) 0.000, P(rupture) 0.000"
+   }
+  },
+  "goal": [
+   "(achieve (held egg-1) :at (end ?i))",
+   "(prevent (shell-state egg-1 cracked) :during ?i)",
+   "(prevent (shell-state egg-1 shattered) :during ?i)"
+  ],
+  "gate": "admitted",
+  "warrant": "rational",
+  "warrant_why": "",
+  "preact": "act-now (P(success) 1.00)",
+  "prediction": "P(slip) 0.000, P(rupture) 0.000",
+  "p_success": 1.0,
+  "t1": 2.0,
+  "wall_s": 3.6,
+  "model_only": [],
+  "verdict": "goal achieved",
+  "violations": [],
+  "state_after": [
+   "(batch-bowl batch-bowl)",
+   "(shell-state egg-1 intact)",
+   "(held egg-1)",
+   "(shell-state egg-2 intact)",
+   "(empty cup-1)"
+  ]
+ },
+ {
+  "path": "crack-egg-cleanly/strike",
+  "designator": "(an action (type cracking) (object ?egg) (tool (a strike-surface)) (speed (some strike-speed)))",
+  "schema": "cracking",
+  "t0": 2.0,
+  "bindings": {
+   "object": {
+    "symbol": "egg-1",
+    "servant": "egg-carton",
+    "status": "recorded",
+    "candidates": 2
+   },
+   "tool": {
+    "symbol": "counter",
+    "servant": "belief-decision",
+    "status": "anchored",
+    "revisable": true,
+    "note": "max P(crack) 0.88 at 0.43 m/s with P(shatter) 0.048 <= 0.05 (EggBelief, 2000 particles)"
+   },
+   "speed": {
+    "symbol": 0.43,
+    "servant": "belief-decision",
+    "status": "anchored",
+    "revisable": true,
+    "note": "on counter: P(crack) 0.88, P(no crack) 0.07, P(shatter) 0.048"
+   }
+  },
+  "goal": [
+   "(achieve (shell-state egg-1 cracked) :at (end ?i))",
+   "(prevent (shell-state egg-1 shattered) :during ?i)"
+  ],
+  "gate": "admitted",
+  "warrant": "rational",
+  "warrant_why": "",
+  "preact": "act-now (P(success) 0.88)",
+  "prediction": "P(intact, check, open, shatter) = 0.07, 0.65, 0.23, 0.05",
+  "p_success": 0.88,
+  "t1": 3.5,
+  "wall_s": 1.6,
+  "model_only": [],
+  "verdict": "goal achieved",
+  "violations": [],
+  "state_after": [
+   "(batch-bowl batch-bowl)",
+   "(shell-state egg-1 cracked)",
+   "(held egg-1)",
+   "(shell-state egg-2 intact)",
+   "(empty cup-1)"
+  ]
+ },
+ {
+  "path": "crack-egg-cleanly/open",
+  "designator": "(an action (type opening) (object ?egg) (destination ?cup))",
+  "schema": "opening",
+  "t0": 3.5,
+  "bindings": {
+   "object": {
+    "symbol": "egg-1",
+    "servant": "egg-carton",
+    "status": "recorded",
+    "candidates": 2
+   },
+   "destination": {
+    "symbol": "cup-1",
+    "servant": "egg-carton",
+    "status": "recorded",
+    "candidates": 1
+   }
+  },
+  "goal": [
+   "(achieve (contents-in egg-1 cup-1) :at (end ?i))",
+   "(achieve (yolk-whole egg-1) :at (end ?i))",
+   "(prevent (opened-into egg-1 cup-1) :while (batch-bowl cup-1))"
+  ],
+  "gate": "admitted",
+  "warrant": "justified",
+  "warrant_why": "",
+  "preact": "act-now",
+  "t1": 6.5,
+  "wall_s": 1.5,
+  "model_only": [],
+  "verdict": "goal achieved",
+  "violations": [],
+  "state_after": [
+   "(batch-bowl batch-bowl)",
+   "(shell-state egg-1 opened)",
+   "(yolk-whole egg-1)",
+   "(contents-in egg-1 cup-1)",
+   "(shell-state egg-2 intact)"
+  ]
+ },
+ {
+  "path": "crack-egg-cleanly/look",
+  "designator": "(an action (type inspecting) (container ?cup))",
+  "schema": "inspecting",
+  "t0": 6.5,
+  "bindings": {
+   "container": {
+    "symbol": "cup-1",
+    "servant": "egg-carton",
+    "status": "recorded",
+    "candidates": 1
+   }
+  },
+  "goal": [
+   "(achieve (inspected cup-1) :at (end ?i))"
+  ],
+  "gate": "admitted",
+  "warrant": "justified",
+  "warrant_why": "",
+  "preact": "act-now",
+  "verdict": "failed: ValueError: could not convert string to float: 'c'",
+  "t1": 8.5
+ }
+]

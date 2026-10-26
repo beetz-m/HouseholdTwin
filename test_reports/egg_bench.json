@@ -1,0 +1,480 @@
+{
+ "egg": 1,
+ "grasp": [
+  {
+   "exp": "G",
+   "egg": 1,
+   "F_cmd": 0.5,
+   "F_pad_measured": 0.5,
+   "lift_mm": 0.0,
+   "slipped": true,
+   "shell": "intact",
+   "F_crack_truth": 23.0,
+   "belief": {
+    "slip": 1.0,
+    "rupture": 0.0,
+    "stable": 0.0
+   },
+   "H8_admissible": false
+  },
+  {
+   "exp": "G",
+   "egg": 1,
+   "F_cmd": 1.0,
+   "F_pad_measured": 1.0,
+   "lift_mm": 65.6,
+   "slipped": false,
+   "shell": "intact",
+   "F_crack_truth": 23.0,
+   "belief": {
+    "slip": 0.0,
+    "rupture": 0.0,
+    "stable": 1.0
+   },
+   "H8_admissible": true
+  },
+  {
+   "exp": "G",
+   "egg": 1,
+   "F_cmd": 2.0,
+   "F_pad_measured": 2.0,
+   "lift_mm": 69.7,
+   "slipped": false,
+   "shell": "intact",
+   "F_crack_truth": 23.0,
+   "belief": {
+    "slip": 0.0,
+    "rupture": 0.0,
+    "stable": 1.0
+   },
+   "H8_admissible": true
+  },
+  {
+   "exp": "G",
+   "egg": 1,
+   "F_cmd": 4.0,
+   "F_pad_measured": 4.0,
+   "lift_mm": 72.4,
+   "slipped": false,
+   "shell": "intact",
+   "F_crack_truth": 23.0,
+   "belief": {
+    "slip": 0.0,
+    "rupture": 0.0,
+    "stable": 1.0
+   },
+   "H8_admissible": true
+  },
+  {
+   "exp": "G",
+   "egg": 1,
+   "F_cmd": 8.0,
+   "F_pad_measured": 8.0,
+   "lift_mm": 77.9,
+   "slipped": false,
+   "shell": "intact",
+   "F_crack_truth": 23.0,
+   "belief": {
+    "slip": 0.0,
+    "rupture": 0.0,
+    "stable": 1.0
+   },
+   "H8_admissible": true
+  },
+  {
+   "exp": "G",
+   "egg": 1,
+   "F_cmd": 15.0,
+   "F_pad_measured": 15.0,
+   "lift_mm": 80.1,
+   "slipped": false,
+   "shell": "intact",
+   "F_crack_truth": 23.0,
+   "belief": {
+    "slip": 0.0,
+    "rupture": 0.013,
+    "stable": 0.987
+   },
+   "H8_admissible": true
+  },
+  {
+   "exp": "G",
+   "egg": 1,
+   "F_cmd": 25.0,
+   "F_pad_measured": 25.0,
+   "lift_mm": 80.1,
+   "slipped": false,
+   "shell": "cracked",
+   "F_crack_truth": 23.0,
+   "belief": {
+    "slip": 0.0,
+    "rupture": 0.16,
+    "stable": 0.84
+   },
+   "H8_admissible": false
+  },
+  {
+   "exp": "G",
+   "egg": 1,
+   "F_cmd": 35.0,
+   "F_pad_measured": 35.0,
+   "lift_mm": 80.5,
+   "slipped": false,
+   "shell": "cracked",
+   "F_crack_truth": 23.0,
+   "belief": {
+    "slip": 0.0,
+    "rupture": 0.53,
+    "stable": 0.47
+   },
+   "H8_admissible": false
+  },
+  {
+   "exp": "G",
+   "egg": 1,
+   "F_cmd": 45.0,
+   "F_pad_measured": 45.0,
+   "lift_mm": 80.9,
+   "slipped": false,
+   "shell": "cracked",
+   "F_crack_truth": 23.0,
+   "belief": {
+    "slip": 0.0,
+    "rupture": 0.849,
+    "stable": 0.151
+   },
+   "H8_admissible": false
+  },
+  {
+   "exp": "V",
+   "egg": 0,
+   "F_cmd": 30.0,
+   "F_pad_measured": 29.6,
+   "lift_mm": 80.0,
+   "slipped": false,
+   "shell": "cracked",
+   "F_crack_truth": 16.7,
+   "belief": {
+    "slip": 0.0,
+    "rupture": 0.33,
+    "stable": 0.67
+   },
+   "H8_admissible": false
+  },
+  {
+   "exp": "V",
+   "egg": 1,
+   "F_cmd": 30.0,
+   "F_pad_measured": 30.0,
+   "lift_mm": 80.2,
+   "slipped": false,
+   "shell": "cracked",
+   "F_crack_truth": 23.0,
+   "belief": {
+    "slip": 0.0,
+    "rupture": 0.355,
+    "stable": 0.645
+   },
+   "H8_admissible": false
+  },
+  {
+   "exp": "V",
+   "egg": 2,
+   "F_cmd": 30.0,
+   "F_pad_measured": 29.99,
+   "lift_mm": 80.0,
+   "slipped": false,
+   "shell": "intact",
+   "F_crack_truth": 38.2,
+   "belief": {
+    "slip": 0.0,
+    "rupture": 0.329,
+    "stable": 0.671
+   },
+   "H8_admissible": false
+  },
+  {
+   "exp": "V",
+   "egg": 3,
+   "F_cmd": 30.0,
+   "F_pad_measured": 29.99,
+   "lift_mm": 80.0,
+   "slipped": false,
+   "shell": "cracked",
+   "F_crack_truth": 29.6,
+   "belief": {
+    "slip": 0.0,
+    "rupture": 0.338,
+    "stable": 0.662
+   },
+   "H8_admissible": false
+  },
+  {
+   "exp": "V",
+   "egg": 4,
+   "F_cmd": 30.0,
+   "F_pad_measured": 30.02,
+   "lift_mm": 80.0,
+   "slipped": false,
+   "shell": "intact",
+   "F_crack_truth": 41.9,
+   "belief": {
+    "slip": 0.0,
+    "rupture": 0.329,
+    "stable": 0.671
+   },
+   "H8_admissible": false
+  },
+  {
+   "exp": "V",
+   "egg": 5,
+   "F_cmd": 30.0,
+   "F_pad_measured": 30.09,
+   "lift_mm": 80.0,
+   "slipped": false,
+   "shell": "cracked",
+   "F_crack_truth": 29.3,
+   "belief": {
+    "slip": 0.0,
+    "rupture": 0.33,
+    "stable": 0.67
+   },
+   "H8_admissible": false
+  },
+  {
+   "exp": "V",
+   "egg": 6,
+   "F_cmd": 30.0,
+   "F_pad_measured": 30.03,
+   "lift_mm": 80.0,
+   "slipped": false,
+   "shell": "cracked",
+   "F_crack_truth": 27.6,
+   "belief": {
+    "slip": 0.0,
+    "rupture": 0.336,
+    "stable": 0.664
+   },
+   "H8_admissible": false
+  },
+  {
+   "exp": "V",
+   "egg": 7,
+   "F_cmd": 30.0,
+   "F_pad_measured": 30.0,
+   "lift_mm": 78.1,
+   "slipped": false,
+   "shell": "microcracked",
+   "F_crack_truth": 30.6,
+   "belief": {
+    "slip": 0.0,
+    "rupture": 0.349,
+    "stable": 0.651
+   },
+   "H8_admissible": false
+  }
+ ],
+ "drop": [
+  {
+   "surface": "granite",
+   "h_cm": 1.0,
+   "v_n": 0.491,
+   "h_eff_cm": 1.23,
+   "polar_deg": 51.7,
+   "F_peak": 46.7,
+   "shell": "cracked",
+   "h_crit_cm_at_this_polar": 0.59
+  },
+  {
+   "surface": "granite",
+   "h_cm": 2.0,
+   "v_n": 0.654,
+   "h_eff_cm": 2.18,
+   "polar_deg": 42.2,
+   "F_peak": 63.8,
+   "shell": "cracked",
+   "h_crit_cm_at_this_polar": 0.6
+  },
+  {
+   "surface": "granite",
+   "h_cm": 4.0,
+   "v_n": 0.94,
+   "h_eff_cm": 4.5,
+   "polar_deg": 39.6,
+   "F_peak": 92.5,
+   "shell": "shattered",
+   "h_crit_cm_at_this_polar": 0.6
+  },
+  {
+   "surface": "granite",
+   "h_cm": 8.0,
+   "v_n": 1.308,
+   "h_eff_cm": 8.72,
+   "polar_deg": 128.7,
+   "F_peak": 119.5,
+   "shell": "shattered",
+   "h_crit_cm_at_this_polar": 0.64
+  },
+  {
+   "surface": "granite",
+   "h_cm": 15.0,
+   "v_n": 1.717,
+   "h_eff_cm": 15.02,
+   "polar_deg": 46.2,
+   "F_peak": 166.3,
+   "shell": "shattered",
+   "h_crit_cm_at_this_polar": 0.59
+  },
+  {
+   "surface": "oak_board",
+   "h_cm": 1.0,
+   "v_n": 0.572,
+   "h_eff_cm": 1.67,
+   "polar_deg": 44.0,
+   "F_peak": 52.3,
+   "shell": "cracked",
+   "h_crit_cm_at_this_polar": 0.68
+  },
+  {
+   "surface": "oak_board",
+   "h_cm": 2.0,
+   "v_n": 0.695,
+   "h_eff_cm": 2.46,
+   "polar_deg": 133.8,
+   "F_peak": 61.2,
+   "shell": "cracked",
+   "h_crit_cm_at_this_polar": 0.72
+  },
+  {
+   "surface": "oak_board",
+   "h_cm": 4.0,
+   "v_n": 0.94,
+   "h_eff_cm": 4.5,
+   "polar_deg": 110.4,
+   "F_peak": 78.2,
+   "shell": "shattered",
+   "h_crit_cm_at_this_polar": 0.69
+  },
+  {
+   "surface": "oak_board",
+   "h_cm": 8.0,
+   "v_n": 1.308,
+   "h_eff_cm": 8.72,
+   "polar_deg": 95.5,
+   "F_peak": 108.4,
+   "shell": "shattered",
+   "h_crit_cm_at_this_polar": 0.66
+  },
+  {
+   "surface": "oak_board",
+   "h_cm": 15.0,
+   "v_n": 1.758,
+   "h_eff_cm": 15.75,
+   "polar_deg": 70.8,
+   "F_peak": 150.3,
+   "shell": "shattered",
+   "h_crit_cm_at_this_polar": 0.65
+  },
+  {
+   "surface": "silicone_mat",
+   "h_cm": 1.0,
+   "v_n": 0.613,
+   "h_eff_cm": 1.92,
+   "polar_deg": 89.8,
+   "F_peak": 37.0,
+   "shell": "cracked",
+   "h_crit_cm_at_this_polar": 1.25
+  },
+  {
+   "surface": "silicone_mat",
+   "h_cm": 2.0,
+   "v_n": 0.654,
+   "h_eff_cm": 2.18,
+   "polar_deg": 40.6,
+   "F_peak": 41.6,
+   "shell": "cracked",
+   "h_crit_cm_at_this_polar": 1.43
+  },
+  {
+   "surface": "silicone_mat",
+   "h_cm": 4.0,
+   "v_n": 0.94,
+   "h_eff_cm": 4.5,
+   "polar_deg": 77.7,
+   "F_peak": 57.3,
+   "shell": "cracked",
+   "h_crit_cm_at_this_polar": 1.25
+  },
+  {
+   "surface": "silicone_mat",
+   "h_cm": 8.0,
+   "v_n": 1.308,
+   "h_eff_cm": 8.72,
+   "polar_deg": 96.2,
+   "F_peak": 78.8,
+   "shell": "shattered",
+   "h_crit_cm_at_this_polar": 1.26
+  },
+  {
+   "surface": "silicone_mat",
+   "h_cm": 15.0,
+   "v_n": 1.717,
+   "h_eff_cm": 15.02,
+   "polar_deg": 59.2,
+   "F_peak": 106.7,
+   "shell": "shattered",
+   "h_crit_cm_at_this_polar": 1.32
+  },
+  {
+   "surface": "towel",
+   "h_cm": 1.0,
+   "v_n": 0.531,
+   "h_eff_cm": 1.44,
+   "polar_deg": 1.2,
+   "F_peak": 11.5,
+   "shell": "intact",
+   "h_crit_cm_at_this_polar": 14.37
+  },
+  {
+   "surface": "towel",
+   "h_cm": 2.0,
+   "v_n": 0.695,
+   "h_eff_cm": 2.46,
+   "polar_deg": 42.5,
+   "F_peak": 15.5,
+   "shell": "intact",
+   "h_crit_cm_at_this_polar": 11.52
+  },
+  {
+   "surface": "towel",
+   "h_cm": 4.0,
+   "v_n": 0.94,
+   "h_eff_cm": 4.5,
+   "polar_deg": 76.9,
+   "F_peak": 20.8,
+   "shell": "intact",
+   "h_crit_cm_at_this_polar": 9.49
+  },
+  {
+   "surface": "towel",
+   "h_cm": 8.0,
+   "v_n": 1.308,
+   "h_eff_cm": 8.72,
+   "polar_deg": 133.0,
+   "F_peak": 29.0,
+   "shell": "intact",
+   "h_crit_cm_at_this_polar": 11.23
+  },
+  {
+   "surface": "towel",
+   "h_cm": 15.0,
+   "v_n": 1.758,
+   "h_eff_cm": 15.75,
+   "polar_deg": 100.9,
+   "F_peak": 38.8,
+   "shell": "cracked",
+   "h_crit_cm_at_this_polar": 9.46
+  }
+ ],
+ "notes": "PhysX: kinematics + contact forces; outcomes: EggTruth (hidden); predictions: EggBelief (register priors). Drop release height is the egg's start height above its rest height (approx.)."
+}

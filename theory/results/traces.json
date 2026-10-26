@@ -1,0 +1,453 @@
+{
+ "unripe / belief band": [
+  {
+   "t": 0.0,
+   "event": "Init",
+   "add": [],
+   "rem": [],
+   "cause": "initial state",
+   "attrs": {},
+   "facts": [
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "stage": 1.5698708772275278
+  },
+  {
+   "t": 0.0,
+   "event": "Photo",
+   "add": [],
+   "rem": [],
+   "cause": "camera",
+   "attrs": {
+    "aspect": 1.484515203037419,
+    "neck": 0.12194317133066557,
+    "L": 44.86815216336242,
+    "C": 17.231441132528847,
+    "h": 121.5518366148559,
+    "stem": true
+   },
+   "facts": [
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "stage": 1.5698708772275278
+  },
+  {
+   "t": 0.0,
+   "event": "Squeeze",
+   "add": [],
+   "rem": [],
+   "cause": "contact pressure 3.3 N vs bruise threshold 41.4 N",
+   "attrs": {
+    "F": 3.3333333333333335,
+    "k_meas": 5.169302289202061
+   },
+   "facts": [
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "stage": 1.5698708772275278
+  },
+  {
+   "t": 24.0,
+   "event": "Wait",
+   "add": [],
+   "rem": [],
+   "cause": "24 h in the counter",
+   "attrs": {
+    "hours": 24.0,
+    "storage": "counter"
+   },
+   "facts": [
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "stage": 2.219424594653781
+  },
+  {
+   "t": 24.0,
+   "event": "Squeeze",
+   "add": [],
+   "rem": [],
+   "cause": "contact pressure 3.3 N vs bruise threshold 21.6 N",
+   "attrs": {
+    "F": 3.3333333333333335,
+    "k_meas": 5.05787880746204
+   },
+   "facts": [
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "stage": 2.219424594653781
+  },
+  {
+   "t": 48.0,
+   "event": "Wait",
+   "add": [],
+   "rem": [],
+   "cause": "24 h in the counter",
+   "attrs": {
+    "hours": 24.0,
+    "storage": "counter"
+   },
+   "facts": [
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "stage": 2.868978312080034
+  },
+  {
+   "t": 48.0,
+   "event": "Squeeze",
+   "add": [],
+   "rem": [],
+   "cause": "contact pressure 3.3 N vs bruise threshold 10.4 N",
+   "attrs": {
+    "F": 3.3333333333333335,
+    "k_meas": 3.593187012766486
+   },
+   "facts": [
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "stage": 2.868978312080034
+  },
+  {
+   "t": 72.0,
+   "event": "Wait",
+   "add": [],
+   "rem": [],
+   "cause": "24 h in the counter",
+   "attrs": {
+    "hours": 24.0,
+    "storage": "counter"
+   },
+   "facts": [
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "stage": 3.518532029506287
+  },
+  {
+   "t": 72.0,
+   "event": "Squeeze",
+   "add": [],
+   "rem": [],
+   "cause": "contact pressure 3.3 N vs bruise threshold 6.6 N",
+   "attrs": {
+    "F": 3.3333333333333335,
+    "k_meas": 2.5347968554049256
+   },
+   "facts": [
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "stage": 3.518532029506287
+  },
+  {
+   "t": 96.0,
+   "event": "Wait",
+   "add": [
+    "Ripe(Avocado)"
+   ],
+   "rem": [],
+   "cause": "24 h in the counter",
+   "attrs": {
+    "hours": 24.0,
+    "storage": "counter"
+   },
+   "facts": [
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "Ripe(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "stage": 4.16808574693254
+  },
+  {
+   "t": 96.0,
+   "event": "Squeeze",
+   "add": [],
+   "rem": [],
+   "cause": "contact pressure 2.0 N vs bruise threshold 4.6 N",
+   "attrs": {
+    "F": 2.0,
+    "k_meas": 3.0024157423353715
+   },
+   "facts": [
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "Ripe(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "stage": 4.16808574693254
+  },
+  {
+   "t": 120.0,
+   "event": "Wait",
+   "add": [],
+   "rem": [],
+   "cause": "24 h in the counter",
+   "attrs": {
+    "hours": 24.0,
+    "storage": "counter"
+   },
+   "facts": [
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "Ripe(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "stage": 4.817639464358793
+  },
+  {
+   "t": 120.0,
+   "event": "CutRoundSeed",
+   "add": [
+    "Scored(Avocado)"
+   ],
+   "rem": [],
+   "cause": "blade round the seed",
+   "attrs": {},
+   "facts": [
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "Ripe(Avocado)",
+    "Scored(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "stage": 4.817639464358793
+  },
+  {
+   "t": 120.0,
+   "event": "TwistApart",
+   "add": [
+    "Apart(HalfA,HalfB)",
+    "SeedIn(HalfA)"
+   ],
+   "rem": [
+    "Whole(Avocado)",
+    "Scored(Avocado)",
+    "SeedIn(Avocado)"
+   ],
+   "cause": "released at the seed",
+   "attrs": {},
+   "facts": [
+    "Apart(HalfA,HalfB)",
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "Ripe(Avocado)",
+    "SeedIn(HalfA)"
+   ],
+   "stage": 4.817639464358793
+  },
+  {
+   "t": 120.0,
+   "event": "RemoveSeed",
+   "add": [
+    "SeedOut(HalfA)"
+   ],
+   "rem": [
+    "SeedIn(HalfA)"
+   ],
+   "cause": "spoon",
+   "attrs": {},
+   "facts": [
+    "Apart(HalfA,HalfB)",
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "Ripe(Avocado)",
+    "SeedOut(HalfA)"
+   ],
+   "stage": 4.817639464358793
+  }
+ ],
+ "unripe / cut now": [
+  {
+   "t": 0.0,
+   "event": "Init",
+   "add": [],
+   "rem": [],
+   "cause": "initial state",
+   "attrs": {},
+   "facts": [
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "stage": 1.5698708772275278
+  },
+  {
+   "t": 0.0,
+   "event": "Photo",
+   "add": [],
+   "rem": [],
+   "cause": "camera",
+   "attrs": {
+    "aspect": 1.484515203037419,
+    "neck": 0.12194317133066557,
+    "L": 44.86815216336242,
+    "C": 17.231441132528847,
+    "h": 121.5518366148559,
+    "stem": true
+   },
+   "facts": [
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "stage": 1.5698708772275278
+  },
+  {
+   "t": 0.0,
+   "event": "CutRoundSeed",
+   "add": [
+    "Scored(Avocado)"
+   ],
+   "rem": [],
+   "cause": "blade round the seed",
+   "attrs": {},
+   "facts": [
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "Scored(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "stage": 1.5698708772275278
+  },
+  {
+   "t": 0.0,
+   "event": "TwistApart",
+   "add": [
+    "Apart(HalfA,HalfB)",
+    "SeedIn(HalfA)",
+    "TornFlesh(HalfB)",
+    "FleshOnSeed(Seed)"
+   ],
+   "rem": [
+    "Whole(Avocado)",
+    "Scored(Avocado)",
+    "SeedIn(Avocado)"
+   ],
+   "cause": "flesh clings to the seed",
+   "attrs": {},
+   "facts": [
+    "Apart(HalfA,HalfB)",
+    "FleshOnSeed(Seed)",
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "SeedIn(HalfA)",
+    "TornFlesh(HalfB)"
+   ],
+   "stage": 1.5698708772275278
+  },
+  {
+   "t": 0.0,
+   "event": "RemoveSeed",
+   "add": [
+    "SeedOut(HalfA)"
+   ],
+   "rem": [
+    "SeedIn(HalfA)"
+   ],
+   "cause": "spoon",
+   "attrs": {},
+   "facts": [
+    "Apart(HalfA,HalfB)",
+    "FleshOnSeed(Seed)",
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "SeedOut(HalfA)",
+    "TornFlesh(HalfB)"
+   ],
+   "stage": 1.5698708772275278
+  }
+ ],
+ "ripe / firm thumb 10 N": [
+  {
+   "t": 0.0,
+   "event": "Init",
+   "add": [],
+   "rem": [],
+   "cause": "initial state",
+   "attrs": {},
+   "facts": [
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "stage": 3.7415590643562733
+  },
+  {
+   "t": 0.0,
+   "event": "Photo",
+   "add": [],
+   "rem": [],
+   "cause": "camera",
+   "attrs": {
+    "aspect": 1.484515203037419,
+    "neck": 0.12194317133066557,
+    "L": 37.810165555194,
+    "C": 10.71637657114261,
+    "h": 221.5518366148559,
+    "stem": true
+   },
+   "facts": [
+    "Intact(Mesocarp)",
+    "OnBoard(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "stage": 3.7415590643562733
+  },
+  {
+   "t": 0.0,
+   "event": "Squeeze",
+   "add": [
+    "Bruised(Mesocarp)"
+   ],
+   "rem": [
+    "Intact(Mesocarp)"
+   ],
+   "cause": "contact pressure 10.0 N vs bruise threshold 5.8 N",
+   "attrs": {
+    "F": 10.0,
+    "k_meas": 2.500149268283528
+   },
+   "facts": [
+    "Bruised(Mesocarp)",
+    "OnBoard(Avocado)",
+    "SeedIn(Avocado)",
+    "Whole(Avocado)"
+   ],
+   "stage": 3.7415590643562733
+  }
+ ]
+}
