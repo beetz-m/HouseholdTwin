@@ -38,7 +38,9 @@ class EggKitchenAdapter(base.EggAdapter):
 
     # -- coraplex execution (the base adapter's callables become step nodes)
     def execute(self, nodes, attach=None):
-        Adapter.execute(self, nodes, attach)
+        """Back to coraplex (the base adapter calls functions); the steps run between plans (plan_running)."""
+        from plan_running import perform_between_world_edits
+        perform_between_world_edits(lambda motions: Adapter.execute(self, motions, attach), nodes)
 
     def _p(self, name):
         return self.world.get_body_by_name(name).global_pose.to_np()[:3, 3]
@@ -66,17 +68,17 @@ class EggKitchenAdapter(base.EggAdapter):
         from coraplex.robot_plans.actions.core.navigation import LookAtAction, NavigateAction
         from coraplex.robot_plans.actions.core.robot_body import MoveTorsoAction, ParkArmsAction
         from semantic_digital_twin.datastructures.definitions import TorsoState
-        from semantic_digital_twin.spatial_types.spatial_types import Pose
+        from krrood_spatial_math.spatial_types import Pose
         self._ready = True
         c = K.LAYOUT["cup-1"]
-        return [ParkArmsAction(self.robot.all_arms), MoveTorsoAction(TorsoState.HIGH),
-                NavigateAction(Pose.from_xyz_rpy(*K.BASE_XYZ, reference_frame=self.world.root)),
-                LookAtAction(Pose.from_xyz_rpy(c[0], c[1], self.top, reference_frame=self.world.root))]
+        return [ParkArmsAction(arms=self.robot.all_arms), MoveTorsoAction(torso_state=TorsoState.HIGH),
+                NavigateAction(target_location=Pose.from_xyz_rpy(*K.BASE_XYZ, reference_frame=self.world.root)),
+                LookAtAction(target=Pose.from_xyz_rpy(c[0], c[1], self.top, reference_frame=self.world.root))]
 
     def _look_at(self, xyz):
         from coraplex.robot_plans.actions.core.navigation import LookAtAction
-        from semantic_digital_twin.spatial_types.spatial_types import Pose
-        return LookAtAction(Pose.from_xyz_rpy(*map(float, xyz), reference_frame=self.world.root))
+        from krrood_spatial_math.spatial_types import Pose
+        return LookAtAction(target=Pose.from_xyz_rpy(*map(float, xyz), reference_frame=self.world.root))
 
     def _take(self, egg):
         p = self._p(egg)
@@ -172,7 +174,7 @@ class EggKitchenAdapter(base.EggAdapter):
                 M.release(self.world, d)
                 T = np.eye(4)
                 T[:3, 3] = b + [0, 0, 0.006 + 0.004 * len(self.bowl)]
-                from semantic_digital_twin.spatial_types import HomogeneousTransformationMatrix
+                from krrood_spatial_math.spatial_types import HomogeneousTransformationMatrix
                 with self.world.modify_world():
                     self.world.remove_branch_from_world(d)
                 K._place(self.world, K._mesh_body(f"contents-{egg}", K.disc_mesh("yolk", 0.022, 0.010),

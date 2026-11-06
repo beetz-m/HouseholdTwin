@@ -6,9 +6,8 @@ cram/meshes/egg_<i>.stl); cup, bowl and glass are open cylinders (trimesh). Outc
 from the egg emulator, which the adapter runs between the PR2's motions; the world shows them: the egg disappears
 when opened, its contents appear in the cup and move with it into the bowl, the two shell halves lie on the counter.
 
-Live: LIVE_VIZ_PORT=8769 CRAMERA_DATA=~/Documents/HouseholdTwin/cram/cramera_data_egg \
-      ~/Documents/ConceptualCRAM/bin/ccram run ~/Documents/HouseholdTwin/activities/egg-cracking-kitchen --workbench
-      (under cramera-live: see the activity's README)
+Run headless (CRAM main of 2026-11, cram-env): the activity's tests/test_kitchen_runs.py. Live CRAMERA is not
+available since 2026-11-06 (CRAM main removed cramera-live; the stand-alone cramera stack runs the CRAM of 2026-10-27).
 """
 from __future__ import annotations
 
@@ -22,12 +21,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.dirname(HERE))
 
-from coraplex.datastructures.dataclasses import Context  # noqa: E402
-from coraplex.datastructures.enums import VisualizationBackend  # noqa: E402
 from coraplex.demonstrations import RobotDemonstration  # noqa: E402
+from coraplex.plans.context_extensions import RobotAccess  # noqa: E402
+from krrood_spatial_math.spatial_types import HomogeneousTransformationMatrix  # noqa: E402
 from semantic_digital_twin.datastructures.prefixed_name import PrefixedName  # noqa: E402
 from semantic_digital_twin.robots.pr2 import PR2  # noqa: E402
-from semantic_digital_twin.spatial_types import HomogeneousTransformationMatrix  # noqa: E402
 from semantic_digital_twin.world import World  # noqa: E402
 from semantic_digital_twin.world_description.geometry import Color, Mesh  # noqa: E402
 from semantic_digital_twin.world_description.shape_collection import ShapeCollection  # noqa: E402
@@ -115,22 +113,46 @@ def half_shell_mesh(instance):
 
 
 @dataclass
-class EggKitchenDemonstration(RobotDemonstration):
-    """The PR2 at the kitchen counter with the activity's eggs (instances by symbol) and vessels."""
+class ApartmentPR2Demonstration(RobotDemonstration):
+    """The PR2 in the coraplex test apartment (coraplex.testing.setup_world, robot already in it), populated by a
+    subclass. CRAM main builds a demonstration's world from a scene and a robot specification; these twins keep the
+    apartment of setup_world, so build_simulated_world replaces that path and the specifications are not used. The
+    plan comes from the activity's library (ccram), which runs each realisation with create_executor(world)."""
 
     used_robot: type = PR2
-    default_visualization_backend: VisualizationBackend = VisualizationBackend.CRAMERA
     collision_avoidance: bool = False
     event_segmentation: bool = False
-    eggs: dict = field(default_factory=lambda: {"egg-1": 3, "egg-2": 5})
-    counter_top: float = field(default=0.0, init=False)
 
     def build_simulated_world(self) -> World:
         from coraplex.testing import setup_world
         world = setup_world()
         self.populate_scene(world)
-        self._pr2 = PR2.from_world(world)              # before the viewer attaches, so it knows the robot
+        self._pr2 = PR2.from_world(world)
         return world
+
+    def robot(self, world: World) -> PR2:
+        """The PR2 of ``world`` (built by build_simulated_world)."""
+        return getattr(self, "_pr2", None) or PR2.from_world(world)
+
+    def scene_specification(self):
+        raise NotImplementedError("the scene is setup_world's apartment, see build_simulated_world")
+
+    def robot_specification(self):
+        raise NotImplementedError("the PR2 comes with setup_world's apartment, see build_simulated_world")
+
+    def build_context_extensions(self, world: World) -> list:
+        return [RobotAccess(self.robot(world))]
+
+    def build_statechart(self, context):
+        raise NotImplementedError("the plan comes from the activity's library (ccram)")
+
+
+@dataclass
+class EggKitchenDemonstration(ApartmentPR2Demonstration):
+    """The PR2 at the kitchen counter with the activity's eggs (instances by symbol) and vessels."""
+
+    eggs: dict = field(default_factory=lambda: {"egg-1": 3, "egg-2": 5})
+    counter_top: float = field(default=0.0, init=False)
 
     def is_scene_populated(self, world: World) -> bool:
         return any(b.name.name == "cup-1" for b in world.bodies)
@@ -150,12 +172,3 @@ class EggKitchenDemonstration(RobotDemonstration):
                pose(*LAYOUT["batch-bowl"], top + 0.0005))
         _place(world, _mesh_body("water-glass", vessel_mesh("glass", 0.040, 0.080), (0.70, 0.85, 0.95)),
                pose(*LAYOUT["water-glass"], top + 0.0005))
-
-    def build_context(self, world: World) -> Context:
-        robot = getattr(self, "_pr2", None) or PR2.from_world(world)
-        context = Context(world=world, robot=robot, _debug=False, ros_node=None)
-        context.evaluate_conditions = False             # as the avocado demo: kinematic, no condition checks
-        return context
-
-    def build_plan(self, context: Context):
-        raise NotImplementedError("the plan comes from the activity's library (ccram)")

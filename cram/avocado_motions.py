@@ -24,10 +24,10 @@ from scipy.spatial.transform import Rotation
 from coraplex.datastructures.enums import CuttingTechnique, ToolPathSegmentKind
 from coraplex.robot_plans.actions.composite.tool_based import CuttingAction
 from coraplex.robot_plans.actions.composite.tool_paths import ToolPath, ToolPathSegment
-from coraplex.robot_plans.actions.core.robot_body import MoveManipulatorAction, SetGripperAction
+from coraplex.robot_plans.actions.core.robot_body import (MoveFingersToWidthAction, MoveManipulatorAction,
+                                                           SetGripperAction)
+from krrood_spatial_math.spatial_types import HomogeneousTransformationMatrix, Pose
 from semantic_digital_twin.datastructures.definitions import GripperState
-from semantic_digital_twin.spatial_types import HomogeneousTransformationMatrix
-from semantic_digital_twin.spatial_types.spatial_types import Pose
 
 # gripper orientations (columns: tool x = approach, tool y = finger closing direction, tool z)
 TOP_ACROSS = np.column_stack([[0, 0, -1], [1, 0, 0], [0, -1, 0]])     # from above, fingers close along world x
@@ -48,11 +48,13 @@ def pose(world, p, R):
 
 
 def move(world, arm, p, R):
-    return MoveManipulatorAction(pose(world, p, R), arm.end_effector, True)
+    return MoveManipulatorAction(target_pose=pose(world, p, R), end_effector=arm.end_effector,
+                                 allow_gripper_collision=True)
 
 
 def gripper(arm, open_):
-    return SetGripperAction(arm.end_effector, GripperState.OPEN if open_ else GripperState.CLOSE)
+    return SetGripperAction(configuration=arm.end_effector.default_configuration(
+        GripperState.OPEN if open_ else GripperState.CLOSE))
 
 
 def attach(world, body, arm):
@@ -89,21 +91,11 @@ class FruitGeometry:
 
 
 # %% squeeze
-FINGER_ANGLE = np.array([0.0, 0.1, 0.2, 0.3, 0.4, 0.548])
-FINGER_GAP = np.array([0.0, 0.018, 0.036, 0.053, 0.070, 0.093])
-"""PR2 finger joint angle -> gap between the finger pads (m), read off the kinematic model (tip links 0.0305 m apart
-when closed)."""
-
-
 def fingers_to_gap(arm, gap_m):
-    """Set the PR2 finger joints so that the pads stand ``gap_m`` apart (the kinematic simulation has no force
-    control: the squeeze is commanded as a width, the force comes from the fruit model)."""
-    from coraplex.plans.factories import execute_single
-    from coraplex.robot_plans.motions.robot_body import MoveJointsMotion
-    th = float(np.interp(gap_m, FINGER_GAP, FINGER_ANGLE))
-    side = "l" if "l_gripper" in str(arm.end_effector.tool_frame.name) else "r"
-    return execute_single(MoveJointsMotion(names=[f"{side}_gripper_l_finger_joint", f"{side}_gripper_r_finger_joint"],
-                                           positions=[th, th]))
+    """Close the gripper until the finger pads stand ``gap_m`` apart (coraplex MoveFingersToWidthAction; Giskard finds
+    the finger joint positions). The kinematic simulation has no force control: the squeeze is commanded as a width,
+    the force comes from the fruit model."""
+    return MoveFingersToWidthAction(gripper=arm.end_effector, width=max(0.0, float(gap_m)))
 
 
 def squeeze_steps(world, arm, g, squeeze_mm):
@@ -144,7 +136,7 @@ def let_go_steps(world, arm, g):
 
 
 # %% cut round the seed
-@dataclass(kw_only=True)
+@dataclass(kw_only=True, eq=False, repr=False)
 class CutRoundSeedAction(CuttingAction):
     """
     Cut through skin and flesh all round the seed: the knife, held flat in the (horizontal) cut plane, enters from the
@@ -186,6 +178,12 @@ class CutRoundSeedAction(CuttingAction):
     @property
     def _alignment_target(self):
         return self.align_frame
+
+    @property
+    def controlled_root(self):
+        """The robot's own root, so the base stands still while the knife goes round: the other hand holds the fruit.
+        CRAM main moves the whole body for tool actions; with the world root the base drove 0.67 m during the cut."""
+        return self.robot.root
 
 
 CUT_ALIGN = np.column_stack([[0, 0, 1], [0, 1, 0], [-1, 0, 0]]).astype(float)

@@ -19,12 +19,12 @@ The commands sit in the query attribute ``issued`` (``an(entity(cmd_x).where(cmd
 builds every preset to word it, and only evaluating the query reads the attribute, so listing the presets does not
 fire anything.
 
-Run (beside an existing CRAMERA session on 8765):
-    source ~/ros_ws/install/setup.bash; source ~/.virtualenvs/cram-env/bin/activate
-    LIVE_VIZ_PORT=8766 CRAMERA_DATA=~/Documents/HouseholdTwin/cram/cramera_data cramera-live ~/Documents/HouseholdTwin/cram/avocado_kitchen.py
-    open http://localhost:8711/?live=127.0.0.1:8766
-Headless test of a command sequence:
+Headless test of a command sequence (CRAM main of 2026-11, cram-env):
+    source /opt/ros/jazzy/setup.bash; source ~/ros_ws/install/setup.bash; source ~/.virtualenvs/cram-env/bin/activate
     CORAPLEX_VISUALIZATION=none python ~/Documents/HouseholdTwin/cram/avocado_kitchen.py --do detect,how_ripe,squeeze,cut,twist,spoon
+Live CRAMERA is not available since 2026-11-06: CRAM main (cram-env) removed the cramera package and its
+cramera-live bridge, and the stand-alone cramera stack (~/.virtualenvs/cramera) runs the CRAM of 2026-10-27, which has
+the former plan API this script no longer uses. Without the viewer the query panel (commands, questions, views) is not offered.
 """
 
 import argparse
@@ -44,25 +44,22 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.dirname(HERE))
 
-from coraplex.datastructures.dataclasses import Context  # noqa: E402
 from coraplex.datastructures.enums import DetectionTechnique  # noqa: E402
-from coraplex.execution_environment import kinematically_simulated_robot  # noqa: E402
-from coraplex.plans.factories import sequential  # noqa: E402
 from coraplex.robot_plans.actions.core.misc import DetectAction  # noqa: E402
 from coraplex.robot_plans.actions.core.navigation import LookAtAction, NavigateAction  # noqa: E402
 from coraplex.robot_plans.actions.core.robot_body import (  # noqa: E402
     MoveTorsoAction, ParkArmsAction, SetGripperAction)
-from coraplex.testing import attach_tool, setup_world, start_visualization  # noqa: E402
+from coraplex.testing import attach_tool, setup_world  # noqa: E402
 from experiments.tool_based_actions.simple_demo.demo_world import CUT_MOUNT, parse_object  # noqa: E402
+from krrood_spatial_math.spatial_types import HomogeneousTransformationMatrix, Pose  # noqa: E402
 from semantic_digital_twin.datastructures.definitions import GripperState, TorsoState  # noqa: E402
 from semantic_digital_twin.robots.pr2 import PR2  # noqa: E402
 from semantic_digital_twin.semantic_annotations.semantic_annotations import CuttingKnife, Spoon  # noqa: E402
-from semantic_digital_twin.spatial_types import HomogeneousTransformationMatrix  # noqa: E402
-from semantic_digital_twin.spatial_types.spatial_types import Pose  # noqa: E402
 
 import avocado_motions as M  # noqa: E402
 import avocado_agent as AG  # noqa: E402
 import avocado_sdt as SDT  # noqa: E402
+from plan_running import perform_steps  # noqa: E402
 from food import avocado_process as PRC  # noqa: E402
 from food.avocado_lifetime import FruitClock  # noqa: E402
 from avocado_pr2_demo import (BASE_XYZ, CAMERA_IMAGE, HALF_ASIDE, INSTANCE, KNIFE_REST, SEED_DROP, X, Y,  # noqa: E402
@@ -173,13 +170,11 @@ class AvocadoKitchen:
         self.spoon = self.world.get_body_by_name("spoon.stl")
         self.spoon_home = self.spoon.global_pose.to_np()
         self.pr2 = PR2.from_world(self.world)
-        self.viz = start_visualization(self.world)
+        self.viz = None                  # CRAM main has no CRAMERA bridge (cramera left the monorepo): headless
         self.knife = CuttingKnife(root=attach_tool(self.world, self.pr2.right_arm, parse_object("big-knife.stl"),
                                                    CUT_MOUNT))
         with self.world.modify_world():
             self.world.add_semantic_annotations([self.knife, Spoon(root=self.spoon)])
-        self.context = Context(world=self.world, robot=self.pr2, _debug=False, ros_node=None)
-        self.context.evaluate_conditions = False
         self.L, self.R = self.pr2.left_arm, self.pr2.right_arm
         self.align = M.cut_alignment_frame(self.world, np.array([X, Y, self.top + 0.03]))
         Rx = np.array([[1, 0, 0], [0, 0, -1], [0, 1, 0]], float)            # lemon lying, long axis along y
@@ -240,11 +235,7 @@ class AvocadoKitchen:
             self.world.remove_branch_from_world(body)
 
     def perform(self, steps):
-        plan = sequential(steps, context=self.context).plan
-        if self.viz is not None and hasattr(self.viz, "attach_plan"):
-            self.viz.attach_plan(plan)
-        with kinematically_simulated_robot:
-            return plan.perform()
+        return perform_steps(self.world, self.pr2, steps)
 
     # %% the query panel
     def register(self):
@@ -404,8 +395,9 @@ class AvocadoKitchen:
 
     def do_detect(self):
         target = Pose.from_xyz_rpy(X, Y, self.top + 0.03, reference_frame=self.world.root)
-        steps = [ParkArmsAction(self.pr2.all_arms), MoveTorsoAction(TorsoState.HIGH),
-                 NavigateAction(Pose.from_xyz_rpy(*BASE_XYZ, reference_frame=self.world.root)), LookAtAction(target),
+        steps = [ParkArmsAction(arms=self.pr2.all_arms), MoveTorsoAction(torso_state=TorsoState.HIGH),
+                 NavigateAction(target_location=Pose.from_xyz_rpy(*BASE_XYZ, reference_frame=self.world.root)),
+                 LookAtAction(target=target),
                  DetectAction(technique=DetectionTechnique.TYPES, object_sem_annotation=Avocado)]
         self.perform(steps)
         self.at_counter = True
@@ -573,7 +565,7 @@ class AvocadoKitchen:
             M.attach(self.world, self.knife.root, self.R)
             self.knife_in_hand = True
             steps = [M.move(self.world, self.R, np.array(rest) + [0, 0, 0.15], M.KNIFE_FLAT)]
-        self.perform(steps + [ParkArmsAction(self.pr2.all_arms)])
+        self.perform(steps + [ParkArmsAction(arms=self.pr2.all_arms)])
         for tag in list(self.pieces):
             self.drop_piece(tag)
         self.new_avocado()

@@ -20,14 +20,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.dirname(HERE))
 
-from coraplex.datastructures.dataclasses import Context  # noqa: E402
-from coraplex.datastructures.enums import VisualizationBackend  # noqa: E402
-from coraplex.demonstrations import RobotDemonstration  # noqa: E402
-from semantic_digital_twin.robots.pr2 import PR2  # noqa: E402
 from semantic_digital_twin.world import World  # noqa: E402
 
 from avocado_world import pose, surface_height_below  # noqa: E402
-from egg_kitchen import MESHES, _mesh_body, _place  # noqa: E402
+from egg_kitchen import MESHES, ApartmentPR2Demonstration, _mesh_body, _place  # noqa: E402
 
 BASE_OBJECTS = (1.70, 2.75)          # the breakfast stretch of the island counter
 BASE_PLACES = (1.70, 2.15)           # the stand-in places
@@ -77,19 +73,8 @@ def height(sym):
 
 
 @dataclass
-class PutAwayKitchenDemonstration(RobotDemonstration):
-    used_robot: type = PR2
-    default_visualization_backend: VisualizationBackend = VisualizationBackend.CRAMERA
-    collision_avoidance: bool = False
-    event_segmentation: bool = False
+class PutAwayKitchenDemonstration(ApartmentPR2Demonstration):
     counter_top: float = field(default=0.0, init=False)
-
-    def build_simulated_world(self) -> World:
-        from coraplex.testing import setup_world
-        world = setup_world()
-        self.populate_scene(world)
-        self._pr2 = PR2.from_world(world)
-        return world
 
     def is_scene_populated(self, world: World) -> bool:
         return any(b.name.name == "place-fridge" for b in world.bodies)
@@ -108,12 +93,3 @@ class PutAwayKitchenDemonstration(RobotDemonstration):
                    pose(x, y, top + 0.0005))
         for sym, (x, y, _, _, rgb) in OBJECTS.items():
             _place(world, _mesh_body(sym, object_mesh(sym), rgb), pose(x, y, top + 0.0005))
-
-    def build_context(self, world: World) -> Context:
-        robot = getattr(self, "_pr2", None) or PR2.from_world(world)
-        context = Context(world=world, robot=robot, _debug=False, ros_node=None)
-        context.evaluate_conditions = False
-        return context
-
-    def build_plan(self, context: Context):
-        raise NotImplementedError("the plan comes from the activity's library (ccram)")

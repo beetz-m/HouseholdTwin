@@ -34,7 +34,9 @@ class PutAwayKitchenAdapter(base.PutAwayAdapter):
         self.slots = {p: 0 for p in K.PLACES}
 
     def execute(self, nodes, attach=None):                       # back to coraplex (the base adapter calls functions)
-        Adapter.execute(self, nodes, attach)
+        """Back to coraplex (the base adapter calls functions); the steps run between plans (plan_running)."""
+        from plan_running import perform_between_world_edits
+        perform_between_world_edits(lambda motions: Adapter.execute(self, motions, attach), nodes)
 
     # -- motions
     def _M(self):
@@ -50,24 +52,24 @@ class PutAwayKitchenAdapter(base.PutAwayAdapter):
 
     def _look_at(self, xyz):
         from coraplex.robot_plans.actions.core.navigation import LookAtAction
-        from semantic_digital_twin.spatial_types.spatial_types import Pose
-        return LookAtAction(Pose.from_xyz_rpy(*map(float, xyz), reference_frame=self.world.root))
+        from krrood_spatial_math.spatial_types import Pose
+        return LookAtAction(target=Pose.from_xyz_rpy(*map(float, xyz), reference_frame=self.world.root))
 
     def _goto(self, where):
         """Drive to a stretch of the counter (arms parked); nothing if already there (tracked at plan-build time)."""
         from coraplex.robot_plans.actions.core.navigation import NavigateAction
         from coraplex.robot_plans.actions.core.robot_body import MoveTorsoAction, ParkArmsAction
         from semantic_digital_twin.datastructures.definitions import TorsoState
-        from semantic_digital_twin.spatial_types.spatial_types import Pose
+        from krrood_spatial_math.spatial_types import Pose
         out = []
         if not self._ready:
             self._ready = True
-            out += [ParkArmsAction(self.robot.all_arms), MoveTorsoAction(TorsoState.HIGH)]
+            out += [ParkArmsAction(arms=self.robot.all_arms), MoveTorsoAction(torso_state=TorsoState.HIGH)]
         b = K.BASE_OBJECTS if where == "objects" else K.BASE_PLACES
         if self._at != b:
             self._at = b
-            out += [ParkArmsAction(self.robot.all_arms),
-                    NavigateAction(Pose.from_xyz_rpy(b[0], b[1], 0.0, reference_frame=self.world.root))]
+            out += [ParkArmsAction(arms=self.robot.all_arms),
+                    NavigateAction(target_location=Pose.from_xyz_rpy(b[0], b[1], 0.0, reference_frame=self.world.root))]
         return out
 
     def _attach(self, name):

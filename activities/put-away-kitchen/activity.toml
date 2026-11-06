@@ -22,4 +22,4 @@ setup = ["/opt/ros/jazzy/setup.bash", "~/ros_ws/install/setup.bash"]
 [workbench]
 port = 8796
 bridge = 8771
-viewer = 8714          # its own viewer: CRAMERA_DATA=~/Documents/HouseholdTwin/cram/cramera_data_putaway cramera 8714
+viewer = 8714          # its own viewer: CRAMERA_DATA=~/Documents/HouseholdTwin/cram/cramera_data_putaway cramera 8714 (cram-env lost `cramera` on 2026-11-06: no live viewer)

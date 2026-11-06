@@ -20,11 +20,12 @@ it) and reasons about what to do with it; then halves and pits it with its own h
 
 All records (belief variables, answers, imagined outcomes, monitoring) are offered to the CRAMERA query panel.
 
-Run beside an existing CRAMERA session (own bridge port):
-    source ~/ros_ws/install/setup.bash; source ~/.virtualenvs/cram-env/bin/activate
-    LIVE_VIZ_PORT=8766 CRAMERA_DATA=~/Documents/HouseholdTwin/cram/cramera_data cramera-live ~/Documents/HouseholdTwin/cram/avocado_pr2_demo.py
-    open http://localhost:8711/?live=127.0.0.1:8766
-Headless: CORAPLEX_VISUALIZATION=none python ~/Documents/HouseholdTwin/cram/avocado_pr2_demo.py
+Run (headless; CRAM main of 2026-11, cram-env):
+    source /opt/ros/jazzy/setup.bash; source ~/ros_ws/install/setup.bash; source ~/.virtualenvs/cram-env/bin/activate
+    CORAPLEX_VISUALIZATION=none python ~/Documents/HouseholdTwin/cram/avocado_pr2_demo.py
+Live CRAMERA is not available since 2026-11-06: CRAM main (cram-env) removed the cramera package and its
+cramera-live bridge, and the stand-alone cramera stack (~/.virtualenvs/cramera) runs the CRAM of 2026-10-27, which has
+the former plan API this script no longer uses.
 """
 
 import json
@@ -39,24 +40,21 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.dirname(HERE))
 
-from coraplex.datastructures.dataclasses import Context  # noqa: E402
 from coraplex.datastructures.enums import DetectionTechnique  # noqa: E402
-from coraplex.execution_environment import kinematically_simulated_robot  # noqa: E402
-from coraplex.plans.factories import sequential  # noqa: E402
 from coraplex.robot_plans.actions.core.misc import DetectAction  # noqa: E402
 from coraplex.robot_plans.actions.core.navigation import LookAtAction, NavigateAction  # noqa: E402
 from coraplex.robot_plans.actions.core.robot_body import (  # noqa: E402
     MoveTorsoAction, ParkArmsAction, SetGripperAction)
-from coraplex.testing import attach_tool, setup_world, start_visualization  # noqa: E402
+from coraplex.testing import attach_tool, setup_world  # noqa: E402
 from experiments.tool_based_actions.simple_demo.demo_world import CUT_MOUNT, parse_object  # noqa: E402
+from krrood_spatial_math.spatial_types import HomogeneousTransformationMatrix, Pose  # noqa: E402
 from semantic_digital_twin.datastructures.definitions import GripperState, TorsoState  # noqa: E402
 from semantic_digital_twin.robots.pr2 import PR2  # noqa: E402
 from semantic_digital_twin.semantic_annotations.semantic_annotations import CuttingKnife, Spoon  # noqa: E402
-from semantic_digital_twin.spatial_types import HomogeneousTransformationMatrix  # noqa: E402
-from semantic_digital_twin.spatial_types.spatial_types import Pose  # noqa: E402
 
 import avocado_motions as M  # noqa: E402
 import avocado_sdt as SDT  # noqa: E402
+from plan_running import perform_steps  # noqa: E402
 from avocado_world import (FRUIT_CUT_HORIZONTAL, Avocado, AvocadoMeshes, remove_piece, resting,  # noqa: E402
                            spawn_board, spawn_piece, surface_height_below)
 from food import avocado_belief as AB  # noqa: E402
@@ -154,11 +152,9 @@ def register_queries(viz, world, node):
 
 # %% the demo
 def perform(viz, steps, context):
-    plan = sequential(steps, context=context).plan
-    if viz is not None:
-        viz.attach_plan(plan)
-    with kinematically_simulated_robot:
-        return plan.perform()
+    """Run ``steps`` as one plan; ``context`` is (world, robot). ``viz`` is None: CRAM main has no CRAMERA bridge
+    (cramera left the monorepo), so the run is headless."""
+    return perform_steps(*context, steps)
 
 
 def ask(node, f, *a):
@@ -190,12 +186,11 @@ def main():
         X - 0.02, Y - 0.26, counter + 0.006, reference_frame=world.root))
     spoon_body = world.get_body_by_name("spoon.stl")
     pr2 = PR2.from_world(world)                      # before the viewer attaches, so it knows the robot
-    viz = start_visualization(world)
+    viz = None
     knife = CuttingKnife(root=attach_tool(world, pr2.right_arm, parse_object("big-knife.stl"), CUT_MOUNT))
     with world.modify_world():
         world.add_semantic_annotations([knife, Spoon(root=spoon_body)])
-    context = Context(world=world, robot=pr2, _debug=False, ros_node=None)
-    context.evaluate_conditions = False
+    context = (world, pr2)
     L, R = pr2.left_arm, pr2.right_arm
     say(f"cutting board top at {top:.3f} m; avocado at ({X}, {Y}) with its cut plane horizontal (hidden truth: "
         f"stage {truth.stage:.2f}, seed {truth.truth['seed_length']:.1f} mm, seed coat adheres to the "
@@ -203,9 +198,10 @@ def main():
 
     # 1. perceive
     target = Pose.from_xyz_rpy(X, Y, top + 0.03, reference_frame=world.root)
-    perform(viz, [SetGripperAction(R.end_effector, GripperState.CLOSE), ParkArmsAction(pr2.all_arms),
-                  MoveTorsoAction(TorsoState.HIGH),
-                  NavigateAction(Pose.from_xyz_rpy(*BASE_XYZ, reference_frame=world.root)), LookAtAction(target)],
+    perform(viz, [SetGripperAction(configuration=R.end_effector.default_configuration(GripperState.CLOSE)),
+                  ParkArmsAction(arms=pr2.all_arms), MoveTorsoAction(torso_state=TorsoState.HIGH),
+                  NavigateAction(target_location=Pose.from_xyz_rpy(*BASE_XYZ, reference_frame=world.root)),
+                  LookAtAction(target=target)],
             context)
     perform(viz, [DetectAction(technique=DetectionTechnique.TYPES, object_sem_annotation=Avocado)], context)
     avocado = world.get_semantic_annotations_by_type(Avocado)[0]

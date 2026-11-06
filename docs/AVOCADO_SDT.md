@@ -158,10 +158,12 @@ seed on the board, knife on the counter, spoon in the right hand. 18 answers, 4 
 The records (belief variables, answers, imagined outcomes, monitoring) are a CRAMERA query source ('avocado SDT')
 with presets (What does the robot believe about the avocado? Was anything not as expected? ...):
 
-    source ~/ros_ws/install/setup.bash; source ~/.virtualenvs/cram-env/bin/activate
-    LIVE_VIZ_PORT=8766 CRAMERA_DATA=~/Documents/HouseholdTwin/cram/cramera_data cramera-live ~/Documents/HouseholdTwin/cram/avocado_pr2_demo.py
-    # viewer: http://localhost:8711/?live=127.0.0.1:8766  (a separate port beside a running session on 8765)
+    source /opt/ros/jazzy/setup.bash; source ~/ros_ws/install/setup.bash; source ~/.virtualenvs/cram-env/bin/activate
     CORAPLEX_VISUALIZATION=none python ~/Documents/HouseholdTwin/cram/avocado_pr2_demo.py      # headless
+
+Live CRAMERA (the query source above) is not available since 2026-11-06: CRAM main removed the cramera package and
+cramera-live, and the stand-alone cramera stack runs the CRAM of 2026-10-27 with the former plan API. The headless
+run on CRAM main reproduces the run above line for line (same answers, imagined outcomes and monitoring).
 
 Not yet: contact forces (kinematic simulation: the knife, fingers and spoon pass through the fruit, the mechanics
 supply forces and outcomes); the robot's seed-centre estimate is the twin's nominal position (no seed offset);
@@ -192,10 +194,11 @@ word it, and only evaluating the query reads the attribute, so listing the prese
 robot's SDT nodes are kept beside the annotations (`avocado_world.SDT_NODES`), because the world serialises every
 annotation it adds or removes.
 
-    source ~/ros_ws/install/setup.bash; source ~/.virtualenvs/cram-env/bin/activate
-    LIVE_VIZ_PORT=8766 CRAMERA_DATA=~/Documents/HouseholdTwin/cram/cramera_data cramera-live ~/Documents/HouseholdTwin/cram/avocado_kitchen.py
-    # viewer: http://localhost:8711/?live=127.0.0.1:8766
+    source /opt/ros/jazzy/setup.bash; source ~/ros_ws/install/setup.bash; source ~/.virtualenvs/cram-env/bin/activate
     CORAPLEX_VISUALIZATION=none python ~/Documents/HouseholdTwin/cram/avocado_kitchen.py --do detect,how_ripe,squeeze,cut,twist,spoon
+
+The panel needs live CRAMERA, which is not available since 2026-11-06 (see section 5); the headless command
+sequence runs on CRAM main with the same outcomes.
 
 ## 7. A goal-directed agent: enforce goals, prevent risks, decide over the fruit's lifetime (`cram/avocado_agent.py`)
 
