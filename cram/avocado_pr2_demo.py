@@ -45,7 +45,8 @@ from coraplex.robot_plans.actions.core.misc import DetectAction  # noqa: E402
 from coraplex.robot_plans.actions.core.navigation import LookAtAction, NavigateAction  # noqa: E402
 from coraplex.robot_plans.actions.core.robot_body import (  # noqa: E402
     MoveTorsoAction, ParkArmsAction, SetGripperAction)
-from coraplex.testing import attach_tool, setup_world  # noqa: E402
+from coraplex.testing import attach_tool  # noqa: E402
+from apartment import apartment_with_pr2  # noqa: E402
 from experiments.tool_based_actions.simple_demo.demo_world import CUT_MOUNT, parse_object  # noqa: E402
 try:  # the fork stack (cram-env) has krrood_spatial_math; CRAM main has it in semantic_digital_twin
     from krrood_spatial_math.spatial_types import HomogeneousTransformationMatrix, Pose  # noqa: E402
@@ -177,7 +178,7 @@ def annotate(world, *bodies):
 
 
 def main():
-    world = setup_world()
+    world = apartment_with_pr2()   # cram/apartment.py: the iai apartment by default (HOUSEHOLD_APARTMENT)
     meshes = AvocadoMeshes()
     truth = TrueAvocado(INSTANCE)
     counter = surface_height_below(world, (X, Y))

@@ -127,8 +127,8 @@ class ApartmentPR2Demonstration(RobotDemonstration):
     event_segmentation: bool = False
 
     def build_simulated_world(self) -> World:
-        from coraplex.testing import setup_world
-        world = setup_world()
+        from apartment import apartment_with_pr2
+        world = apartment_with_pr2()   # cram/apartment.py: the iai apartment by default (HOUSEHOLD_APARTMENT)
         self.populate_scene(world)
         self._pr2 = PR2.from_world(world)
         return world
