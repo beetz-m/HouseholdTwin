@@ -68,7 +68,10 @@ class EggKitchenAdapter(base.EggAdapter):
         from coraplex.robot_plans.actions.core.navigation import LookAtAction, NavigateAction
         from coraplex.robot_plans.actions.core.robot_body import MoveTorsoAction, ParkArmsAction
         from semantic_digital_twin.datastructures.definitions import TorsoState
-        from krrood_spatial_math.spatial_types import Pose
+        try:  # the fork stack (cram-env) has krrood_spatial_math; CRAM main has it in semantic_digital_twin
+            from krrood_spatial_math.spatial_types import Pose  # noqa: E402
+        except ImportError:
+            from semantic_digital_twin.spatial_types.spatial_types import Pose  # noqa: E402
         self._ready = True
         c = K.LAYOUT["cup-1"]
         return [ParkArmsAction(arms=self.robot.all_arms), MoveTorsoAction(torso_state=TorsoState.HIGH),
@@ -77,7 +80,10 @@ class EggKitchenAdapter(base.EggAdapter):
 
     def _look_at(self, xyz):
         from coraplex.robot_plans.actions.core.navigation import LookAtAction
-        from krrood_spatial_math.spatial_types import Pose
+        try:  # the fork stack (cram-env) has krrood_spatial_math; CRAM main has it in semantic_digital_twin
+            from krrood_spatial_math.spatial_types import Pose  # noqa: E402
+        except ImportError:
+            from semantic_digital_twin.spatial_types.spatial_types import Pose  # noqa: E402
         return LookAtAction(target=Pose.from_xyz_rpy(*map(float, xyz), reference_frame=self.world.root))
 
     def _take(self, egg):
@@ -174,7 +180,10 @@ class EggKitchenAdapter(base.EggAdapter):
                 M.release(self.world, d)
                 T = np.eye(4)
                 T[:3, 3] = b + [0, 0, 0.006 + 0.004 * len(self.bowl)]
-                from krrood_spatial_math.spatial_types import HomogeneousTransformationMatrix
+                try:  # the fork stack (cram-env) has krrood_spatial_math; CRAM main has it in semantic_digital_twin
+                    from krrood_spatial_math.spatial_types import HomogeneousTransformationMatrix  # noqa: E402
+                except ImportError:
+                    from semantic_digital_twin.spatial_types.spatial_types import HomogeneousTransformationMatrix  # noqa: E402
                 with self.world.modify_world():
                     self.world.remove_branch_from_world(d)
                 K._place(self.world, K._mesh_body(f"contents-{egg}", K.disc_mesh("yolk", 0.022, 0.010),

@@ -23,7 +23,10 @@ sys.path.insert(0, os.path.dirname(HERE))
 
 from coraplex.demonstrations import RobotDemonstration  # noqa: E402
 from coraplex.plans.context_extensions import RobotAccess  # noqa: E402
-from krrood_spatial_math.spatial_types import HomogeneousTransformationMatrix  # noqa: E402
+try:  # the fork stack (cram-env) has krrood_spatial_math; CRAM main has it in semantic_digital_twin
+    from krrood_spatial_math.spatial_types import HomogeneousTransformationMatrix  # noqa: E402
+except ImportError:
+    from semantic_digital_twin.spatial_types.spatial_types import HomogeneousTransformationMatrix  # noqa: E402
 from semantic_digital_twin.datastructures.prefixed_name import PrefixedName  # noqa: E402
 from semantic_digital_twin.robots.pr2 import PR2  # noqa: E402
 from semantic_digital_twin.world import World  # noqa: E402
@@ -141,7 +144,7 @@ class ApartmentPR2Demonstration(RobotDemonstration):
         raise NotImplementedError("the PR2 comes with setup_world's apartment, see build_simulated_world")
 
     def build_context_extensions(self, world: World) -> list:
-        return [RobotAccess(self.robot(world))]
+        return [RobotAccess(robot=self.robot(world))]
 
     def build_statechart(self, context):
         raise NotImplementedError("the plan comes from the activity's library (ccram)")

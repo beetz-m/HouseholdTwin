@@ -24,13 +24,13 @@ def perform_steps(world, robot, steps, collision_avoidance=False, extensions=())
     :param extensions: Executor extensions, e.g. a visualization.
     :return: The plan node that ran.
     """
-    context = StatechartContext.with_extensions(world, [RobotAccess(robot), StatementGrounding()])
-    executor = KinematicallySimulatedPlanExecutor(context, collision_avoidance=collision_avoidance,
+    context = StatechartContext.with_extensions(world=world, extensions=[RobotAccess(robot=robot), StatementGrounding()])
+    executor = KinematicallySimulatedPlanExecutor(context=context, collision_avoidance=collision_avoidance,
                                                   extensions=list(extensions))
     plan = Sequence(nodes=list(steps))
     statechart = Statechart(context=executor.context)
-    statechart.add_node(plan)
-    executor.compile(statechart)
+    statechart.add_node(node=plan)
+    executor.compile(statechart=statechart)
     executor.execute()
     executor.close()
     return plan

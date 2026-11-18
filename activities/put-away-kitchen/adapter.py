@@ -52,7 +52,10 @@ class PutAwayKitchenAdapter(base.PutAwayAdapter):
 
     def _look_at(self, xyz):
         from coraplex.robot_plans.actions.core.navigation import LookAtAction
-        from krrood_spatial_math.spatial_types import Pose
+        try:  # the fork stack (cram-env) has krrood_spatial_math; CRAM main has it in semantic_digital_twin
+            from krrood_spatial_math.spatial_types import Pose  # noqa: E402
+        except ImportError:
+            from semantic_digital_twin.spatial_types.spatial_types import Pose  # noqa: E402
         return LookAtAction(target=Pose.from_xyz_rpy(*map(float, xyz), reference_frame=self.world.root))
 
     def _goto(self, where):
@@ -60,7 +63,10 @@ class PutAwayKitchenAdapter(base.PutAwayAdapter):
         from coraplex.robot_plans.actions.core.navigation import NavigateAction
         from coraplex.robot_plans.actions.core.robot_body import MoveTorsoAction, ParkArmsAction
         from semantic_digital_twin.datastructures.definitions import TorsoState
-        from krrood_spatial_math.spatial_types import Pose
+        try:  # the fork stack (cram-env) has krrood_spatial_math; CRAM main has it in semantic_digital_twin
+            from krrood_spatial_math.spatial_types import Pose  # noqa: E402
+        except ImportError:
+            from semantic_digital_twin.spatial_types.spatial_types import Pose  # noqa: E402
         out = []
         if not self._ready:
             self._ready = True

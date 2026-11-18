@@ -17,7 +17,10 @@ from typing_extensions import Optional
 
 from semantic_digital_twin.datastructures.prefixed_name import PrefixedName
 from semantic_digital_twin.semantic_annotations.semantic_annotations import Fruit
-from krrood_spatial_math.spatial_types import HomogeneousTransformationMatrix
+try:  # the fork stack (cram-env) has krrood_spatial_math; CRAM main has it in semantic_digital_twin
+    from krrood_spatial_math.spatial_types import HomogeneousTransformationMatrix  # noqa: E402
+except ImportError:
+    from semantic_digital_twin.spatial_types.spatial_types import HomogeneousTransformationMatrix  # noqa: E402
 from semantic_digital_twin.world import World
 from semantic_digital_twin.world_description.connections import FixedConnection
 from semantic_digital_twin.world_description.geometry import Color, Mesh

@@ -47,7 +47,10 @@ from coraplex.robot_plans.actions.core.robot_body import (  # noqa: E402
     MoveTorsoAction, ParkArmsAction, SetGripperAction)
 from coraplex.testing import attach_tool, setup_world  # noqa: E402
 from experiments.tool_based_actions.simple_demo.demo_world import CUT_MOUNT, parse_object  # noqa: E402
-from krrood_spatial_math.spatial_types import HomogeneousTransformationMatrix, Pose  # noqa: E402
+try:  # the fork stack (cram-env) has krrood_spatial_math; CRAM main has it in semantic_digital_twin
+    from krrood_spatial_math.spatial_types import HomogeneousTransformationMatrix, Pose  # noqa: E402
+except ImportError:
+    from semantic_digital_twin.spatial_types.spatial_types import HomogeneousTransformationMatrix, Pose  # noqa: E402
 from semantic_digital_twin.datastructures.definitions import GripperState, TorsoState  # noqa: E402
 from semantic_digital_twin.robots.pr2 import PR2  # noqa: E402
 from semantic_digital_twin.semantic_annotations.semantic_annotations import CuttingKnife, Spoon  # noqa: E402

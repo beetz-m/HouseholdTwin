@@ -24,9 +24,15 @@ from scipy.spatial.transform import Rotation
 from coraplex.datastructures.enums import CuttingTechnique, ToolPathSegmentKind
 from coraplex.robot_plans.actions.composite.tool_based import CuttingAction
 from coraplex.robot_plans.actions.composite.tool_paths import ToolPath, ToolPathSegment
-from coraplex.robot_plans.actions.core.robot_body import (MoveFingersToWidthAction, MoveManipulatorAction,
-                                                           SetGripperAction)
-from krrood_spatial_math.spatial_types import HomogeneousTransformationMatrix, Pose
+from coraplex.robot_plans.actions.core.robot_body import MoveManipulatorAction, SetGripperAction
+try:  # the fork stack has a finger-width action; CRAM main only a motion that refuses kinematic worlds
+    from coraplex.robot_plans.actions.core.robot_body import MoveFingersToWidthAction
+except ImportError:
+    MoveFingersToWidthAction = None
+try:  # the fork stack (cram-env) has krrood_spatial_math; CRAM main has it in semantic_digital_twin
+    from krrood_spatial_math.spatial_types import HomogeneousTransformationMatrix, Pose  # noqa: E402
+except ImportError:
+    from semantic_digital_twin.spatial_types.spatial_types import HomogeneousTransformationMatrix, Pose  # noqa: E402
 from semantic_digital_twin.datastructures.definitions import GripperState
 
 # gripper orientations (columns: tool x = approach, tool y = finger closing direction, tool z)
@@ -95,6 +101,10 @@ def fingers_to_gap(arm, gap_m):
     """Close the gripper until the finger pads stand ``gap_m`` apart (coraplex MoveFingersToWidthAction; Giskard finds
     the finger joint positions). The kinematic simulation has no force control: the squeeze is commanded as a width,
     the force comes from the fruit model."""
+    if MoveFingersToWidthAction is None:
+        # CRAM main: MoveFingersToWidthMotion raises FingerWidthNeedsPhysics under kinematic execution, where a held
+        # object hangs off the tool frame however the fingers stand; closing the gripper means the same there
+        return gripper(arm, False)
     return MoveFingersToWidthAction(gripper=arm.end_effector, width=max(0.0, float(gap_m)))
 
 

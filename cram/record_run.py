@@ -35,8 +35,9 @@ def main():
                  for h in node.belief.history],
         pieces=sorted(b.name.name for b in world.bodies if b.name.name.startswith("avocado") and
                       b.name.name.endswith(("_skin", "_seed_coat"))))
-    os.makedirs(os.path.join(HERE, "results"), exist_ok=True)
-    path = os.path.join(HERE, "results", "pr2_run.json")
+    # RECORD_RUN_OUT=<path> writes elsewhere (the labs repo reruns cases without touching the committed record)
+    path = os.environ.get("RECORD_RUN_OUT") or os.path.join(HERE, "results", "pr2_run.json")
+    os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
     json.dump(out, open(path, "w"), indent=1, default=str)
     print("wrote", path)
 
